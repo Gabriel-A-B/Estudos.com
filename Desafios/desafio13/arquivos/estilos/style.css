@@ -49,6 +49,9 @@ section#redes img {
 
 section#redes img:hover {
     transform: translate(-10%, -10%);
+    width: 60px;
+    height: 60px;
+    border: 5px white solid;
 }
 
 iframe#tela {
