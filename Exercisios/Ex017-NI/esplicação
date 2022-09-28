@@ -1,0 +1,28 @@
+
+    nessa parte vamos aprender sobre familys de fontes
+    //
+    bem para comesar temos essa tag que pega diversas fontes, e pq trez tipos de fontes?
+    pq nem todas as plataformas usam Arial, ou etc... Sendo assim se n tem esta ele usara a proxima opção chamada save-font-combinachions
+    //
+    nem todos estão ai então alguns tem que ser baixados e acoplados ali
+    //
+    lembra daquelas clasificações que eu anotei, então eles podem escolher uma save-font-combinacions de classes distintas
+    //
+    obs: tem como botar style em dois atravez de aoenas uma linha assim
+    Ex: h1, h2 {
+       color: blue; 
+    }
+    //
+    um em e a mesma coisa que 16 pixeis, com distinção da adaptação
+    //
+    Peso: esse peso e a groçura da fonte onde tem uma tag do style chamada 
+    font-weight: V;
+    V: aqui dentro tera todas as posibilidade
+    100 ate 900 = grossuras mais especificas
+    bold: mesma coisa do negrito
+    bolder: mais grosso que o bold
+    lighter: mais leves que tem (finas)
+    normal: n modifica nada
+
+    import url: importa fontes
+

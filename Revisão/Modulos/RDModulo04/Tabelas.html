@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Completo</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+
+    <style>
+        table {
+            overflow: scroll;
+        }
+
+        p {
+            padding: 10px
+        }
+
+        td, th {
+            border: 1px solid black;
+            font-size:0.4em;
+        }
+
+        #listrado tr:nth-child(2n) {
+            background-color: yellowgreen;
+        }
+
+        thead th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
+            color: white;
+        }
+
+        #A {
+            background-color: red;
+        }
+
+        #B {
+            background-color: green;
+        }
+
+        #C {
+            background-color: blue;
+        }
+
+        #resultado {
+            overflow: scroll;
+            border-radius: 10px;
+        }
+
+        #resultado table td {
+            padding: 0px 40px;
+        }
+    </style>
+ </head>
+ <body>
+    <header> 
+    <div>
+            <img src="Imagens/logo2.png" alt="logo.png">
+            <h1>Todos os Modulos</h1>
+    </div>
+    </header>
+    <main>
+        <h1>O que são tabelas?</h1>
+        <p>
+        tabela e uma ferramenta para a organização de dados, bem vc sabe:
+        </p>
+        <h2>Tabelas</h2>
+        <p>e para fazermos as tabelas precisamos saber sua anatomia que seria:</p>
+        <hr>
+        <pre>
+tabela
+    thead
+        tr
+            th
+            td
+        /tr
+    /thead
+    tbody 
+        tr
+            th
+            td
+        /tr
+    /tbody
+    tfoot 
+        tr
+            th
+            td
+        /tr
+    /tfoot
+        </pre> 
+        <hr>
+        <p>
+            onde:
+            tabela = table, onde  seria por onde comesa a tabela
+        </p>
+        <p>
+            thead, tbody, tfoot = e como formamos as tabelas, sendo a mesma coisa para um arquivo html
+        </p>
+
+        <p>
+            tr = e o que forma uma linha na tabela
+        </p>
+
+        <p>
+            td, th = são quase a mesma coisa: td: e para dados
+            th: e para titulos
+        </p>
+        <h2>Caption e Escopos</h2>
+
+        <h3>Caption</h3>
+
+        <p>são breves descrições que podem ficar acima dastabelas
+        </p>
+
+        <pre>
+table
+    caption
+    /caption
+/table
+        </pre>
+
+        <p>exemplo:</p>
+
+        <table>
+            <caption>Caption</caption>
+            <thead>
+                <tr>
+                    <th>thead</th>
+                    <td>titulo</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>tbody</th>
+                    <td>conteudo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>tfoot</th>
+                    <td>finalizações</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>
+            e escopos são uma clasifiação para th's onde define de quem e o titulo, se e da coluna ou da linha
+        </p>
+            
+        <p>
+            th scope=""
+        </p>
+
+        <p>
+        e no scope pode ter 2 valores, sendo eles:
+        </p>
+
+        <p>
+           col = define as colunas
+        </p>
+
+        <p>
+            row = define as linhas
+        </p>
+
+        <p>
+            colgroup = define quando o mesmo titulo possue mais de uma coluna
+        </p>
+
+        <p>
+            rowgroup = define quando um titulo possue mais de uma linha
+        </p>
+
+        <p>ex:</p>
+
+        <table>
+            <tr>
+                <th colspan="2"
+                rowspan="2">dono dos alinhados</th>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+
+        <h2>efeito zebrado</h2>
+
+        <p>N importa se vc esta na escola ou n, pois todos tinham o mesmo medo ou sentiram a mesma anciedade naquela lista chamada boletim, mais pq estou falando sobre isso, bem e pq a sua sala de 30 alunos deixava a lista do boletim muito longa, por conta disso usavam o efeito zebrado para facilitar a localização, bem e isso que vamos ver aqui</p>
+
+        <p>bem, mais para podermos testar isso vamos criar uma lista grande de 10 alunos</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Alunos</th>
+                    <th>Media</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amanda</td>
+                    <td>9.50</td>
+                </tr>
+                <tr>
+                    <td>Rogerio</td>
+                    <td>8.00</td>
+                </tr>
+                <tr>
+                    <td>Gabriel</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>Talia</td>
+                    <td>6.00</td>
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>Leon</td>
+                    <td>5.50</td>
+                </tr>
+                <tr>
+                    <td>Teilor</td>
+                    <td>8.50</td>
+                </tr>
+                <tr>
+                    <td>Isadora A.</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td>Isadora B.</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td>Leonardo</td>
+                    <td>5.25</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p>agora colocamos os tr no style com a sub clase :nth-child(n) onde usa uma logica de pular linhas deacordo com o numero posto no lado do n</p>
+
+        <p>e ele ficaria assim:</p>
+
+        <table id="listrado">
+            <thead>
+                <tr>
+                    <th>Alunos</th>
+                    <th>Media</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amanda</td>
+                    <td>9.50</td>
+                </tr>
+                <tr>
+                    <td>Rogerio</td>
+                    <td>8.00</td>
+                </tr>
+                <tr>
+                    <td>Gabriel</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>Talia</td>
+                    <td>6.00</td>
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>Leon</td>
+                    <td>5.50</td>
+                </tr>
+                <tr>
+                    <td>Teilor</td>
+                    <td>8.50</td>
+                </tr>
+                <tr>
+                    <td>Isadora A.</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td>Isadora B.</td>
+                    <td>4.50</td>
+                </tr>
+                <tr>
+                    <td>Leonardo</td>
+                    <td>5.25</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Cabeçario fixo em listas grandes</h2>
+        <p>
+            aqui vamos fixar o cabeçario de uma lista grande e para isso vamos comesar com uma tabela grande
+        </p>
+
+        <p>para fazermos isso, nós pegamos o thead e colocamos seus th's no style e em seguida colocamos o "position" em "sticky" e por fim, coloque o "top" abaixo do "position" e coloque "-1px", para grudar perfeitamente</p>
+
+        <h2>Mesclagem de celulas</h2>
+        <p>
+            ja mostrei isso antes na primeira tabela, aqui vc vai aprender a organizar a sua tabela
+        </p>
+
+        <p>
+            para começar, temos que intender que eles apenas ocupam locais de acordo com a quantidade de dados existentes por exemplo:
+            em uma tabela temos 6 colunas e
+            em uma linha falta uma, então nessa linha ele ocupara o espaço que deveria ser do que faltou, e funciona do mesmo jeito de vice versa
+            exemplo:
+        </p>
+
+        <table>
+            <tr>
+                <td colspan="2">A</td>
+                <td rowspan="2">B</td>
+            </tr>
+            <tr>
+                <td rowspan="2">C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td colspan="2">F</td>
+            </tr>
+        </table>
+
+        <h2>agrupando com colgroup</h2>
+
+        <p>
+            e podemos nomear cada coluna para podermos editar
+        </p>
+
+        <p>
+            para começar, dentro de uma tabela escrevemos "colgroup" e nomeamos cada coluna com a tag "col" e coloque uma id ou class na tag, como se fosse outra tag, e a logica desta tag e que, as col são clasificadas por sequencia
+        </p>
+
+        <p>
+            depois disso podemos editar as colunas de acordo com sua id ou class
+        </p>
+
+        <table>
+            <colgroup>
+                <col id="A">
+                <col id="B">
+                <col id="C">
+            </colgroup>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+        </table>
+
+        <h2>Responsividade De Tabelas</h2>
+
+        <p>
+            e para finalizar temos as responsividades
+        </p>
+
+        <p>
+            para comesar colocamos o "table" no style e colocamos nele o "overflow" com o valor "scroll", apos isso ele detectara o tamanho da janela e colocara um scroll para deixar-lo responcivo
+        </p>
+        <div id="resultado">
+            <table>
+                <tr>
+                    <td>feijão</td>
+                    <td>arroz</td>
+                    <td>toalhas</td>
+                    <td>fosforos</td>
+                    <td>espetos de churrasco</td>
+                    <td>roupas</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+    </footer>
+ </body>
+ </html>

@@ -1,0 +1,161 @@
+Ospedagem
+
+aula 01: o que vamos aprender:
+
+aqui e so o que vamos aprender, tipoo que vc esta esperando ã?
+VASA
+
+aula 02: repositorio Local e Remoto:
+
+aqui vamos conversar sobre GitHub:
+
+e para explicar o que é vamos explicar o que e repositorio local e remoto
+
+Repositorio Local: quando voce esta com um projeto voce modifica ele varias vezes
+e este repositorio local seja usado para isso
+onde sechama git
+
+Git: e um gerenciador de versões que salva todas as versões de um projeto
+
+Repositorio Remoto: então esta possue quase a mesma função, só que com a 
+diferença de ser online, então se voce perder o computador ele sera salvo neste
+repositorio
+
+GitHub: e praticamente isso, onde usa o git sitado anteriormente para trabalhar
+com as versões
+
+		|> Local = Git    |
+então lembre: 			  |}e quando citamos atualizações remotas dizemos
+				  | (Push)
+		|> Remoto = GitHub|
+
+aula 03: instalando Ferramentas:
+
+aqui vamos só instalaras ferramentas:
+
+Git = Git > https://git-scm.com > https://git-scm.com/download/win
+64-bit Git for Windows Setup.
+
+GitHub = GitHub Desktop > GitHub Desktop | Simple collaboration from your desktop
+
+aula 04: criando conta no GitHub:
+
+bem aqui a gente vai aprender a criar contas onde aqui a gente vai...
+
+bem criar uma conta, faz o que vc sempre faz
+
+aula 05: Primeiro repositorio git e GitHub:
+
+aqui vamos aprender a criar um repositorio e como lançar no GitHub
+
+onde para comesar voce vincula a conta no GitHub Desktop e em seguida
+pega o nome da pasta onde sera criada o repositorio e em seguida cola-a
+na criação do reositorio, em seguida coloque uma descrição(opicional)
+
+depois disso voce vai em chosse e escolhe a pasta ao qual vc colou seu nome
+
+e em fim vc clica na caixinha abaixo do chosse e escolha apenas MIT License
+MAIS NADA
+
+e é isso
+
+dai e so publicar no botão azul, da direita
+
+(lembrete: clica na caixinha das configuracões para deixalo publico ou n)
+
+aula 06: Gerenciando repositorios:
+
+assim que um repositorio for feito, quando voce abrir no code, qualquer
+modificação pode ser salva no repositorio local ou remoto
+
+e para finalizar como salvar e outras coisas
+
+para salvar voce pode ir na area de compartilhidade e a segunda forma é ir em 
+GitHub Desktop e clicar em commit to main assim que voce colocar o nome da 
+atualização
+
+e para finalizar para modificar o compartilhamento do repositorio e o delete de
+um repositorio voce vai nos setings do repositorio e vai na area perigosa indo
+para baixo
+
+aula 07: Hospedando Site Gratuitamente:
+
+aqui vamos esplicar como eu descobri com mais detalhes que sim, São MUITO IMPORTANTES
+
+assim que vc tiver um repositorio remoto voce pode testar uma função chamada 
+
+GitHub Pages:
+
+onde ali voce coloca nas configurações o seguinte:
+
+onde esta none voce coloca main e deixa o /root e n /docs
+apos issoclica em save
+
+e na scene voce escolhe
+
+(lembrando que nem sempre funciona: ao que entendi ele funciona mais facilmente
+quando os arquivos são organizados assim:
+
+Site = onde esta o git
+	arquivos das atividades do html = as oisas que terão ospedagem
+
+e se n funcionar exclua tudo e recrie denovo ate ir)
+
+aula 08: Concertando e conf os sites:
+
+aqui agente concerta o Desafio 10 onde ali na separação da nav para header vc 
+muda o margin por padding
+
+e por fim tem como atualizar todos os codigos e sites onde assim que uma coisa for 
+mudada, GitHub Desktop percebera e em baixo esta o push onde voce o nomejia e 
+clica no botão azul e en seguida clica no botão azul na direita
+
+aula 09: Parte social do GitHub:
+
+bem aqui n tem muita coisa para dizer pq e facil mexer nele
+
+apenas precisando dizer que a parte social seria Explore
+
+aula 10: Clonagem de Repositorios:
+
+aqui e onde vamos aprender a clonar um codigo seja para estudos etc...
+
+e bem para fazer isso, vc vai no repositorio desejado e clica em code
+e em seguida cona ele no GitHub Desktop e...
+
+é isso, a partir disso vc pode fazer o q quiser
+
+aula 11: Em varios PC's:
+
+bem para comesar vamos explicar o que é essa aula
+
+essa aula e para expliacr mais a fundo como vc faz para trabalhar em outro 
+pc saindo desse trabalho sem deixar rastro
+
+e para fazer isso vamos ir em file do GitHub Desktop e em seguida vai em 
+options, no Acounts vc loga na sua conta do GitHub e a partir disso 
+aparece os repositorios q estão na sua conta
+
+depois vc vai no git e coloca seu nome do GitHub e seu email
+
+e a partir dai voce clona o repositorio 
+
+e para ir embora vc vai no repositiry e clica em remove
+e exclue os arquivos dali
+
+dai vai no file option e da um sing up na conta e vai no git e apaga
+todas as informações 
+
+a e n precisa se logar no gitHub.com
+
+e é isso
+
+(lebrete: passa no curso de github e vai em contas mais seguras no YouTube
+para melhorar a segurança da sua conta)
+
+aula 12: Dowload das Imagens do Capitulo
+
+Nesse aqui só vou dizer que arquivo baixamos
+
+imagens-cap19.zip
+no Exercisio 22 < Modulo 3 < exercisios

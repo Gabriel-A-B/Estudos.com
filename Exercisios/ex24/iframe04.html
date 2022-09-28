@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segurança de iframe</h1>
+
+    <p>
+        aqui vamos aprender segurança sobre iframe: onde e importante pois pode ter sistemas em sites onde pode causar um caos no seu site
+    </p>
+
+    <p>
+        então para comesar
+    </p>
+
+    <p>
+        sandbox: pode bloquear funções de sites como scripts, documentos, links, etc...
+    </p>
+    <pre>
+        ex:
+            iframe sandbox="allow-scripts allow-form"
+            (podendo escolher qual liberar atraver da opção escolhida)
+            
+            podendo escolher mais de uma atravez do space
+    </pre>
+
+    <iframe src="paginas/pagina04.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">
+        seu navegador n e compativel...
+    </iframe>
+
+    <p>
+        e o outro e o referrerpolicy onde bloqueia a função de pegar informações do usuario
+    </p>
+
+    <pre>
+        ex:
+            frame referrerpolicy="no-referrer"
+            (ainda e so isso)
+    </pre>
+
+    <h2>segundo exemplo</h2>
+
+    <iframe src="paginas/pagina05.html" frameborder="1" sandbox="allow-scripts"
+    referrerpolicy="no-referrer">
+    Seu navegador n e compativel...
+    </iframe>
+
+    <p>
+        aqui apena permiti o script que e o que ta rolando no site
+    </p>
+</body>
+</html>

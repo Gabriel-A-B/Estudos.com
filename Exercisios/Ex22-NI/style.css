@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #533434, #000000);
+    background-attachment: fixed;
+}
+
+header {
+    border: 5px solid #000000;
+    display: block;
+    background-color: #533434;
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 2px 30px 30px 30px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+nav {
+  font-size: 2em;
+  font-style: italic;  
+}
+
+nav > a {
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: rgb(255, 3, 255);
+}
+
+a:hover {
+    color: yellow;
+}
+
+main {
+    background-color: blanchedalmond;
+    border: 5px solid black;
+}
+
+p {
+    margin: 5px;
+}
+
+h2 {
+   text-align: center; 
+   background-color: black;
+}
+
+aside {
+    font-size: 2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+#criador {
+    color: white;
+}

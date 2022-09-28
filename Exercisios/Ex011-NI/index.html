@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Dinamica</title>
+</head>
+<body>
+ <h1>Imagem Dinamica</h1>
+<p>teste abrir este arquivo em varias plataformas</p>
+
+<picture>
+    <source media="(max-width: 700px)" srcset="Imagens/ImagemPequena.png"
+    type="image/png"> 
+
+<source media="(max-width: 1050px)" srcset="Imagens/ImagemMedia.png"
+type="image/png">
+
+ <img src="Imagens/ImagemGrande.png" alt="ImagemParaPC"> 
+
+</picture>
+<hr>
+<h1>Teste de Audio</h1>
+<p>botando audio no site</p>
+<audio src="Musicas/North Oakland Extasy - Squadda B.mp3" controls></audio>
+<hr>
+<h1>Teste de Audio02</h1>
+
+<p>outra estrutura</p>
+
+<audio preload="none" controls autoplay loop>
+    <source src="Musicas/North Oakland Extasy - Squadda B.mp3" type="audio/mpeg">
+    <p>infelizmente n tem como carregar as musicas</p>
+</audio>
+<hr>
+<!--MP3, WAV, OGG-->
+
+<!--E aqui vai os videos que podem ser mandados para o seu site atravez de sites externos-->
+
+<h1>Videos com Servidore Externos</h1>
+<h2>YouTube</h2>
+<p>este video seria do YouTube</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_zwmVqsH8G0?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

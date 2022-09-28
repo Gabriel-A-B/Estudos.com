@@ -1,0 +1,1605 @@
+NOVO CURSO:)
+
+CSS:
+MODULO 01:
+
+-O que iremos aprender-
+
+vamos aprender sobre a evolução da internet, como funciona, e diferenças de linguagem
+
+vamos aprender a organiçar a area de trabalho e os programas, e tudo sobre HTML no mais fundo possivel
+
+Marqueting, imagens, sites, etc...
+
+-Precisamos fazer um acordo-
+
+do que voce vai precisar:
+
+FOCO
+
+EXERCITAR
+
+CADERNO
+                    
+ASSISTIR O VIDEO       -|_
+                          |_
+VER O CONTEUDO DE APOIO    _|- github.com/gustavoguanabara e gustavoguanabara.github.io
+                         _|
+ESTUDAR EM GRUPO       -|
+
+-ATENÇÃO!-
+
+Prestar atenção,se esforçar, não tente ir rapido, e restabilize uma rotina
+
+segunda, terça e quinta
+
+-Sera que esse curso e para mim?-
+
+Sim..., praticamente
+
+-melhores livros para aprender HTML5 e CSS3-
+
+01 - DevWeb HistoriaDaInternet
+
+02 - referencias online:
+     referencia MDN;
+     W3C Standards;
+     WHATWG Living Standard;
+     W3Schools;
+
+03 - Livros = 
+     MarkPilgrim;
+     Erick Meyer;
+     Estelle Wey!;
+     Eric Meyer
+
+04 - Elizabeth Castro e Bruce Hyslop;
+    Jon Duckett;
+    Elisabeth Robson e Eric Freeman;
+    Nate Cooper e Kim Gee
+
+05 - Mauricio Samy Silva
+
+06 - David Dabner e outros;
+     Bob e Maggie Gordon;
+     Eva Heller;
+     Ellen Lupton
+
+07 - Jorge Montoya e Stephen Burge[2];
+     Bill Sanders;
+     Eric Meyer
+   
+-Como a internet chegou na minha casa?-
+
+seu inicio veio da guerra fria: onde ocorreu uma disputa de tecnologia entre 
+EUA e a União Sovietica
+
+onde a União Sovietica ficou em primeira na epoca com um satelite lançado 
+chamado Spotnik
+
+porem era apenas um teste,coisa que o presidente dos Estados Unidos n sabia
+
+pensando que era uma arma, fundou uma instituição de pesquisa chamada "Darpa"
+
+onde como primeiro projeto se focou na maior preoucupação dos EUA, que e umas das
+bases militares serem destruidas, tendo a posibilidade de levar junto consigo suas 
+informações
+
+então para resolver isso, criou uma rede de cabos interligados nas bases, onde passaria as informações
+o tal protocolo NCP
+
+no começo foi so 4 computadores
+
+e eles eram: 
+
+SDS90;
+SDS Sigma7;
+DECPDP-10;
+IBM 370 175
+
+porem por conta da epoca, todos os computadores de marcas distintas funcionavam em linguagens distintas,e por conta disso n rolava a comunicação, então resolvera
+com o protocolo NCP, que interrompia as outras conexçoes para fazer uma em especifico, atravez de apenas uma linguagem usada pelos dois computadores, porem com isso
+veio um nov, problema, o de travar as outras conexoes, ai veio o Protocolo TCP, porem ainda resistia um problema, n era tão funcional por falta de localização e por 
+conta disso, foi criado o IP
+
+bem foi se pasando o tempo, e a rede foi aumentando, logo naceu um novo problema
+
+pois agora n era apenas uma tecnologia militar, mas sim uma tecnologia Universitaria e ate Publica
+
+e então por conta disso ouve uma divisão 
+
+tempos se passaram e a internet publica veio com o primeiro navegador da historia chamada "Galpher"
+
+porem era muito arcaico, por conta disso um informatico criou uma nova rede independente chamado "WWW"
+
+e essa rede apenas possue sites rodando em hiper texto: http:// onde são programados pela linguagem criado 
+pelo mesmo, o tão aguardado HTML
+
+bem e hoje em dia possue varios servidores espalhados nos litorais de cada continente em que possue uma conexão a cabo entre eles
+e assim que recebe a solicitação do endereço de um site, esta central recolhe o IP do cliente e manda para o servidor do site
+
+os computadores entram em comunicação com as centrais atravez dos Satelites
+
+Protocolos
+
+NCP: criava conexções entre dois computadores com linguagem nativa distinta, atravez de uma unica linguagem
+TCP: permitia diversas conexções ao mesmo tempo
+IP : mapeava a localização do computador atravez de um numero, onde facilitava o trabalho do TCP
+ 
+-Como a Internet Funciona?-
+
+video de reforço(assista antes desta aula, ou se esqueceu algo)
+Vox Internet
+
+para comesar tenho que esplicar que a conexção entre computadores funciona a base do codigo binario
+ou binary digit = bit
+
+e para os bits serem legiveis e necesario, no minimo, 8 bits(ai vem a pixel art kkk)
+                                                                                         1  1
+assim que se chunta 8 bits que seriam apenas 1 e 0, nos conseguimos um bytes             _
+(e esses bites são reconhecidos por ondas de eletricidades onde 1 e eletrizado e 0 n }   | |_|
+que e tranformado em uma luz que pisca na basse desta frequencia onde o outro pegara)   0  0
+
+e ai que entra a parte da comunicação, pois para cada mensagem, imagem, buffered, video, etc...
+seria necesarios muitos bytes para carregalos
+
+então vem as escalas de tamanho de arquivos
+
+em que diferente da esala convencional que de mmg para mg seria 1¹°
+na informatica seria 2¹°
+
+onde daria 1024
+
+então todas as vezes que chega nessa quantia o arquivo simplifica para uma sigla, ex:
+
+1024 bytes = 1KB
+1024 KiloBytes = 1MB
+1024 MegaBytes = 1GB
+1024 GigaBytes = 1TB
+1024 TeraBytes = 1PB
+1024 PetaBytes = 1EB
+1024 ExaBytes  = 1ZB
+1024 ZetaBytes = 1YB
+1024 YotaBytes = ???
+
+e existe dois jeitos de escrever, ex
+
+MB e Mb
+
+e eles tem diferenças
+
+ja que MB são usados mais para capacidade de armazenameto, e o Mb que significa Megabits, são usados para capacidade
+de processamento( ou seja de quantos bits ele pode passar para o outro ponto)
+
+e estas duas são usadas de forma diferente 
+
+MB e mais para computadores, consoles, celulares, etc...
+Mb e para roteadores, extençores de rede, antenas, etc...
+
+bem agora que entendemos tudo isso, precisamos entender como que o nosso computador entra em contato com os servidores
+primeiro o computador chamado de cliente joga a solicitação ao moldem
+ao chegar ao moldem, ele transforma aqueles bytes em ondas sonoras que sera coletada por uma linha telefonica
+a linha telefonica mandara para a rede que enviara para os servidores, que reenviara o que foi pedido para o cliente
+então ele faz o mesmo percurso ate o moldem que retransformara aqueles sinais em codigos binarios, e por fim 
+enviara para seu computador
+
+porem para localizar os servidores, e necesario algo a mais
+
+ai entra os IPS
+
+todos os sites, moldem e ate o cliente quando pede uma solicitação possuem um, em que e mandado para o DNS que seria
+uma lista de IPS de sites, que localiza o servidor e manda para o moldem, que manda para a rede, e ai o resto ja sabes
+
+simplificando( e uma transformação de palavras para numeros, os IPS)
+
+ate existe um sistema para encontrar a rota mais rapida se por acaso uma linha desta rede estiver coongestionada
+
+-o que é dominio e hospedagem-
+
+outras pessoas vão acesar meu site?
+
+R:bem como esplicado anteriormente, n tem como acesar um site alheio sem um dominio e uma Hospedagem
+ja que sem dominio vc n tera uma identificação e sem uma Hospedagem n tera o apoio dos servidores
+
+mas o que ceria Dominio e Hospedagem?
+
+Dominio: dominio seria o nome de seu site, um jeito da DNS saber sobre seu site, e poder 
+encontralo para os outros, atraves de um pagamento para fazer estes nomes
+
+Hospedagem: e uma fatura que vc paga para sites especializados nisso, onde sera seu acesso aos 
+servidores
+
+sobre Dominios: 
+-Devem ser nomes unicos;
+-são pagos anualmente;
+-Varios TLDs(n esplicou ainda sob isso)
+
+sobre Hospedagem:
+-Espaço para armazenar seus arquivos;
+-pago mensalmente;
+-elas se mostram mais eficaces que outras atravez de:
+Espaço,Memoria,Recursos
+
+sobre links
+ex:
+
+www.Youtube.com.br/7minutoz
+
+a parte 7minutoz é uma URL: e tipo uma ponte que leva tal cliente para o usuario ou a pagina dentro do site, como se fosse uma biblioteca
+
+e a parte Youtube e o Dominio: que e o que espliquei antes, simplificando uma forma de indentificação para a DNS
+
+e a parte .com e o TLD: e a classificação do portador deste site, onde mostra estar em dominio de uma impresa ou pessoa individual, como ex:
+possui o .gov que tem como portador o proprio governo, e possiu o gtld: que são tlds que n são muito usados por isso e mais estaticos
+
+e a parte .br e o CCTLD: e um jeito de fazer versões distintas de sites em idiomas diferente, exemplo:br, ea...
+
+e a parte /7minutoz por completo e conhecida como caminho: caminho
+
+-A diferença ente HTML, CSS, e JavaScript:
+
+HTML e CSS n são linguagens e sim programas, a e elas são femeninas, e o HTML e plural
+
+HTML=HyperTexto
+     Markup
+     Language
+ou seja uma pagina com palavras que podem levar a outras paginas
+
+CSS=Cascated
+    Style
+    Sheets
+os seu seletores vai modificando as paginas seguintes
+
+a linguagem HTML e focada em conteudo:textos,imagens,videos,tabelas
+
+e a CSS e focada em design:cores,sombras,tamanhos,posicionamentos
+
+e por fim entra o JavaScripts, que cuida da logica do site<3
+
+como usar CSS:
+
+ele anda junto com o HTML onde usa sua logica para editar o que o HTML fez
+
+e ele diferente do HTML, usa apenas seletores para se referir a algo em especifico
+e depois usa seus comandos para modificar algo do seletor
+
+ex:
+
+h1{
+  font-family:Arial;
+  font-size:20pt;
+  color: blue;
+}
+
+e e dividido em seletor, declaração, propiedades, e valor
+
+seletor: h1;
+
+declaração:  font-family:Arial;
+  font-size:20pt;
+  color: blue;
+
+valor: Arial, 20pt, e blue;
+
+propiedades: font-family, font-size, color;
+
+e por fim, como estas ferramentas funcinam com a parte da internet?
+
+bem o servidor e basiapo nestes programas, então ele entende o que o cliente pede,
+e manda para o mesmo, o navegador vai ler linha por linha e vai executalo em forma visual
+
+UTF-8 = é um símbolo tipográfico usado para escrever texto em alguma língua.(pesquisar 
+mais)
+
+- Estilos CSS inline -
+
+nessa parte falaremos sobre o CSS inline onde n e recomendada para ser usada 
+direto
+
+Ex: se o objetivo for fazer a aparencia, ja que ela pode acabar sendo inviavel
+pelo fato de ser em codigo, acabar tendo que ser replicada em varias tags, 
+podendo dar mais trabalho
+
+então tera que ser usada apenas em ocaçiões especiais
+
+e as tags são:
+
+style: e usado como configurações que indicara que os proximas tags são CSS, 
+sendo assim, aparencia
+EX:  <body style= qualquer um abaixo>
+
+background-color:: muda a cor de fundo da pagina
+estrutura:
+ 
+  <body style="background-color: NomeDaCorEmIngles;">
+
+color:: muda a cor da linha ou do paragrafo
+estrutura:
+
+  <body style="color: NomeDaCorEmIngles;">
+
+font-family:: escolhe a fonte da letra
+estrutura:
+ 
+  <body style="font-family: QualquerFonte;">
+
+font-size:: modifica o tamanho da letra
+
+  <body style="font-size: TamanhoEm-em;"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 - estilo CSS internos -
+
+nessa aqui a gente faz uma estrutura onde sera confirmado as cores e suas 
+caracteristicas sob a tag e nela temos internas e externas, onde nessa parte
+veremos a interna
+
+bem a estrutura consiste em um codigo extendido na head, onde sua estrutura
+é
+
+<style>
+bory {}
+</style>
+
+onde dentro dos {} voce incrementa as tags css acima
+
+onde essa e recomensavel apenas para paginas distintas das outras, ou seja
+quando devem modificar partes especificas
+
+
+- estilo CSS externos -
+
+e esse e o mais universal e mais recomendavel ja que nessa parte, um unico 
+arquivo modificara todos os outros pois para ela se opor ao arquivo vc usa 
+apenas uma tag
+
+o link-css
+
+estrutura:
+
+primeiro crie um arquivo .css (Ex: Style.css)
+
+logo em seguida voce usa a estrutura passada
+
+budy {}
+
+e a partir dai e a mesma coisa, dentro do {} voce coloca conf do css 
+
+e para finalizar voce usa a tag link-css na head, onde dentro do href 
+voce coloca o nome do arquivo css, ou seja Style.css
+
+e para finalizar evita usar inline, internos apenas para poucos casos, externo 
+e universal
+
+codigos: text-align: muda a localização da tag em q ela esta
+estrutura:
+<p style="text-align: APosiçãoDesejada;">
+
+-Modulo 2-
+
+-O que vamos aprender?-
+
+simplificando: vc vai aprender mais sobre estilo, como logica das cores, como criar
+uma paleta de cores, e como mexer em geral com o CSS3
+
+-pisicologia das cores-
+
+Para começarmos com o pé esquerdo, o Css consiste em aparencia, e aparencia se 
+apoia muito na pisicologia humana, onde quando nossas mentes se sentem conforta-
+veis com a armonização e organização colorida
+
+onde e provado que nossas mentes asemelham emoções em cores:
+
+azul = demostra copetencia e segurança, onde e muito usado por sites de tec. 
+
+vermelho = demostra amor, ou emoções fortes, muito usados em sites de culinaria
+
+verde = demostra saude, natureza, e folga, onde é muito usados em sites de 
+naturezas ou saude
+
+rosa = demonstra amor, romance, onde sites de cosmeticos são muito usados
+
+marrom = demonstra algo robusto, usados em sites que querem passar-se como algo
+robusto e chique, muito usados para bebidas mais valorizadas como vinhos
+
+
+porem tem que tomar cuidado pois contrastes fortes, podem cansar as mentes, onde
+só podem ser usados se n tiver muita coisa na pagina
+
+-Representando cores em CSS3-
+
+Então vamos testar isso
+
+para comesar crie um arquivo chamado Ex016-NI onde vamos criar 3 lorens para 
+mostrar diversos tipos de tags para cores
+
+sendo:
+
+o normal:
+<h1 style = "color:blue;"></h1>
+
+o hexaDecimal:
+<h1 style = "color:0000ff"></h1>
+onde HExadecimal nada mais é do que um codigo formado por Decimais:
+0 1 2 3 4 5 6 7 8 9
+e o Hexa que é 
+A B C D E F
+sendo:
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+formado por 6 sujeitos onde:
+primeiros:
+00 = Vermelho
+segundo:
+00 = Verde
+terceiro:
+ff = Azul
+e o que cada letra faz?
+
+A = 
+
+B = 
+
+C = 
+
+D = 
+
+E = 
+
+F = coloca a intensidade e a infliencia de uma cor ao maximo (Vai ao 255 no aximo)
+
+e temos que usa o codigo rgb:
+<h1 style = "color:rgb(0, 0, 255);"></h1>
+onde o primeiro numero é o vermelho;
+o segundo e o verde;
+e o terceiro e o azul;
+
+e por fim temos o hsl onde:
+h = Hue:mostra a tonalidade das cores
+s = Saturation:mostra a saturação da cor
+l = Luminosity: o proprio nome diz
+
+e para finalizar tem como configurar a cor, passando o mause encima da tag, ou
+escrevendo assim:
+
+rgb(0, 0, 0, N) = N:de 1 ao 0 dividido em centesimos: 0.000 para mudar a transparencia
+da cor
+
+-Harmonia de cores-
+
+Para criarmos sites decentes precisamos aprender sobre a roda cromatica que nela a 
+gente usa para criar paletas de cores onde são formados por cores primarias
+
+onde nela a gente tem diversas tecnicas para criar paletas
+sendo elas:
+
+complementares: cores opostas no circulo EX: vermelho e verde
+
+analogas: cores vizinhas Ex: verdeAzulado, verde, verdeAmarelado 
+
+triangulação: escolha de cores que formam um triangulo Ex: roxo, 
+amareloAvermelhado, verde
+
+meioComplementares: escolhas de cores que formam um triangulo mais ponteagudos
+Ex: roxoAvermelhado, laranja, verde
+
+retangulo: escolhas de cores que formam um retangulo Ex: vermelho
+amareloAvermelhado, verde, azulEsverdiado
+
+quadrado: escolhas de cores que formam um quadrado Ex: vermelho,
+amareloAvermelhado, verde, azul
+
+analogomplementar: escolhas de cores vizinhas e um oposto Ex: verde,
+verdeAmarelado, verdeAzulado, roxo
+
+monocromia: a junção de varias tonalidades da mesma cor
+
+intermediarias: cores que estejam entre as cores primarias e secundarias
+
+sendo dividido em trez classes de cores:
+
+primarias: vermelho, amarelo, azul
+
+secundarias: roxo, verde, laranja
+
+intermediarias: todas as outras que n estão nesses outros grupos
+
+-Paleta de cores-
+
+aqui vamos passar os sites que podem ajudar a criar paletas:
+
+-
+
+-
+
+-
+
+-Como capturar cores na tela-
+
+aqui vamos passar uma extenção do google chrome onde pode usar o conta gotas
+
+-Como criar degrade no CSS3-
+
+primeiro cria um arquivo CSS e em seguida usa essa extrutura
+Estrutura:
+=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=------=-----=------=------=-----=-----=-----=-----=----=----=-----=----=----=
+
+@charset "UTF-8";                                                            |
+                                                                             |
+body {                                                                       |
+    background-image: linear-gradient(to top, #353D40, #A1A5A6);
+    background-attachment: fixed;
+}
+main {
+    background-color: #D9D9D9;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=
+onde aqui
+
+@charset "UTF-8"; = faz aceitar a escritura portuguesa
+
+body {} e main{}
+body = construção do site
+main = cria um painel atras do body
+{} = aqui dentro a gente configura o estilos
+
+background-image: linear-gradient(to top, #353D40, #A1A5A6); = cria um degrade
+
+onde:
+background-image: = cria uma image atras
+linear-gradient() = cria um degrade
+to = o tipo de degrade:
+
+right = de esquerda para direita
+ 
+left = de direita para esquerda
+
+top = de baixo para cima
+
+bottom = de cima para baixo
+
+#353D40, #A1A5A6 = cores que participarão do degrade
+
+background-attachment: = configuração de background
+
+fixed; = deixa o fundo fixo, n se mexe ao rolar a pagina
+
+padding: px; = codigo que aumenta o main 
+
+border-radius: px; = arendonda a borda do main
+
+margin: ; = codigo que configura a posição do obj
+
+-Criando um Exemplo Real-
+=Ex 16=
+
+-Primeiros passos de TipoGrafia-
+
+antigamente n existia copiadores, sendo assim eles tinham uma profição chamado 
+escrivões, onde escreviam o mesmo livro milhoes de vezes para poder vendelas, onde
+nesta epoca foi criada a primeira impresora, criado pelo "_____", onde facilitou 
+este trabalho, que com o tempo, acabou sendo extinta 
+
+-Anatomia do Tipo-
+ 
+E para criarmos sites melhores precisamos saber como funciona as fontes certas para
+usalas
+
+e como exemplo usaremos: Types new Romans;
+ExemploFont.jpg
+
+onde existem varios tamanhos e estrategias para criar e configurar os tamanhos
+e uma dele e o tamanho x, onde vc cria uma linha imaginaria encima e embaixo 
+do x
+
+onde essa sera a altura dos minusculos;
+
+porem ainda tera coisas fugindo dessa linha imaginaria como o b,g...
+
+onde da linha para cima é:
+
+e da linha para baixo seria as caldas;
+
+a altura total é o corpo;
+
+e estes dados existem para ajudar a logica humana na hora de ler onde
+existem variaveis das letras que seriam:
+
+serifa = pontas em cada letra formando uma linha imaginaria na palavra
+
+hastes = retangulos que formam as letras
+
+filete = retangulos mais finos que os anteriores 
+
+arco = formatos de arcos nas letras onde fica mais grossos e depois vai afinando
+
+esporão = formas pontudas que finaliza uma letra
+
+vertice = formatos semelhantes a uma ceta, que formam os a maiusculos e outros
+
+terminal = pontas soutas que terminam mais grosas e arendodadas do que iniciavam 
+
+as letras são formadas pela logica da anatomia(nem todos):
+
+braço = hastes que começam de baicho para cima 
+pé = parte que se tiver ficaria as serifas 
+espinha = bases onde os braços e pernas se sustemtam 
+barriga = partes arrendodadas de algumas letras Ex: B
+olho = buraco dentro da extrutura das letras Ex: O 
+orelha = traços pequenos esticados para o lado
+calda = um rabo que fica abaixo da letra Ex:g
+
+Familias: nem todas as fontes tem mais, as familias consistem em formatos 
+distintos para a mesma formas, onde eles podem ser divididos em
+
+normal = normal, apenas carregando o tipo de escrita
+intermediario = corpo um pouco mais groço
+Negrito = Negrito
+meioNegrito = mais groço q o acima
+extraNegrito = Muitos groços
+ 
+e por fim temos a Categoria de fontes onde nelas tem:
+
+serifados = classicos, usados para qualquer cituação
+
+sans-serif = o classico sans, onde são usados para textos mais longos, onde o 
+cerebro humano n se canse 
+
+monoespaçadas = desregulados mas muito util para titulos
+
+handwriting = tenta simular a escrita humana
+
+display = usado para comemorações
+
+-Familias de fontes CSS-
+
+Agora vamos aprender sobre as tags de style
+
+so para teste usando o css local
+
+para entender ente no codigo do fontesFamalis.html
+
+-Tamanho de fontes-
+
+e agora vamos esplicar o que é isso
+
+bem para comesar, nessa plataforma cada corpo e medido por pixel
+porem as letras podem ser aumentadas ou diminuidas com outras proporções como:
+
+medidas: absolutas:
+
+cm = centimetros
+
+mm = milimetros
+
+in =tamanho adaptavel a tela
+
+px = pixel
+
+pt = medida em pontos (mesma logica usada no Word)
+
+pc = validava 12 pontos
+
+medidas: relativas:
+
+em = e uma medida de 16 por 16 pixeis e se adaptam em telas distintas
+
+ex = se baseia na altura do x
+
+rem = mesma coisa do em, com a diferença de que ele funciona em qualquer cituação
+
+vw, vh = eles adaptam o tamanho da fonte de 1/100 onde vw e lateral, e vh e autura
+
+% = n sei
+
+use apenas px e em
+
+-Peso, estilo, e shorthand-
+
+  Peso: esse peso e a groçura da fonte onde tem uma tag do style chamada
+ 
+    font-weight: V;
+    V: aqui dentro tera todas as posibilidade
+    
+100 ate 900 = grossuras mais especificas
+    
+bold: mesma coisa do negrito
+    
+bolder: mais grosso que o bold
+    
+lighter: mais leves que tem (finas)
+    
+normal: n modifica nada
+
+@import url: (aqui voce ); importa fontes
+
+	estilos: todos os conf de estatica dos fontes
+
+font-family: fontes (conjuntos de fontes que serão escolhidos pelo sistema, ao
+que todas as funcionalidades funcionam)
+
+font-weight: peso da fonte;
+
+font-size: tamanho das fontes;
+
+font-stile: estilo da fonte podendo ser Negrito e Italico
+
+e tem como fazer isso em uma com o metodo chamado shorthand que tem como estrutura
+assim:
+
+font: Lista;
+
+tem uma sequencia de objetos que representei como Lista
+
+Lista: font-stile -> font-weight -> font-size -> font-family
+
+onde para uma fonte estar 100% funcional tem que estar compativel com todos essas
+tags de style
+
+-Usando Google Fonts-
+
+usando o google font.com voce consegue importar fonts, onde, para, inportar voce
+pode fazer assim:
+
+@import font: ;
+
+onde ao adicionar na sua lista de fontes ele lhe mandara para uma aba que mostra
+e lhe da o codigo necesario para importar a fonte
+
+-Usando fontes externas baixadas-
+
+e ttem como baixar fontes onde voce pode usar este site para baixar:
+
+=https://www.dafont.com
+
+onde apos baixar, voce os coloca na pasta do site, em uma pasta separada chamada
+(Ex: Fontes)
+depois disso voce usa esta extrutura:
+=----=----=----=----=----=----=----=----=----=----=----=----=----=----=----=----=----=
+ @font-face {
+        font-family: 'Vintages';
+        src: url('Fonts/Vintages.ttf');
+    }
+=----=----=----=----=----=----=----=----=----=----=----=----=----=----=----=----=----=
+@font-face {} = e a mesma coisa do import onde esta extrutura sera construida 
+automaticamente
+font-family: ''; = nome que a fonte usara na hora de usar
+src: url(''); = e onde voce colocara a fonte
+
+e para finalizar temos o format's onde e usado para compatibilizar a fonte com o 
+sistema:
+
+-opentype = usado para fontes .otf;
+//
+-truetype = usado para fonte .ttf;
+//
+-embedded-opentype =
+//
+-truetype-att (Apple Advanced Typography) =
+// 
+-svg = 
+
+-Capturando fontes em sites-
+
+aqui vai recomendar uma extenção que pega fontes de sites diversos chamado:
+
+Fonts Ninja
+
+-Detectando fontes dentro de Imagens-
+
+para fazermos isso temos 3 sites, onde eles usam aquelas regras de tipografia
+para detectar a fonte usada. E para usalo voce precisara colocar uma foto nele,
+depois a chente configura a palavra escolhida para melhor leitura do site, e 
+por fim ele mostrara q fonte é
+
+e os sites são:
+
+-MyFonts
+-FontSquirrel
+-WathFont is.com
+
+onde são recomendado mais de um, pois nenhum funciona 100% das vezes, então, se
+for o caso, vc podera usar outro
+
+-Alinhamento de Textos-
+
+para alinhamento nós usamos o text-align sitado anteriormente onde possue diversas 
+opções como:
+
+left = coloca o texto na esquerda
+
+right = coloca o texto a direita
+
+center = coloca o texto no centro
+
+justify = cria um espaçamento entre as palavras do texto, que se adaptam ao tamanho
+da tela
+
+e temos o text-indent que cria paragrafos com o tamanho escolhivel, usando as medidas
+de textos passados anteriormente
+Ex:
+text-indent: 30px;
+
+-Usando com o ID com CSS-
+
+Ids são usados apenas para objetos especificos onde eles serão separados pelo nome
+que sera dado ao id onde para criar um é:
+
+<h1 id="Nome">Teste</h1>
+
+apos isso vc o cita no css assim:
+
+#Nome {}
+
+onde como outros, dentro dos '{}' voce coloca as coisas que quer nele
+
+-Diferença entre id e class-
+
+Suas diferenças consistem na logica de programação onde id e o geito de identificar
+um sujeito enquanto o class e um grupo
+
+e cada um e criado da mesma forma
+class:
+html:
+<h1 class="Nome">Teste</h1>
+css:
+.Nome {}
+
+id:
+html:
+<h1 id="Nome">Teste</h1>
+css:
+#Nome {}
+
+Bem, mas ai vc me pergunta, mas pq eu n usario id em vairos?
+
+porque n e proficional, ja que essa é a função da class
+
+e para finalizar:
+
+id é representado no css como #
+ja class e representado como .
+
+parte 2:
+
+-Pseudo Classes-
+
+exixte um tipo de classe chamada div, onde assim como os anteriores ele possue
+suas regras, e seus estilos chamadas <div>
+
+onde ele pode ser representado como uma palavra ou um bloco
+
+onde nele pode por diversas coisas como paragrafos, h1's, h2's, etc...
+
+e neles podemos fazer diversas coisas como:
+
+esconder coisas:
+<head>
+   <style>
+        div:hover {
+            color: blue;
+        }
+        div > p{
+          display: none;  
+        }
+        
+        div:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+onde:
+
+div = nome da Pseudo classe
+
+> = indica algo dentro de algo, exemplo:
+
+mochila > cadernos
+
+hover = comando de classes que cria a logica do mause ativalo quando assalo por
+cima
+
+: = e a forma de incrementarmos esse tipo de classe
+
+displey = comando que muda o geito que sera representado o objeto
+
+none = n sera representado(n vai aparecer)
+
+block = vai aparecer normalmente, como um texto
+=----=----=----=----=----=----=----=----=----=----=----=----=----=---=---=----=---=--
+<body>
+    <h1>Exemplo</h1>
+    <div>
+     passe aqui 
+     <p>Texto Escondido...</p>  
+    </div>
+</body>
+
+<div></div> = tag que cria essa classe
+
+e temos como fazer animações com ele:
+
+<style>
+    div {
+       display: inline-block;
+       background-color: gray;
+       border: 1px solid black;
+       text-align: center;
+       height: 200px;
+       width: 200px; 
+    }
+    div:hover {
+     background-color: yellow;
+    }
+</style>
+
+border = conf da extrutura da div
+
+e essa extrutura ja foi totalmente explicada, tendo apenas como objetivo
+customizar a div representada como bloco pelo:
+
+display: tbm organiza como sera representado os objetos como
+
+inline-block = coloca cada objeto em uma mesma linha
+
+border: 1px solid black; = onde cria caixas com:
+
+border = cria uma borda
+
+1px = tamanho da borda (aumentada depois pelo width e height)
+
+solid = cria linhas laterais na caixa
+
+black = cor dessas linhas
+
+-Pseudo Elemenos em Css-
+
+assim como as Pseudo classes, existem os Pseudos Elementos onde são representados 
+com "::" onde e usado para comandos mais fisicos do que sistematicos
+
+podendo ser:
+
+::after = coloca um elemento apos o objeto
+
+::before = coloca um elemento antes
+
+e temos algumas Pseudos classes que n falamos como:
+
+:activate = modifica o objeto quando esta ativado (ex: em um link, se ele estiver
+aberto em outra aba, sera mudado para o que foi descrito ali )
+
+:visited = Muda se o objeto ja foi usado (muito mais usados em links)
+
+e para finalizarmos temos comandos novos como:
+
+contetnt = que escreve no objeto o que estiver nele
+
+-Modelos de Caixas-
+
+e agora vamos aprender algo qe ja aviamos visto antes, as famosas caixas, onde
+tem como objetivo destacar o local de uma tag no documento de contrução do site,
+que sera ativado pelo mauuse passando por cima:
+
+e essas caixas possuem uma anatomia onde funciona assim:
+
+<h1> Ola Mundo!! </h1>
+_____________
+|Ola Mundo!!| } parte do conteudo onde e constituido por width, e height 
+
+========================================================================================================================================================================
+_______________
+|_____________| } borda (uma camada que cerca o conteudo) 
+||Ola Mundo!!||   
+|-------------|
+
+========================================================================================================================================================================
+_________________
+|_______________| } padding (um espaçamento criado entre a borda e o conteudo)
+||_____________||  
+|||Ola Mundo!!|||   
+||-------------||
+|---------------|
+
+========================================================================================================================================================================
+_____________________
+| _________________ | } margim (um espaçamento criado depois da borda)
+| |_______________| | 
+| ||_____________|| |  
+| |||Ola Mundo!!||| |   
+| ||-------------|| |
+| |---------------| |
+|-------------------|
+
+========================================================================================================================================================================
+_________________________
+| _____________________ | } outline (uma linha grudada na borda)
+| | _________________ | | 
+| | |_______________| | | 
+| | ||_____________|| | |  
+| | |||Ola Mundo!!||| | |   
+| | ||-------------|| | |
+| | |---------------| | |
+| |-------------------| |
+|-----------------------|
+
+========================================================================================================================================================================
+
+e existe dois tipos de boxing que são o
+
+boxLevel: uma caixa que, ao criar, ele quebra uma linha em um paragrafo
+
+e o 
+
+inline leve: é criada dentro de um paragrafo como parte do paragrafo
+
+e cada uma delas são uteis quando vamos usar estas tags:
+
+boxLevel:
+<dev>
+<h1>-<h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+inline-Level:
+<span>
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup>-<sub>
+<label>
+<buttom>
+<input>
+<select>
+
+-Modelos de Caixas na Praticas-
+
+e aqui vamos testar em pratica o que é uma box, onde para comesar
+
+voce cria um arquivo css e um html onde ali vc cria o conteudo do body
+
+e vai no site criado depois, clica no botão direito e lá vai estar
+a box que como dito é dividido em:
+
+._________________________________.
+|margem                           |
+| ._____________________________. |
+| |borda                        | |
+| | ._________________________. | |
+| | |padding                  | | |
+| | | ._____________________. | | |
+| | | |conteudo             | | | |
+| | | |---------------------| | | |
+| | |                         | | |
+| | *-------------------------* | |
+| |                             | |
+| *-----------------------------* |
+|                                 |
+*---------------------------------*
+
+onde na parte de inspecionar, todas essas só aparecem quando são criadas pelo
+css:
+
+h1 {
+    background-color: rgb(131, 120, 109);
+    width: 100px;
+    height: 100px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    padding: 20px;
+}
+
+-Modelo de Caixa na pratica parte:2-
+
+bem nessa parte vamos ver o que n vimos anteriormente obviamente onde faltou a
+margen e o outline
+
+margin: determina a posição do objeto e sua distancia dos outros objetos
+
+outline: n aparece pelas estatisticas do site
+
+e suas estruturas são assim:
+
+h1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin: auto;
+
+    outline: 5px solid #01014b;
+}
+
+onde top, left, bottom, right:
+
+top: parte de cima do objeto
+left: parte da esquerda do objeto
+right: parte da direita do objeto
+bottom: parte de baixo do objeto
+
+obs: esta deve ser a ordem
+t,l,b,r
+
+e para finalizar vc tambem pode simplificar as caracteristicas do objeto como:
+
+margim: Npx; = um Numero que sera usado para todos os lados
+
+margin: Lpx Apx; = L: laterais, A: alturas
+
+margin: T L B R; = cada um representa um lado onde estão representados acima
+
+-Grouping Tags-
+
+e aqui vamos a extrutura proficional, e finalmente dar um sentido a esse assunto 
+de caixas, onde facilita para poder fazer modificações n permanentes para poder 
+fazer testes com estatisticas
+
+e para fazer o teste vamos usar uma extrutura proficional:
+
+<body>
+=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=
+   <header>                  |header seria o cabeçario do site onde esta o roda-
+       <h1>Teste de Site</h1>|pé do site que normalmente tem links que levam á
+       <a href="@"></a>      |outras abas do site
+       <a href="@"></a>      |
+       <a href="@"></a>      |
+   </header>                 |
+=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=
+   <main>                    |main seria onde fica o conteudo dos sites e alem 
+    <section id="assuntos">  |disso temos os section onde é usados para organizar
+                             |os assuntos, article simboliza os articulos que 
+    </section>               |seriam textos sobre o section, e por fim tem o aside
+    <section id="noticias">  |onde lá coloca o nome dos autores do articulo
+        <article>            |
+            <h2>Noticias</h2>|
+            <p>Lorem</p>     |
+        </article>           |
+        <aside>              *_____________________*
+            <p>escrito pela gorda da SUA MÃE!!!</p>|
+        </aside>                                   |
+    </section>                                     |
+   </main>                                         |
+=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=
+   <footer>                                        |footer e a parte final onde 
+    <p>desenvolvido por um Cara Aleatorio</p>      |mostra de quem e o site e 
+   </footer>                                       |etc...
+=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----=-----= 
+</body>
+
+e por ultimo tem como configurar a box-shadow pelas estatisticas do site
+
+-Box_Shadow-
+
+é uma das coisas que pode ser testado com as caracteristicas, onde aqui vamos
+testar a boxShadow com as inspecionar 
+
+e sua extrutura é:
+
+header {
+    box-shadow: 1px 1px 1px black;
+}
+
+onde o primeiro: altura
+
+segundo: largura
+
+terceiro: espaçamento
+
+color: cor da sombra
+
+-Bordes-Radios-
+
+essa vai ser rapida, mas para arendodar uma borda voce fas essa extrutura:
+
+header {
+   border-radius: 2px 30px 30px 30px;
+}
+
+onde cada um representa um canto;
+
+pode ser usada apenas por dois, onde cada um representa dois cantos opostos
+
+e o ultimo e uma transformação em circulo que e um numero só representado com %
+
+-Bordas Decoradas-
+
+nessa parte vamos ver como funciona essas bordas personalizadas
+E para comessar vamos criar as bordas no gimp, onde depois de criala, vc salva 
+como png
+
+em seguida vc ussa essa extrutura:
+
+     h1 {
+        border: 12px solid black;
+        border-image-source: url(image/Borda.png);
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+     } 
+
+border: 12px solid transparent = aqui voce vai criar a borda que sera mudada
+
+border-image-source: url(image/Borda.png) = extenção da imagem da borda
+
+border-image-slice: 27 = tamanho da borda
+
+border-image-repeat: repeat =e aqui e para colocar como ele se colocara como borda
+tendo como opções:
+repeat: se repete ate prencher como borda
+round: divide os pixeis para encaixar a borda
+space: cria um spaço entre os pixeis
+stretch, inherit, initial, unset: afina os pixeiss de altura, e grosam as laterais
+
+-Desafio 10: criar um exemplo de site-
+
+vai no github do prof, e abre a area de desafios do modulo 2 de html e css
+
+-Criando um projeto a partir do zero-
+
+la vai ter os arquivos necesarios para fazer esse projeto
+
+-Navegando pelo projeto pronto-
+
+aqui ele vai só mostrar como funciona o site
+
+-Planejando a estrutura do site-
+
+onde voce pode usar o site:
+
+///mockflow.com///
+
+-Transformando o layout em código-
+
+aqui vamos mostrar a estrutura de sites proficionais onde cada coisa e uma tag:
+
+<html>
+<body>
+<header> cabeçario do cite </header>
+<nav> tag de navegação onde se localiza links para outras abas </nav>
+<main> local de artigos e o conteudo do site </main>
+<footer> rodapé do site </footer>
+
+obs(# na parte dos links(a) simboliza que o link enviara vc ao mesmo site)
+
+-Organizando o conteúdo do site-
+
+aqui vamos organizar o site com o conteudo onde vc vai poder ver no desafio10
+MockFlow.com
+
+-Variaveis do css-
+
+variaeis são como objetos da css onde esta dividido em dois:
+
+as variaveis universais e as variaveis personalidas
+
+Variavel:
+e definida como qualquer objeto do css
+Universal:
+ele extende o estilo colocando nele para todos onde sua ex-
+trutura é:
+
+* {
+	(estilo)
+}        
+
+Personalizada:
+ele extende os obetos criados nele para todas as var(), 
+onde suas extruturas são:
+
+:root {
+	obj: cor, ou fonte, ou estilo
+}
+
+-Responcividade-
+
+ele e dividido em dois mas aqui vou acrecentar apenas a pratica, onde
+na teoria apenas acrecentou uma nova extenção:
+
+Windows Resizer > Chrome Web Story
+
+e explicação de que e a Responcividade:
+
+que e a area do css que cria uma organização para os objetos de acordo 
+com o tamanho da janela
+
+e agora vamos explicar a parte pratica:
+
+bem para aplicar isso nós vamos no css do obeto, e escrevemos as medidas
+de seu tamanho sendo eles:
+
+min-width: e o tamanho minimo do objeto (o ponto de partida do obj)
+max-width: e o tamanho maximo do objeto (o ponto de termino do obj)
+
+e para colocar o objeto no meio vc escreve isso:
+
+margin: auto;
+
+-Configurando o Header do site-
+
+aqui como diz, ele vai configurar a header onde aqui:
+
+colocamos o seguinte:
+
+header > h1 {
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+header > p {
+    width: 28em;
+    padding-top: 20px;
+}
+
+nav {
+    padding-top: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.288);
+}
+
+nav > a {
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: .9s;
+    border-radius: 3px;
+}
+
+nav > a:hover {
+    padding: 0px 10px;
+    background-color: var(--cor3);
+    color: var(--cor5);
+}   
+
+se vc ver direito, vc vai ver uma nov config onde ali a gente configua quantos
+segundos demorara o hover ou outras coisas
+
+transition: uma conf para animações
+duration: conf. o tempo da animação
+0s: quanto demora
+
+transition-duration: 0s;
+
+-Melhorando o formato do conteudo-
+
+aqui eu apenas arrumei a aparencia do site
+
+e outra coisa: tem como fazer um degrade que vai desaparecendo pouco a pouco
+
+e para isso vamos fazer o seguinte:
+
+    background-image: linear-gradient(to Direção, Cor, transparent);
+
+-Rodapé-
+
+vamos analisar o que eu coloquei de novo:
+
+aside {
+    background-color: var(--cor2);| aqui a unica coisa nova é o position onde se
+    padding: 10px;                | voce colocar relative, faz com que voce possa
+    border-radius: 10px;          | mudar a pocisão dos objetos, podendo usar
+    margin: 0px 10px;             |}esse codigos: top, bottom, right, left
+    padding-top: 10px;            | 
+    position: relative;           |
+    bottom: 4px;                  |
+}
+
+aside > h3 {
+    background-color: var(--cor6);   | aqui a gente apenas configurou a aparencia
+    color: white;                    | do titulo
+    padding: 10px;                   |}
+    margin: -10px -10px;             |
+    border-radius: 10px 10px 0px 0px;|
+}
+
+aside > ul {
+    list-style-type: '\2714\0020\0020';| e aqui a coisa mais importante é o 
+    list-style-position: inside;       | "list-style-type: '\2714\0020\0020';"
+    columns: 2;                        |}onde nós modificamos o simbulo das 
+    padding: 10px;                     | listas onde aqui "2714" é um codigo do
+}                                      | emojipledia, e o "0020" e o espaço, e
+                                       | e as "\" separa cada um
+aside p {
+    text-align: center;|
+    font-size: 0.8em;  |}aqui a gente só estilisou os paragrafos
+    padding: 10px;     |
+}                       
+
+e por ultimo:
+
+ele usou o a.externo::after {} onde aqui ele colocou essa classe para links que
+levam para outro site e colocou um emoji para demonstrar isso
+
+e para colocar ele usa o conf: content = codigoDoEmoji;
+
+-tornando um video Responsivo-
+
+bem aqui vamos a responsivar o video: onde para fazermos isso precisamos fazer
+uma ganbiarra
+
+e isso porque, infelizmente o codigo do video vem de um local onde n tem como 
+modificar
+
+e para fazermos isso use essa estrutura abaixo:
+
+div.Video {
+    background-color: var(--cor6);| aqui a gente modifica o local do video onde
+    margin: 0px -.2px -30px -.2px;| tambem transformamos o local em um medida para
+    padding: 20px;                |}modificar a localização do video e tbm o 
+    padding-bottom: 58%;          | tamanho
+    position: relative;           |
+}
+
+div.Video > iframe {
+    position: absolute;| 
+    top: 5%;           |
+    left: 5%;          |}aqui eu coloquei a responsidade
+    width: 90%;        |
+    height: 90%;       |
+}
+
+-Fim do Modulo 2-      
+
+Modulo 3:
+
+Funcionalidades do BackGround:
+
+parte 01:
+
+para comesar vamos mostrar os 3 tipos de fundos existentes sendo eles:
+
+Opaca: uma cor só > background-color: black;
+
+Gradiants: Um degrade de cores > background-image: linear-gradiants(to bottom,
+yellow, red)
+
+Img: um funco que seria uma imagem > background-image: url(Imagem);
+
+e para finalizar temos o background-size que muda o tamanho do background
+
+parte 02:
+
+aqui vamos mostrar as seguintes funcionalidades:
+
+background-repeat: onde vc pode escolher se a imagem sera repetida ou n
+
+e no repeat tem:
+
+repeat: repete a imagem
+
+no-repeat: n repete
+
+repeat-x: repete apens no eixo x
+
+repeat-y: repete apenas no eixo y
+
+parte03:
+
+e aqui vamos falar sobre as funcionalidades
+
+background-position: que modifica o local da renderização onde e definida em
+
+top, bottom, right, left, center: que seriam as localizações da imagem
+
+e para finalizar se vc pegar uma imagem pequena, vc pode usar isso para mudar
+sua posição
+
+e algumas observações: se na hora do teste o html n posue um conteudo, vc usa
+vh para modificar o tamanho do arquivo se n pode bugar
+
+heigh: 98vh;    
+
+parte04: 
+ 
+aqui vamos mexer no tamanho do backGround, onde aqui vamos ver o background sizes
+
+background-size: auto, contain, cover, px, %
+
+onde:
+
+auto: aruma a largura de acordo com a janela(porem é só a largura)
+
+contain: aqui ele ajustara o tamanho para ficar no centro da janela, adaptando
+o tamanho das barras envolta para adaptar-se na janela
+
+cover: ele usara toda a imagem e ainda adaptava para o tamanho da janela
+
+100px: muda o tamanho para 100 pixel
+
+100%: ocupa 100 por cento da janela, porem ele acaba modificando a imagem o
+deixando distorcido
+e para caber cem por cento seria: 100% 100%
+
+e para finaizar (em Projetos reais vc faz um background color antes de fazer 
+background-image)
+
+parte05:
+
+aqui vamos falar sobre atachement e Shorthand de background
+
+bem atachement e um laço do backGround a um outro objeto do site que tem as 
+seguintes atachement
+
+background-atachement:
+
+fixed: ele fixa a background na janela onde ele iria seguir o scroll do site
+
+local: ele deixa o background fixado em apenas um local
+
+scroll: ele segue o scroll do conteudo
+
+e agora vamos falar do Shorthand:
+
+onde seria uma abreviação para uma lista de codigos onde ele possue essa 
+sequencia
+
+color - img - posição repetição attachement
+
+então ficaria assim:
+
+background: black url(img/wallpaper002.jpg) center center no-repeat fixed;
+
+onde a unica coisa que n tem como por aqui é o background-size: ;
+
+parte06:
+
+bem aqui vamos finalmente falar sobre organização de caixas
+
+e para comesar vamos falar sobre isso usando section e article
+
+section:seria onde ficaria o conteudo e onde fica o conteudo usamos o possition
+relative
+
+e temos o article
+
+article: seria o conteudo que usa o possition absolute onde ele ele usa o section
+como referencia para poder organizar
+
+onde depois desses possition temos como por:
+
+top: coloca o objeto para baixo
+
+bottom: coloca o objeto para cima
+
+left: coloca o objeto para direita
+
+right: coloca o objeto para esquerda
+
+e para finalizar temos o transform que vou pesquisar depois (pois n entendi)
+
+mas a gente usou o transform: translate(-50%, -50%);
+
+onde diminuiria os 50% com base no tamanho da janela 
+
+projeto 12: anotações:
+
+tem como adaptar o tamanho da letra atravez do * e a classe do Css onde esta 
+a letra os texts etc...
+
+onde no * fica o tamanho maximo da letras
+
+* {
+font-size: 1em;
+}
+
+e na classe 
+
+caption{
+font-size: 50vw;
+}
+
+sendo vw como o tamanho da viwerport
+
+e as imagens que foram construidas assim
+
+background: url(Imagem01.png);
+background-position: right, center;
+background-size: cover;
+background-attachement: fixed;                                                                                                                                                                                                                                                                             

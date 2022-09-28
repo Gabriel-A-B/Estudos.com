@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imangem de fundo</title>
+    <style>
+        body {
+            background-image: url(img/wallpaper001.jpg);
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            font-size: 10px;
+            text-align: center;
+            margin: auto;
+        }
+
+        div#q1 {
+            background-color: aquamarine;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url(img/pattern003.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+        <h1>Cor Opaca</h1>
+    </div>
+    <div class="quadrado" id="q2">
+        <h1>Cor Radiantes</h1>
+    </div>
+    <div class="quadrado" id="q3">
+        <h1>Imagens No fundo</h1>
+    </div>
+</body>
+</html>

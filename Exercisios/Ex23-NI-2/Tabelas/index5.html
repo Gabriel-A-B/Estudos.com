@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de scope</title>
+    <style>
+        body {
+            font-size: 1.4em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        col.Nomes {
+            background-color: aqua;
+        }
+
+        col.Idade {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="Nomes">
+            <col class="Idade" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nomes</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marcos</td>
+                <td>21</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Jessy</td>
+                <td>18</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>25</td>
+                <td>M</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

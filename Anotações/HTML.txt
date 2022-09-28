@@ -1,0 +1,1573 @@
+NOVO CURSO:)
+
+HTML:
+MODULO 01:
+
+-O que iremos aprender-
+
+vamos aprender sobre a evolução da internet, como funciona, e diferenças de linguagem
+
+vamos aprender a organiçar a area de trabalho e os programas, e tudo sobre HTML no mais fundo possivel
+
+Marqueting, imagens, sites, etc...
+
+-Precisamos fazer um acordo-
+
+do que voce vai precisar:
+
+FOCO
+
+EXERCITAR
+
+CADERNO
+                    
+ASSISTIR O VIDEO       -|_
+                          |_
+VER O CONTEUDO DE APOIO    _|- github.com/gustavoguanabara e gustavoguanabara.github.io
+                         _|
+ESTUDAR EM GRUPO       -|
+
+-ATENÇÃO!-
+
+Prestar atenção,se esforçar, não tente ir rapido, e restabilize uma rotina
+
+segunda, terça e quinta
+
+-Sera que esse curso e para mim?-
+
+Sim..., praticamente
+
+-melhores livros para aprender HTML5 e CSS3-
+
+01 - DevWeb HistoriaDaInternet
+
+02 - referencias online:
+     referencia MDN;
+     W3C Standards;
+     WHATWG Living Standard;
+     W3Schools;
+
+03 - Livros = 
+     MarkPilgrim;
+     Erick Meyer;
+     Estelle Wey!;
+     Eric Meyer
+
+04 - Elizabeth Castro e Bruce Hyslop;
+    Jon Duckett;
+    Elisabeth Robson e Eric Freeman;
+    Nate Cooper e Kim Gee
+
+05 - Mauricio Samy Silva
+
+06 - David Dabner e outros;
+     Bob e Maggie Gordon;
+     Eva Heller;
+     Ellen Lupton
+
+07 - Jorge Montoya e Stephen Burge[2];
+     Bill Sanders;
+     Eric Meyer
+   
+-Como a internet chegou na minha casa?-
+
+seu inicio veio da guerra fria: onde ocorreu uma disputa de tecnologia entre 
+EUA e a União Sovietica
+
+onde a União Sovietica ficou em primeira na epoca com um satelite lançado 
+chamado Spotnik
+
+porem era apenas um teste,coisa que o presidente dos Estados Unidos n sabia
+
+pensando que era uma arma, fundou uma instituição de pesquisa chamada "Darpa"
+
+onde como primeiro projeto se focou na maior preoucupação dos EUA, que e umas das
+bases militares serem destruidas, tendo a posibilidade de levar junto consigo suas 
+informações
+
+então para resolver isso, criou uma rede de cabos interligados nas bases, onde passaria as informações
+o tal protocolo NCP
+
+no começo foi so 4 computadores
+
+e eles eram: 
+
+SDS90;
+SDS Sigma7;
+DECPDP-10;
+IBM 370 175
+
+porem por conta da epoca, todos os computadores de marcas distintas funcionavam em linguagens distintas,e por conta disso n rolava a comunicação, então resolvera
+com o protocolo NCP, que interrompia as outras conexçoes para fazer uma em especifico, atravez de apenas uma linguagem usada pelos dois computadores, porem com isso
+veio um nov, problema, o de travar as outras conexoes, ai veio o Protocolo TCP, porem ainda resistia um problema, n era tão funcional por falta de localização e por 
+conta disso, foi criado o IP
+
+bem foi se pasando o tempo, e a rede foi aumentando, logo naceu um novo problema
+
+pois agora n era apenas uma tecnologia militar, mas sim uma tecnologia Universitaria e ate Publica
+
+e então por conta disso ouve uma divisão 
+
+tempos se passaram e a internet publica veio com o primeiro navegador da historia chamada "Galpher"
+
+porem era muito arcaico, por conta disso um informatico criou uma nova rede independente chamado "WWW"
+
+e essa rede apenas possue sites rodando em hiper texto: http:// onde são programados pela linguagem criado 
+pelo mesmo, o tão aguardado HTML
+
+bem e hoje em dia possue varios servidores espalhados nos litorais de cada continente em que possue uma conexão a cabo entre eles
+e assim que recebe a solicitação do endereço de um site, esta central recolhe o IP do cliente e manda para o servidor do site
+
+os computadores entram em comunicação com as centrais atravez dos Satelites
+
+Protocolos
+
+NCP: criava conexções entre dois computadores com linguagem nativa distinta, atravez de uma unica linguagem
+TCP: permitia diversas conexções ao mesmo tempo
+IP : mapeava a localização do computador atravez de um numero, onde facilitava o trabalho do TCP
+ 
+-Como a Internet Funciona?-
+
+video de reforço(assista antes desta aula, ou se esqueceu algo)
+Vox Internet
+
+para comesar tenho que esplicar que a conexção entre computadores funciona a base do codigo binario
+ou binary digit = bit
+
+e para os bits serem legiveis e necesario, no minimo, 8 bits(ai vem a pixel art kkk)
+                                                                                         1  1
+assim que se chunta 8 bits que seriam apenas 1 e 0, nos conseguimos um bytes             _
+(e esses bites são reconhecidos por ondas de eletricidades onde 1 e eletrizado e 0 n }   | |_|
+que e tranformado em uma luz que pisca na basse desta frequencia onde o outro pegara)   0  0
+
+e ai que entra a parte da comunicação, pois para cada mensagem, imagem, buffered, video, etc...
+seria necesarios muitos bytes para carregalos
+
+então vem as escalas de tamanho de arquivos
+
+em que diferente da esala convencional que de mmg para mg seria 1¹°
+na informatica seria 2¹°
+
+onde daria 1024
+
+então todas as vezes que chega nessa quantia o arquivo simplifica para uma sigla, ex:
+
+1024 bytes = 1KB
+1024 KiloBytes = 1MB
+1024 MegaBytes = 1GB
+1024 GigaBytes = 1TB
+1024 TeraBytes = 1PB
+1024 PetaBytes = 1EB
+1024 ExaBytes  = 1ZB
+1024 ZetaBytes = 1YB
+1024 YotaBytes = ???
+
+e existe dois jeitos de escrever, ex
+
+MB e Mb
+
+e eles tem diferenças
+
+ja que MB são usados mais para capacidade de armazenameto, e o Mb que significa Megabits, são usados para capacidade
+de processamento( ou seja de quantos bits ele pode passar para o outro ponto)
+
+e estas duas são usadas de forma diferente 
+
+MB e mais para computadores, consoles, celulares, etc...
+Mb e para roteadores, extençores de rede, antenas, etc...
+
+bem agora que entendemos tudo isso, precisamos entender como que o nosso computador entra em contato com os servidores
+primeiro o computador chamado de cliente joga a solicitação ao moldem
+ao chegar ao moldem, ele transforma aqueles bytes em ondas sonoras que sera coletada por uma linha telefonica
+a linha telefonica mandara para a rede que enviara para os servidores, que reenviara o que foi pedido para o cliente
+então ele faz o mesmo percurso ate o moldem que retransformara aqueles sinais em codigos binarios, e por fim 
+enviara para seu computador
+
+porem para localizar os servidores, e necesario algo a mais
+
+ai entra os IPS
+
+todos os sites, moldem e ate o cliente quando pede uma solicitação possuem um, em que e mandado para o DNS que seria
+uma lista de IPS de sites, que localiza o servidor e manda para o moldem, que manda para a rede, e ai o resto ja sabes
+
+simplificando( e uma transformação de palavras para numeros, os IPS)
+
+ate existe um sistema para encontrar a rota mais rapida se por acaso uma linha desta rede estiver coongestionada
+
+-o que é dominio e hospedagem-
+
+outras pessoas vão acesar meu site?
+
+R:bem como esplicado anteriormente, n tem como acesar um site alheio sem um dominio e uma Hospedagem
+ja que sem dominio vc n tera uma identificação e sem uma Hospedagem n tera o apoio dos servidores
+
+mas o que ceria Dominio e Hospedagem?
+
+Dominio: dominio seria o nome de seu site, um jeito da DNS saber sobre seu site, e poder 
+encontralo para os outros, atraves de um pagamento para fazer estes nomes
+
+Hospedagem: e uma fatura que vc paga para sites especializados nisso, onde sera seu acesso aos 
+servidores
+
+sobre Dominios: 
+-Devem ser nomes unicos;
+-são pagos anualmente;
+-Varios TLDs(n esplicou ainda sob isso)
+
+sobre Hospedagem:
+-Espaço para armazenar seus arquivos;
+-pago mensalmente;
+-elas se mostram mais eficaces que outras atravez de:
+Espaço,Memoria,Recursos
+
+sobre links
+ex:
+
+www.Youtube.com.br/7minutoz
+
+a parte 7minutoz é uma URL: e tipo uma ponte que leva tal cliente para o usuario ou a pagina dentro do site, como se fosse uma biblioteca
+
+e a parte Youtube e o Dominio: que e o que espliquei antes, simplificando uma forma de indentificação para a DNS
+
+e a parte .com e o TLD: e a classificação do portador deste site, onde mostra estar em dominio de uma impresa ou pessoa individual, como ex:
+possui o .gov que tem como portador o proprio governo, e possiu o gtld: que são tlds que n são muito usados por isso e mais estaticos
+
+e a parte .br e o CCTLD: e um jeito de fazer versões distintas de sites em idiomas diferente, exemplo:br, ea...
+
+e a parte /7minutoz por completo e conhecida como caminho: caminho
+
+-A diferença ente HTML, CSS, e JavaScript:
+
+HTML e CSS n são linguagens e sim programas, a e elas são femeninas, e o HTML e plural
+
+HTML=HyperTexto
+     Markup
+     Language
+ou seja uma pagina com palavras que podem levar a outras paginas
+
+CSS=Cascated
+    Style
+    Sheets
+os seu seletores vai modificando as paginas seguintes
+
+a linguagem HTML e focada em conteudo:textos,imagens,videos,tabelas
+
+e a CSS e focada em design:cores,sombras,tamanhos,posicionamentos
+
+e por fim entra o JavaScripts, que cuida da logica do site<3
+
+como usar HTML:
+
+HTML e modelagem de textos, logo ela funciona atravez de uma logica usada para 
+dividir o que e texto e o que n é
+
+ex:
+
+para fazer um titulo:
+primeiro tem que fazer com que o programa identifique o que é
+
+e ele identifica titulos:
+abrindo a identificação;
+o Titulo;
+e a fechando com a identificação;
+
+<h1>Exemplo</h1>
+
+e para textos a mesma coisa
+
+<p>Exemplo</p>
+
+e para arquivos com maior pesso a gente ussa esta aqui
+
+<img src="foto.png" alt="Exemplo de foto">
+por onde para identificar usamos as palavras chaves que são
+
+<>= para por as palavras chaves
+img=para renderizar uma image
+src=simboliza a origem da imagem, seu nome.png
+alt=para caso n for possivel carregar as imagens, aparecer um texto inves
+
+<h1> = abertura de tag
+Exemplo = conteudo
+</h1> = fechament de tag
+alt = parâmetro
+"Exemplo de foto" = valor
+
+Estrutura basica de um documento HTML
+
+<!DOCTYPE html>
+<html lang ="pt-br">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width,
+  initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+ <h1>Olá Mundo!</h1>
+
+ </body>
+</html>
+
+explicação:
+
+isso eo que se e necesario para fazer um codigo html onde nela possue:
+
+<!DOCTYPE html> = onde mostra para o programa que tipo de arquivo é
+<head> e </head> = e onde vai as configurações do projeto
+<meta charset="UTF-8"> = e para permitir o uso de caracteres apresentadas 
+apenas no portugues, como as virgulas
+<meta name="viewport"
+  content="width=device-width,
+  initial-scale=1.0"> = e para detectar a proporção certa para o arquivo 
+aparecer na pagina
+
+<body> e </body> = e onde entra o corpo do projeto onde vai ter um titulo etc...
+
+<title>Document</title> = e o titulo de seu arquivo
+
+e por fim, como estas ferramentas funcinam com a parte da internet?
+
+bem o servidor e basiapo nestes programas, então ele entende o que o cliente pede,
+e manda para o mesmo, o navegador vai ler linha por linha e vai executalo em forma visual
+
+-O que é front-End, Back-End, e Full-Stack
+
+frot-end e back-end:
+
+o que é:
+
+site istatico: servidor que e acessado e funcionado igualmene para todos
+
+cliend side: e o acesso ao site pela leitura das tecnologias feitas pelo proprio 
+cliente
+
+fron-end: são criadores de sites para serem usadas na base do cliend side
+(e para ele e necesario um cero conhecimento de certas ferramentas)
+
+server side: e o oposto do cliend side onde e a tecnologia feita para os servers
+
+back-end: e o nome dos desenvolvedores do serve side
+
+*Linguagens*
+front-end: HTML5;
+           CSS3;
+           JAVAS
+
+back-end: PHP;
+          JS;
+          C++;
+          PITHON;    (n e necesario saber de todas, e so escolher uma)
+          RUBY;
+          LINGUAGEM J;
+
+*como funciona tudo isso:*
+
+o servidor entra em contato com o cliente que esta solicitando um site, onde neste
+site a uma promoção, para manter atualizado o servido usa um arquivo HTML
+que junta todas essas informações e acaba entregando-lhe, onde sera reconhecido pelo
+HTML, CSS, JAVA, e sera recriado
+
+e por fim o que e um fullstack:
+
+um full Stack e um profisional que sabe mexer tanto no Front-End, e Back-End
+
+simplificando:
+
+*front-end = plateia
+
+*back-end = palco
+
+-Instalando ferramentas
+
+ navegador= Chrome
+
+ plataformaDeCod = VisualEstudioCode
+
+ comandos:
+
+ obs: digite ! para a construção do basico do codigo
+
+<!DOCTYPE html> = mostra que tipo de linguagem se baseia o artigo
+
+<html lang="pt-BR"> = mostra em que idioma sera trabalhado este artigo
+
+<head> & </head> = e aonde se guarda os comandos de configurações
+
+<meta charset="UTF-8"> = e para fazer o programa suportar acentuação do portugues
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> = ?
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> = e para 
+a janela ocupar toda a tela
+
+  <title> Titulo aqui </title> = e o nome do site
+
+<body> & </body> = e onde quida da estrutura do site como exemplo textos e fotos
+
+<h1> exemplo de titulo </h1> = titulos para paragrafos = tag
+
+<p> exemplo de paragrafo </p> = para criar paragrafos = tag
+
+<hr> = para criar linhas horizontais = tag
+
+</html> = fechamento do artigo
+
+-paragrafos e quebras:
+
+nessa aula aprendemos que esta linguagem funciona na logica das tags, ou seja, 
+para fazer uma quebra no texto assim 
+
+eae
+aea
+
+precisa colocar br e precionar enter
+
+e para apenas citar estas tegs vc apaga o <> delas e substitue por &lt; tag &gt;
+
+-simbulos e emojis no seu site
+
+nessa parte aprenderemos sobre simbulos e nestes simbulos temos, simbulos de 
+categorização, e emojis e nels vamos ensinar com por os dois
+
+*Categorização*
+
+(observação, termina de catalogar o que cada um significa usando o MiskSimbols)
+
+&reg; = 
+&copy;
+&trade;
+&euro;
+
+todos seguem essa mesma estrutura 
+
+& e ;
+
+apenas mudando o simbulo
+
+e para mais simbulos va no artigo da postila do crurso chamada
+
+miskSimbols
+
+ja nos emojis e um pouquinho diferentes pois elles possuem um codigo proprio para
+cada, e para fazelos vc usa a estrutura
+&#x
+
+e em seguida coloque o codigo, onde pode ser pego no 
+
+https://emojipedia.org/
+
+e outra coisa:
+
+n pode usar o br mais de uma vez em trabalhos proficionais pois e anti profisional
+
+e da para comentar no codigo fazendo assim
+
+digite <!-- e escreva entre ela assim
+
+<!-- comentario -->
+
+-voce tem o direito de usar qualquer imagem no seu site?
+
+como sabemos: para uso comercial, n e possiel usar qualquer imagem encontrada no google 
+
+então nessa aula ele mostra como encontrar Images que n possuem direitos autorais
+
+e a primeira e o google image ferramentas
+
+a segunda e dois sites:
+
+pexels.com;
+unsplash.com (usa esse e mas confiavel)
+
+alem disso recomendou um aplicativo para edião de images
+
+o GIMP;
+
+-Quais são os formatos para Imagens?
+
+*formato de arquivo para imagem*
+
+JPEG;
+
+ele guarda a distancia de um pixel a outro de um objeto e constitue a imagem assim
+criando arquivos 📂 leves 
+
+PNG;
+
+ele n e tão bem compactado quanto o Jpeg porem, ele pode criar animações e deixar a 
+imagem transparente alem de ter mais qualidade
+
+-O tamanho da Imagem importa para o site?
+
+fique primeiro sabendo que e imposivel ter um site perfeito pois este site ficaria muito pessado
+ja que para as imagens serem perfeitas precisaria de png, que são mais pesados
+
+e qual seria o tamanho maximo para um site?
+
+1500px no maximo
+
+e o tamanho da imagem e seu tipo importa ja que em sites com mts acessos e preciso
+um controle em suporte de tamanho do site onde uma imagem png e mais pesada que uma 
+jpg
+
+vai nas imagens testes e de uma olhada
+
+-a tag de imagem do HTML5
+
+agora vamos aprender a por imagens no site e para fazermos isso teriamos que por
+um codigo facil chamado img
+
+digite img e precione enter
+
+em seguida voce bota o nome da imagem
+
+onde pode ser posta de trez formas
+
+1 = e salvar a imagem na mesma pasta do arquivo, ai so bota o nome
+da imagem ali (.png ou jpg)
+
+2 = basta digitar todo o indereço da imagem e para ver isso vá nas
+propriedades
+
+3 = voce pode apenas salvar o link das imagens, e colar no "src=" da img
+
+(dica = na hora de por a imagem precione cntr + space para pegar ele
+
+-icones de site:
+
+bem nessa parte aprenderemos onde consiguir icones para seu site, e tbm como 
+por
+
+*como consiguir*
+
+temos 3 sites que podem lhe ajudar nisso
+
+icon arquives: uma biblioteca de icones onde podese encontrar qualquer icone
+
+favicon.ico: um local para criar seu proprio icone
+
+favicon generator: um local para montar seu icone
+
+*como por*
+
+para por voce tem que escrever link dentro do head
+
+e selecionar o favicon
+
+apos isso digite na segunda aspas a localidade da imagem(ou se ja estiver dentro da pasta 📂 do arquivo 🗄)
+apenas coloque seu nome
+
+<link rel="shortcut icon" 
+href=" *Nome da Imagem* " 
+type="image/x-icon">
+
+-Hierarquia de titulos
+
+em muitos sites eles usam algo chamado de sub titulos
+e neles temos niveis de subtitulos
+
+h1;
+h2;
+h3;
+h4;
+
+onde cada um teria um tamanho, e sempre entram em uma sequencia
+
+por exemplo
+
+<h1> exemplo </h1>
+
+<h2> titulo de um texto dentro do h1 </h2>
+
+<h3> titulo de um texto dentro do h2 </h3>
+
+<h4> titulo de um texto dentro do h4 </h4>
+
+sendo um jeito de organizar seus sites e textos
+
+(obs: tem um codigo para criar um paragrafo como base = lorem, onde tem que
+estar dentro do <p> "" </p>)
+
+modulo 2:
+
+- codigos ultrapaçados -
+
+em html existe muitas versões e isso ocorre por causa da necesidade de deixar o 
+codigo mais pratico, por conta disso existem codigos em que ali estão, porem
+eles n são recomendaveis de serem usados pois a qualquer momento estes codigos 
+pararão de funcionar
+
+e nesses codigos temos, codigos de visual que n são mais aceitos pelo google
+simplismente pq agora para aparencia vc usa o CSS
+
+codigos velhos e desatualizados, e codigos que ainda funcionam, porem
+eles ou vão sair ou ja sairam(estes podem ser qualquer coisa dita anteriormente)
+
+e simplismente ocorre isso pq o HTML e uma linguagem que trabalha apenas
+com textos, onde precisam de uma organização entre semantica e n semantica
+
+SEMANTICA: aquilo que segue um significado
+
+os semanticos e os não semanticos
+
+os codigos semanticos indicá escrita que seria o correto no HTML
+e n forma = N semanticos(que serão destivados mais para frente)
+
+Simplificando: antigamente tinha como cuidar da aparencia do site pelo HTML
+e hoje em dia e mais recomendavel ussar CSS
+
+e tambem: sites que ussam de codigos ultrapasados são desvalorizados pelo 
+Google
+
+https://www.dev.w3.org/
+
+- Negrito/Italico -
+
+nessa parte mostraremos de forma pratica como a Semantica funciona
+
+digamos que eu tenha duas forma de escrita:
+
+Negrito(N)
+e Italico(I)
+
+e tem muitos codigos para transformar um codigo em N ou I
+
+mas tem jeitos corretos e errados, e aqui vai o errados
+
+<b> Exemplo </b>
+
+<i> Exemplo </i>
+
+por que esses são errados:
+
+porque estes codigos se focam em forma e n Semantica, por isso n e recomendavel usalas
+ja que a qualquer hora podem ser desativadas
+
+então qual e a maneira certa de usalas:
+
+e com esses codigos
+
+<strong> Exemplo </strong>
+
+<em> Exemplo </em>
+
+simplismente pq elas são focadas no Enfase, logo n sairão de linha tão cedo
+
+(obs: se vc apertar CTRL + SHIFT + P = vc vai poder por qualquer tag em uma
+frase ja escrita, basta selecionala, com o SHIFT ou MOUSE, e se n estiver dando
+certo antes de dar enter, precione os trez e pesquise ABB: Wrap With Abbrevietion
+e de enter nele, dai so escreve a tag que voce quiser
+
+obs: depois de consertar aperte os trez e aperte enter, que ele vai no bagulho 
+das tags direto)
+
+- Formatações adicionais em HTML - 
+
+nessa parte aprenderemos codigos Semanticos que trarão algum significado como:
+
+Mark = que poderia ser usado para marcar coisas inportantes
+(mara texto basicamente)
+
+e voce pode modificalo assim:
+
+<mark style="background-color:escolhe a cor da lista;"> MensagemDeExemplo </mark>
+
+tambem tem como botar uma cor unica para o mark assim:
+
+o codigo fica na parte head
+
+<style>
+     mark{
+        background-color:
+         cor desejada;
+     }
+</style>
+
+tambem temos como por tamanhos distintos em certa parte dos textos como por
+exemplo o big e o small
+
+big: aumenta o tamanho da palavra elegida
+(n recomendavel usar profisionalmente pois esta obsoleta, por falta da Semantica)
+
+small: diminue o tamanho das palavras
+(pode ser usada ja que possui Semantica: que e a parte dos contratos que pede
+para ler a parte miúda)
+
+e temos tambem acrecentações de textos:
+o del e o ins
+
+del: palavras que devem ser ignoradas por causa de uma correção feita depois do
+texto ja ter sido publicado
+(Semantica)
+
+ins: palavras inseridas depois do texto ter sido publicado, geralmente depois das
+palavras del
+(semantica) 
+
+u: mesma coisa do ins
+(N Semantica: pois e apenas a forma e n o significado)
+
+e por fim temos o sup e o sub, que tem como objetivo partes que possuem 
+algoritimos que possam representar contas Matematicas, formulas quimicas, 
+etc...:
+
+sup: acrecenta os numeros ou as letras acima de uma forma menor
+(semantica)
+
+sub: acresenta os numeros ou as letras abaixo de uma forma menor
+(semantica)
+
+-citações e codigos-
+
+e aqui vamos para a parte dos codigos, e aqui abaixo vai mostrar quais codigos 
+existem e eles são
+
+code: seria uma tag que ajusta o espaçamento das letras para deixalo mais orga-
+nizado
+
+pre: e uma tag que faz usso da organização dentro dela
+ex:
+
+  eae
+    eae
+      eae
+
+dentro do site
+
+  eae
+    eae
+      eae
+
+
+pre = SHIFT + TAB: para ajustar os espaçamentos nos paragrafos
+
+q(citasões),blockquote(citasões completas),cite,abbr,bdo,
+
+q: e a forma certa de fazer citações, onde se cria duplas aspas
+ex: <q>Exemplo</q>
+
+blockquote: e para citações maiores que o normal
+ex: <blockquote>Exemplo</blockquote>
+
+cite: e uma extensão do blockquote onde mostra para o sistema de onde esta cita-
+são pode ter vindo
+ex:<blockquote cite=" ExemploDoLinkDoSiteDaCitasão ">
+
+abbr: mostra o nome completo de uma sigla quando um mouse passa por cima
+
+bdo(esse e inutil puta merda): apenas escreve a frase escolhida al contrario
+ex:<bdo="rtl">Exemplo</bdo>
+
+cite:seria um codigo para pegar o link de ode veio tal frase, ec...
+
+(obs: index e a pagina inicial)
+
+- Lista OL e UL -
+
+nesta parte aprenderemos algo muito importante no HTML que e as listas
+
+OL: Orden List(Lista ordenanda
+
+OL: e usado paracriar uma ordem ordenadas e para catalogar cada objeto voce pode
+usar li
+
+li: e um geito logico de numeração para os objetos
+
+e para completar voce pode usar o codigo Type dentro da tag OL para mudar o estilo
+das letras ali encontradas
+
+type: 1, A, a, I, i
+
+estrutura:
+<ol type="1">
+      <li>Exemplo de objeto</li>
+             ou apenas          
+          Exemplo de objeto     
+</ol>
+
+(obs: esse type possui diversas numerações então teste-as, com CTR + SPACE)
+
+ul: Underest List(Lista Desordenada)
+
+ul: e igual a anterior so que ela n usa numerações e sim simbulos que são
+os types abaixo
+
+type: disc, circle, squere
+
+estrutura: 
+
+  (opcional)
+<ul type="Qualquer uma das trez assima">
+    Mesma logica assim
+         ou
+    <li>Assim</li>
+</ul>
+
+- Listas mistas e de Definição -
+
+nessa parte aprenderemos sobre listas em listas, ou o famoso aninhamento
+aninhamento: codigos um dentro do outro
+
+e para fazer isso basta repetir a estrutura da lista dentro da lista
+
+<ol>
+<ol>
+<li> Exemplo </li>
+</ol>
+</ol>
+
+e da para fazer a mesma coisa com o ul, ja que e a mesma estrutura
+
+e temos um novo codigo o start
+start: modfica qual letra ira comesar
+ele e uma configuração para a tag de listas onde ela configura em que ordem 
+ela vai fazer a lista
+Ex:
+
+<ol start="2">
+<li>Exemplo</li>
+
+no site
+
+2.Exemplo
+
+e temos as listas de explicação os dt e dd onde cada um faz um papel
+
+dt: mostra o que sera explicado
+dd: mostra a esplicação
+Ex:
+
+<dt>Exemplo</dt>
+<dd>E uma estrategia linguistica para explicar algo que se baseia no proprio
+teste</dd>
+
+para mudar varias tags ao mesmo tempo
+alt + click = pode mudar varias tags ao mesmo tempo 
+
+- links e ancoras -
+
+nessa parte aprenderemos como criar uma ancorae um link
+
+Ancora: e um texto que tem o objetivo de ser ínterativo onde se disfarça de um link
+Link: e uma ferramenta que carrega o indereço de um site e manda o usuario 
+para ele
+
+e como fazer isso?
+
+usando a tag a onde pedira apenas o endereço do site
+estrutura:
+
+<p>Exemplo<a href="http://www.Exemplo.com/"> ExemploDeAncora</a></p>
+
+e tem o target e o rel tabem em que nessa tag possui uma função mt util
+
+taget: combinada com _blank fara com que o site seja gerado em um 
+espaço vazio
+
+rel: combinada com external criara esse espaço vazio para o site
+
+então o site que entregou o link ainda estara aberto e o site do link
+abria em outra aba
+
+estrutura:
+<p>Exemplo<a href="http://www.Exemplo.com/" target="_blank" rel="external"> 
+ExemploDeAncora</a></p>
+
+- Links para DownLoad -
+
+nessa parte aprenderemos como abrir um link em que ira iniciar um dowload
+
+para comesar tem que saber que este metodo e igual ao link comum so que com algumas
+diferenças, como o proprio link, onde seria um arquivo salvo no seu pc
+
+estrutura:
+<p><a href="NomeDoArtigoQueDesejaBaixar "> e este arquivo te que ser salva pelo mesmo 
+metodo das fotos</a></p>
+
+e para iniciar um dowload automaticamente precisa de um codigo especifico para 
+cada tipo de arquivo
+
+onde precisa das configurações do link e elas são:
+
+<a href="Exemplo" download="NomeDoArqivo"
+type:"PrecisaVerQTipoDeArquivoÉEPegarOCodigoCorrespondente">
+
+e para saber acesse este site Media Types
+
+e essas catalgções de arquivos são .zip, .png, .jpg...
+
+- exercisios propostos -
+
+e so fazer os exercisios 01 e 02
+
+- Imagem Dinamica -
+
+hoje em dia sites podem ser acesados em qualquer plataforma e ai que entra essas 
+imagens, pois para ter as melhores resoluções tem que aver imagens que cabem 
+perfeitamente para cada plataforma, e abaixo essas são as medidas de cada 
+plataforma
+
+cell: 80 pxl
+tablete: 300 pxl
+computador: 1000 pxl
+
+- Imagens que se adaptam sozinhas -
+
+e precisamos fazer um site atrativo pois acessos que saem derrepente e detectado 
+pelo Google que acaba diminuindo a sua relevancia
+
+[e para fazermos com que ele detecte o tamanho da foto vc vai usar o picture
+
+e para fazer isso antes tem que ter uma versão da imagem em diferentes tamanhos
+
+<picture>
+ 
+depois vc usa uma tag chamada source
+source: esta tag usara uma logica baseada no tamanho da janela do site, onde 
+ela diminuira a imagem de acordo com a janela 
+                                     _____________\ Ex(max-width: 1000px)
+estrutura:                          |             /
+<source media="(max-width: TamanhoDaMaiorImagempx)" srcset="NomeDaImagem(ESeForO
+CasoALocalizaçãoQSeriaEmQueArquivoEsta)" type="OTypeCorrespondenteDoArquivo">
+
+dai voce usa o image
+<img src="MesmaCoisaDoSrcset" alt="mensagemParaCasoNForCarregadoAImagem"
+
+</picture>
+
+(obs: para funcionar corretamente, tem que comesar pela maior versão da imagem que
+sera posta no <img> e os source tem que ir diminuindo conforme o tamanho do maior 
+que ele Ex: <source media="(max-width: tamanhoDaImageDo img px)", depois dele
+media="(max-width: tamanhoDaImagemAcima)")   
+
+- colocando audios no site -
+ 
+existem dois geitos de colocar musicas nos sites o automatico e o player
+
+e para os dois a chente ussa as seguintes tags
+
+audio: uma tag onde voce extende a musica que sera tocada(tem que estar salvo no seu pc)
+estrutura:  <audio src="Musica"></audio>
+
+e nela possui varias configurações e elas são
+
+preload: essa configuração desidi o que sera carregado ao entrar no site
+sendo dividido em 3, sendo elas:
+
+-auto = ela carrega tudo sobre o audio
+-metadata = carrega as informaçõessobre o audio
+-none = n carrega nada sobre o site
+
+controls:coloca os controles do audio no site
+
+autoplay: era para tocar o audio automaticamente
+
+loop:recomeça o audio ao acabar
+
+type:e para ser mais expecifico sob o audio onde tem diversos types para cada 
+arquivo
+
+source:uma conf usada em outra estrutura
+
+e a outra estrutura e usada para ser compatiel com todos os navegadores
+
+estrutura:
+<audio>
+    <source src="Musica" type="exemploDeTypesDeAcordoComOTipoDeArquivo">
+</audio>
+e ela e usada para fazer uma lista de musicas usando essa estrutura
+
+obs: Wav são pesados então veja bem sobre que tipo de audio é
+
+- Formato de video para Site e Videos em hospedagem propria -
+1º parte;
+
+assim como qualquer arquivo cada um dos tipos abaixo possuem um tipo de tamanho e
+uma qualidade
+
+MP4 e M4V: compativel com o Youtube, condeguindo reunir legendas e audios em um só
+tbm sendo bem leve
+
+WebM: esse formato ira substituir as gifs pois e um tipo de videos que pode 
+conversar com o HTML5 onde dai n seria necesario carregar todas as informações 
+
+OGV:(pesquisar mais dps) 
+
+e voce pode consiguir estes videos sem nenhum problema no Pexels
+
+e voce pode converter os videos baixados no HandBreak
+
+2ª parte:
+
+nessa parte aprenderemos a como colocar videos usando as tags
+
+e para comerçarmos existem 2 estruturas e elas são
+
+a mais simples, e a outra e para ser compativel com todos os navegadores
+
+video: e usada para extender o video
+controls: e usada para por as ordens do video
+Ex: pausar, despausar, etc...
+
+width:regula o tamanho do video(em escala msm)
+
+<video src="Video" controls>
+
+e a outra estrutura e usada para ser compatiel com todos os navegadores
+
+<video controls>
+<source src="Video" type="OSeuType">
+</video>
+
+e para completar, estes ultimos arquivos como Imagens, Videos, e Musicas, precisam
+estar em um servidor externo pois, por conta do numero de downloads serem grandes,
+podem aparecer problemas, como sobrecarregamento, taxas altas da hospedagem, e 
+outras coisas, por conta disso, no proxima aula vai falar sobre isso
+
+tarefa:
+crie um video com esses suportes para o mesmo video
+M3V, MP4, OGV, WebM
+
+- incorporação de videos externos -
+
+para videos, audios, e fotos, é bom usar servidores exteriores pois assim n ficara 
+pesado para seu site pois, estas informações serão carregadas do servidor exterior
+e n do seu servidor
+
+e para fazer isso, e recomendavel usar plataformas grandes 
+
+(obs: essa regra se aplica mais em videos 
+do que nos outros, então imagens e 
+audios e mais opicional, pois são mais 
+leves)
+
+e como poderia pegar o local do video
+
+plataformas recomendadas para:
+
+videos:
+
+YouTube
+Vimeo
+
+fotos:
+
+audios:
+
+Metodo de Exportação:
+
+video:
+
+nos dois e só clicar em compartilhar, dps 
+clique em corporar, e por fim copie o
+codigo que ira aparecer e cole no codigo do 
+site
+
+Diferenças:
+
+videos:  
+
+YouTube: N são todos os videos que da para 
+exportar, apos o fim do video ele 
+recomenda outros videos, a qualidade de 
+frames e pior que o Vimeo( porem n tem
+muita diferença ), porem seu ponto bom vem 
+do fato de que ele possue uma variedade
+muito mais ampla
+
+Vimeo: Sua qualidade e melhor, possue 
+configurações avançadas para a incorporação,
+diferente do YouTube, nele n precisa se 
+preocupar com licenças
+
+Capitulo 21-Aula 01:
+
+Tabelas: bem essas tabelas são coisas 
+complicadas de se explicar, pois elas
+possuem muitas formas de usalas, ou pelo 
+menos tinha, ja que no HTML4 eles
+usavam as tabelas para organizar os sites, 
+o que hoje em dia e considerado 
+antiproficional ja que assim que são 
+atualizados eles podem bagunçar todo o 
+site, então hoje em dia elas apenas servem 
+para categorizar e organizar dados
+de tal informação
+
+então lembre: n se usa tabelas para 
+organizar conteudo de site
+
+Aula 02:
+agora que sabemos para q serve uma tabela 
+vamos ver como ela e feita
+
+Anatomia de Tabela simples:
+
+        Tabela = tabela;
+            Table Row = linha de tabela;
+                Table Header = cabeçario de 
+                Tabela;
+                    Table Data = dado de 
+                    tabela;
+funcionando assim:
+<table>
+{aqui e onde comesa a tabela}
+     <tr>
+     {aqui ele separa todas as linhasda 
+     tabela}
+          <th>
+          {e uma tag onde vem como um 
+          titulo,
+          funcionando como um td}
+          </th>
+          <td>
+          {dados da tabela, simplificando, 
+          o conteudo dele}
+          </td>
+     </tr>
+</table>
+
+Style das tabelas:
+
+bem essa parte e mais guiada pela logica, 
+tipo vamos
+testar com background
+
+background-color no <table> vai pintar toda 
+a tabela
+
+<style>
+     table {
+          background-color: yellow;
+     }
+</style>
+
+background-color no <tr> pintaria uma linha 
+da tabela
+
+<style>
+     tr {
+          background-color: yellow;
+     }
+</style>
+
+background-color no <th> pintaria o 
+destacado a ser
+um titulo
+
+<style>
+     th {
+          background-color: yellow;
+     }
+</style>
+
+background-color no <td> pintaria os dados 
+da tabela
+
+<style>
+     td {
+          background-color: yellow;
+     }
+</style>
+
+lembrando q para testar melhor e bom 
+dividir a tabela
+em classes ou id's
+
+e tem alguns styles interesantes tipo:
+
+border-collapse: onde decide a colisão das 
+bordas
+(ex: na tabela eu criei bordas nas td's e 
+dai usei
+para grudalas uma a outra com 
+"border-collapse: 
+collapse;")
+
+vertical-align: onde e usado para td's onde 
+define a
+posição da altura do dado(lembrando: que 
+nessa style
+a gente usa middle para coisas que estão em 
+vertical
+"vertical-align: middle;")
+
+Tabelas Grandes:
+
+bem agora vai fazer um pouco mais de 
+sentido essa
+parte, pq a construção dele e diferente:
+
+Anatomia de tabela grandes
+     <table>
+          <thead> = cabeçaro da tabela
+            <tr>
+               <th></th>
+               <td></td>
+            </tr>
+          </thead>
+          <tbody> = corpo da tabela
+            <tr>
+               <th></th>
+               <td></td>
+            </tr>
+          </tbody>
+          <tfoot> = roda-pé da tabela
+            <tr>
+               <th></th>
+               <td></td>
+            </tr>
+          </tfoot>
+
+onde ela e organizada para ter uma
+organização maior 
+tendo como exemplo o index anexado no
+"Ex23-NI-2"
+
+Caption e escopo dos cabeçarios: 
+bem aqui vai ficar mais interesantes porque 
+nos temos dois sistemas diferentes
+
+Cations: seria uma breve explicação do que se tratra a tabela sendo posicionada acima de tudo e dentro do <table>
+
+Escopos: eles são mais interesantes ja que eles predominam qual e o objeto que representa a coluna ou a linha 
+
+ex: <th scope="col">Estados</th>
+
+agora toda vez que colocar um style nele, este style modificara toda a coluna 
+
+e temos o row que, diferente do col ele representa linhas e n colunas 
+
+ex: <th scope="row">Total</th>
+
+agora toda vez que colocar um style nele, este style modificara toda a linha
+
+Efeito Zebrado nas tabelas:
+
+Efeitos zebrados são uma tecnica usada para se localizar nas listas que possuem muitas colunas e elas funcionam assim
+
+com a sub classe :nth-child() {}
+
+onde se usaria assim
+
+     tbody > tr:nth-child(){
+     
+        }
+
+tendo dentro de seus parenteses 3 logicas
+
+ex:
+
+     tbody > tr:nth-child(3n){
+          font-weight: bolder;
+        }
+
+     tbody > tr:nth-child(odd) {
+          background-color: gray;
+        }
+
+     tbody > tr:nth-child(even) {
+          background-color: aquamarine;
+        }
+
+onde usando o :nth-child() voce pode separar em uma logica de sequencia nas linhas ex:
+
+:nth-child(NUMBERn) essa aqui ele pega certo numero de linhas e as divide de acordo com o valor do NUMBER
+
+2n = a segunda linha sera escolhida
+    3n = a terceira linha sera escolhida
+
+podendo ate usar equações como 2n + 10
+
+tbm temos a logica do par e impar:
+
+par = even> todas as linhas que corespondem a um numero par sera escolhido
+
+impar = odd> todas as linhas que corespondem a um numero impar e escolhido
+
+Cabeçalho fixo:
+
+um problema que pode rolar em tabelas grandes e a chance da pessoa que esta lendo ele se esquecer do que cada coluna significa
+
+e para resolver esse problema podemos fixar o cabeçalho e para fazermos isso primeiro:
+
+colocamos a posição do <table> como relativo
+
+e em seguida vamos no style do thead e usamos a modificação chave
+
+position: sticky; = isso fara grudar na parte que for dita abaixo
+
+top: -1px; = onde ele grudara na pagina 
+(obs: esta -1 pois tem uma falha que deixa sepparado por um pixel)
+
+então ficaria assim
+
+<style>
+
+     table {
+          position: relative;
+     }
+
+     thead {
+          position: sticky;
+          top: -1px;
+     }
+</style>
+
+(obs: todas as vezes que pecisa mudar a posição de um objeto voce coloca no style de sua box position: relative;)
+
+Mesclagem de celulas:
+
+nessa parte vamos aprender sobre uma função de organização de tabelas chamada Mesclagem De celulas
+
+bem quando uma tabela n esta completa ela pode ser dividida para ficar completa ou pode complementar um grupo de objetos ex:
+
+-----------/\---------------
+|  LETRA   ||     IDADE    |
+-----------__---------------
+|    G     ||  10  |  200  |
+-----------\/---------------
+
+onde um titulo pode representar dois elementos com essa ferramenta
+
+onde funciona assim:
+
+   <table>
+        <tr>
+            <td colspan="2">A</td>
+            <td rowspan="2">B</td>
+        </tr>
+   </table>
+
+<td colspan="2">A</td> = colspan: estica para o lado onde pode estar faltando um elemento
+
+<td rowspan="2">B</td> = rowspan: estica para baixo onde pode estar faltando um elemento
+
+e esses numeros define o quanto ele esticara
+
+lembrando que ele possue um limite onde e definido pelas quantidade maxima de td's que ouver na tabela
+
+Desafios: crie tres tabelas iguais aos do desafio 13; 
+
+Escopos de Grupo:
+
+aqui vamos esplicar o que seria o rowgroup e o colgroup
+
+eles seriam uma classificação para th's que representam mais de uma coluna ou linha sendo:
+
+colgroup para as colunas
+e rowgroup para as linhas
+
+ex:
+
+--------------/\---------
+|    Group    ||   Col  |
+--------------||---------
+|  td  |  td  ||   td   |
+--------------\/---------  
+
+Desafio parte 2: recrie a tabela correspondente a aula, tendo suas scope's;
+
+Agrupando colunas com colgroup: 
+
+e aqui vamos mostrar uma tag do table que pode controlar as colunas 
+
+estrutura:
+
+<body>
+     <table>
+          <colgroup>
+               <col class="Nomes">
+               <col class="Idade"span="2">
+          </colgroup>
+     </table>
+<body>
+
+onde <colgroup> me permite colocar class para as colunas onde poderia me ajudar a editar elas no <style>
+
+usando a logica de sequencia onde a primeira linha e a primeira coluna da esquerda para direita, e assim se segue
+
+e podemos sclassificar duas coluunas com a mesma classe usando span dentro da tag <col> ex:
+
+coluna com class: <col class="Nomes"> 
+
+coluna com span <col span="2">
+
+onde para finalizar elas podem ser estilizadas no style:
+
+<style>
+
+        col.Nomes {
+            background-color: aqua;
+        }
+
+        col.Idade {
+            background-color: aquamarine;
+        }
+
+</style>
+
+Tabelas responsivas:
+
+bem essa e bem facil
+
+para comesar voce pega a tabela e a envelopa em div e nomeie a div
+
+em seguia crie uma css ou um style e edite essa div com overflow
+
+overflow = traduzido do ingles, transbordar. É uma style onde pega o objeto e coloca um barra de rolagem quando ela n consegue se esticar na janela, ou seja quando a janela e pequena
+
+ex:
+
+body
+     div
+          table
+          /table
+     /div
+/body
+
+/-------------------------------------------------------\
+
+style
+     div {
+          overflow-x: auto; (testar outras opções)
+     }
+/style
+
+para finalizar podemos escolher qual eixo ele mechera o y ou o X
+
+Fim do Modulo 3...
+
+começo do modulo 04:
+
+aula 01: o inframe pode ser usado?
+
+o que é?
+e uma tag que funciona como um portal, onde mostra atravez de uma janela o site ligado ao iframe 
+
+Anatomia
+
+<iframe src="link" frameborder="0"></iframe>
+
+<iframe> </iframe> = são as tags que fazem isso
+
+src = e onde se colocaria o link
+
+frameborder = aqui conf' o tamanho e a grosura da bordas
+
+obs: alguns sites n permitem esse sistema por direitos de uso
+
+aula 02: Configurando iframe
+
+tem dois geito de configuralos:
+o primeiro e pela tag onde ja sabemos
+e o outro e pelo style
+
+onde e importante lembrar que ele sempre dara importancia para o style
+
+temos algumas outras coisas como por exemplo:
+
+scrolling: onde e uma conf' para a rolagem onde possue 3 opções que são
+
+auto = se precisar tera rolagem
+yes = msm que n precise tera
+no = n tera n importa 
+
+mais tem que lembrar que essa config' n funciona em todos os dispositivos
+
+por exemplo: em todos os disp' so deu certo no linux
+
+e por fim temos os links que estão bloqueados, aos qual citei antes
+
+se ele estiver bloqueado ou corromper podemos colocar um link para o usuario ir nele assim:
+
+<iframe>
+     <a href="link"> </a>
+</iframe>
+
+aula 03: conteudo local do iframe
+
+nessa aula mostrarei uma utilidade
+
+e ela e simples: voce pode usalo para mostrar tabelas de outros projetos colocando-os
+na mesma pasta e dps colocal a localização atraves do ctrl + space 
+dentro do src
+e tbm tem como colocalo atravez do github pages, colocando o link deles usando o github-pages 
+
+aula 04: Navegação do iframe
+
+nessa aula vamos usar um sistema mt legal do iframe e ele e assim
+
+vc pode usar links localizados no site criado por vc para abrilos no iframe
+como se fosse um navegador separado
+e para fazermos isso primeiro:
+
+criamos um iframe com o style name(coloque um nome para ele)
+
+em seguida coloca um link com a target=(nome do iframe)
+
+<a href="linkAleatorio" target="frame"> linkAleatorio </a>
+
+<iframe name="frame"></iframe>
+
+e por fim retire o src do iframe ou:
+
+aula 05: conteudo do iframe por codigo
+
+podemos fazer um menu para o iframe, que sera ensinada nessa aula
+
+primeiro dentro do iframe criamos o srcdoc onde nos da a liberdade de criar um documento dentro dele
+
+ex:
+
+<iframe srcdoc="<h1>Teste</h1>">
+
+aula 06: Incovenientes do iframe
+
+nessa aula vamos falar pq tem que ter cuidado na hora de usar o iframe
+
+para comesar o bot do google analiza diversas paginas que tem relalção com a busca do usuario e coloca la em cima quem se saiu melhor nas pesquisas e ao msm tempo quem pagou
+
+porem sites que usam muito iframe n conseguem ser recomendados pois o robo n consegue analizar o conteudo dentro do iframe, alem e claro do problema de assecibilidade
+
+pois para quem n sabe pessoas cegas conseguem usar um pc, ataravez de um leitor de tela, o problema e que como o robo n consegue ler o iframe ele tbm n leria para esta pessoa
+
+e temos os problemas de segurança onde se vc colocar no iframe sites que foram rackiados recentemente eles acabam tendo uma porta para seu site
+
+usando estas tecnicas:
+crossite
+xss
+
+aula 06: mantendo o iframe mais seguro
+
+nessa aula vamos falar sobre metodos para manter o iframe mais seguro:
+
+para comesar vamos falar do snadbox
+
+sandbox: uma ferramenta que pode bloquear elementos do site linkado com o iframe como scripts, formularios, html's, etc...
+
+pode liberar mais de um assim:
+
+sandbox="allow-script allow-form"
+
+podendo tbm bloquear tudo com o  sandbox:
+sandbox="sandbox"
+
+e o outro e a referrerpolicy onde:
+
+referrerpolicy: bloqueia qualquer armazenamento de info dos usuarios, podendo usala assim
+
+referrerpolicy="no-referrer"
+
+anatomia:
+
+<iframe sandbox="allow-OQVcQuiserLiberar"
+referrerpolicy="no-referrer"></iframe> 
+
+aula 07: Dicas do iframe
+
+podemos usar o iframe para videos, mapas e documentos usando o sistema incorporar:
+
+vai no ex24/iframe06.html para ver melhor

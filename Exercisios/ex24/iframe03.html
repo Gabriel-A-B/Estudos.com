@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação</title>
+
+    <style>
+        iframe {
+            border: black solid 1px;
+            width: 97.4vw;
+            height: 300px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegação do iframe</h1>
+
+    <p>
+        Vou mostrar algo daora: tem como abrir diversos sites atravez do iframe em apenas um clique como:
+    </p>
+
+    <ul>
+        <li><a href="paginas/tabelaDTeste.html" target="frame">pagina01</a></li>
+
+        <li><a href="paginas/pagina02.html" target="frame">pagina02</a></li>
+
+        <li><a href="paginas/pagina03.html" target="frame">pagina03</a></li>
+    </ul>
+
+    <iframe name="frame" srcdoc="<h1>Menu<h1>">
+        <p>desculpe, mais acho que seu navegador n e compativel</p>
+    </iframe>
+
+    <p>Assim que voce coloca o name em uma tag onde abre uma janela, ou tem a ver com links, o name coloca um titulo para a tag ser aberta com o link citado com target onde usaria o name
+        Para n deixar nada no iframe e so apagar o src
+    </p>
+
+    <p>
+        a vdd vc viu o 'srcdoc' ele e usado para criar html dentro dele: podendo ser usado para fazer menu, olhe ali
+    </p>
+</body>
+</html>

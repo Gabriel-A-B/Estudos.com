@@ -1,0 +1,30 @@
+@charset "UTF-8";
+h1 {/*Box-Level*/
+    background-color: rgb(131, 120, 109);
+    width: 100px;
+    height: 100px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+
+    padding: 20px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin: auto;
+
+    outline: 5px solid #01014b;
+}
+
+a {/*Inline-Level*/
+  border: 5px solid  #0000ff;
+  
+  padding: 2px;
+
+  margin: 10px;
+
+  outline: 5px solid #01014b;
+}

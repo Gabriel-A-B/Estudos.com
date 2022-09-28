@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+
+body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            position: relative;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px 15px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 8px 15px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(10, 10, 10);
+            color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--nessa parte aqui nos chamamos de efeito Zebrado
+
+        tbody > tr:nth-child(3n){
+            font-weight: bolder;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+    onde usando o :nth-child() voce pode separar em uma logica de sequencia nas linhas ex:
+
+    :nth-child(NUMBERn) essa aqui ele pega certo numero de linhas e as divide de acordo com o valor do NUMBER
+
+    2n = a segunda linha sera escolhida
+    3n = a terceira linha sera escolhida
+
+    podendo ate usar sistemas matematicos como 2n + 10
+
+    tbm temos a logica do par e impar:
+
+    par = even> todas as linhas que corespondem a um numero par sera escolhido
+
+    impar = odd> todas as linhas que corespondem a um numero impar e escolhido
+    -->
+
+    <!--Tabelas grandes Anatomia-->
+    <!--ANATOMIA:
+    Table
+        THead
+            th
+            tr
+            td
+        TBody
+            th
+            tr
+            td
+        TFoot
+            th
+            tr
+            td
+    -->
+
+    <table>
+        <caption>População dos estados</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col" style="width:110px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Roraima</td>
+                <td>505 665</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>766 679</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>803 513</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>6 819 190</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1 515 126</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td>1 768 204</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 242 937</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 651 235</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>2 914 830</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 204 028</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 270 973</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 340 932</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 442 175</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 929 911</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 938 336</td>
+            </tr>
+            <tr>
+                <td>Paráiba</td>
+                <td>3 972 202</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>6 610 681</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 904 241</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8 175 113</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 904 459</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 345 173</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 163 018</td>
+            </tr>
+            <tr>
+                <td>Riu Grande do Sul</td>
+                <td>11 247 972</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>15 203 934</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 869 101</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 396 484</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td>212,6 milhões</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis odio illo assumenda sapiente rem autem commodi eum iure nulla quo culpa est fugiat cupiditate, nihil ratione repellat, officia numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates ipsa provident natus voluptas aperiam odit consequuntur. Laudantium, incidunt facere dignissimos similique perspiciatis consequatur vero iste voluptates, adipisci, doloremque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque id, omnis, necessitatibus corrupti asperiores labore ab, veritatis culpa commodi sint cupiditate aliquam exercitationem. Asperiores dolorem ea voluptas adipisci cum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis odio illo assumenda sapiente rem autem commodi eum iure nulla quo culpa est fugiat cupiditate, nihil ratione repellat, officia numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates ipsa provident natus voluptas aperiam odit consequuntur. Laudantium, incidunt facere dignissimos similique perspiciatis consequatur vero iste voluptates, adipisci, doloremque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque id, omnis, necessitatibus corrupti asperiores labore ab, veritatis culpa commodi sint cupiditate aliquam exercitationem. Asperiores dolorem ea voluptas adipisci cum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis odio illo assumenda sapiente rem autem commodi eum iure nulla quo culpa est fugiat cupiditate, nihil ratione repellat, officia numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates ipsa provident natus voluptas aperiam odit consequuntur. Laudantium, incidunt facere dignissimos similique perspiciatis consequatur vero iste voluptates, adipisci, doloremque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque id, omnis, necessitatibus corrupti asperiores labore ab, veritatis culpa commodi sint cupiditate aliquam exercitationem. Asperiores dolorem ea voluptas adipisci cum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis odio illo assumenda sapiente rem autem commodi eum iure nulla quo culpa est fugiat cupiditate, nihil ratione repellat, officia numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates ipsa provident natus voluptas aperiam odit consequuntur. Laudantium, incidunt facere dignissimos similique perspiciatis consequatur vero iste voluptates, adipisci, doloremque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque id, omnis, necessitatibus corrupti asperiores labore ab, veritatis culpa commodi sint cupiditate aliquam exercitationem. Asperiores dolorem ea voluptas adipisci cum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis odio illo assumenda sapiente rem autem commodi eum iure nulla quo culpa est fugiat cupiditate, nihil ratione repellat, officia numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates ipsa provident natus voluptas aperiam odit consequuntur. Laudantium, incidunt facere dignissimos similique perspiciatis consequatur vero iste voluptates, adipisci, doloremque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque id, omnis, necessitatibus corrupti asperiores labore ab, veritatis culpa commodi sint cupiditate aliquam exercitationem. Asperiores dolorem ea voluptas adipisci cum!</p>
+</body>
+</html>

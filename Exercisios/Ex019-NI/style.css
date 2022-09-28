@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+   background-image: linear-gradient(to top, #0000ff, #ffffff);
+}
+
+#principal {
+     color:chocolate;
+     background-color: cornflowerblue;
+     text-align: center;
+}
+
+.basico {
+color: darkgoldenrod;
+}
+
+.intermediario {
+color: darkolivegreen;
+}
+
+.avançado {
+color: darkviolet;
+}
+
+.destaque {
+    background-color: dimgray;
+}
+
+h1 {
+   color: brown;
+}

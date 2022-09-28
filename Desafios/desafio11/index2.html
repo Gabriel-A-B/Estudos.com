@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 2</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            font-size: 1.3em;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            color: white;
+            background-color: rgb(85, 54, 54);
+        }
+
+        tbody tr.Destaque {
+            text-align: left;
+            background-color: rgb(85, 54, 54);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Boletim</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Àrea</th>
+                <th rowspan="2" scope="col">Disiplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matématica</td>
+                <td>8.50</td>
+                <td>6.50</td>
+                <td>7.50</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>10.00</td>
+                <td>8.50</td>
+                <td>9.25</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>6.50</td>
+                <td>7.50</td>
+                <td>7.00</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>6.50</td>
+                <td>6.00</td>
+                <td>6.25</td>
+            </tr>
+            <tr class="Destaque">
+                <th rowspan="4" scope="row">Media das Exatas</th>
+                <td>7.50</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Historia</td>
+                <td>9.00</td>
+                <td>8.00</td>
+                <td>8.50</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>4.00</td>
+                <td>8.00</td>
+                <td>6.00</td>
+            </tr>
+            <tr class="Destaque">
+                <th rowspan="4" scope="row">Media das Humanas</th>
+                <td>7.25</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
