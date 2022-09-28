@@ -12,19 +12,50 @@ html, body {
     background-color: black;
 }
 
+body {
+    background-image: url(../imagens/fundo-madeira.jpg);
+}
+
 main {
     height: 100vh;
-    background-color: green;
     position: relative;
 }
 
 section#telefone{
     position: absolute;
-    height: 627;
-    width: 311;
+    height: 627px;
+    width: 311px;
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
-    background-image: url(../imagens/frame-iphone.png);
+    transform: translate(-50%, -50%);
+    background: url(../imagens/frame-iphone.png) no-repeat ;
+}
+
+section#redes {
+    text-align: right;
+}
+
+section#redes img {
+    height: 50px;
+    width: 50px;
+
+    margin: 10px;
+
+    border-radius: 50%;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.678);
+    box-sizing: 5px;
+}
+
+section#redes img:hover {
+    transform: translate(-10%, -10%);
+}
+
+iframe#tela {
+    position: relative;
+    top: 84px;
+    left: 26px;
+
+    height: 464px;
+    width: 260px;
 }
