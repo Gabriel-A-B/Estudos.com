@@ -48,11 +48,10 @@ section#redes img {
 }
 
 section#redes img:hover {
-    transform: translate(-10%, -10%);
-    width: 60px;
-    height: 60px;
-    border: 5px white solid;
+    transform: translate(-5%, -5%);
     transition-duration: 1s;
+
+    transition: transform .3s;
 }
 
 iframe#tela {
@@ -63,3 +62,12 @@ iframe#tela {
     height: 464px;
     width: 260px;
 }
+
+/*anotações*/
+/*
+::-webkit-scrollbar {
+    color: black;
+}*/
+/*isso aqui pode ser usado para modificar ferramentas do navegador*/
+
+/*transition : voce pode modificar o timer de animações especificas*/

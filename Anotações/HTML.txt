@@ -1571,3 +1571,40 @@ aula 07: Dicas do iframe
 podemos usar o iframe para videos, mapas e documentos usando o sistema incorporar:
 
 vai no ex24/iframe06.html para ver melhor
+
+projeto13: redes sociais,o que aprendi:
+
+parte 01: se voce usar o codigo ::webkit-scrollbar voce pode modificar a barra de rola-
+gem assim:
+
+::webkit-scrollbar {}
+
+lembramdo que tem como modificar elementos do navegador assim
+
+::webkit
+
+parte 02: voce pode usar transition para modificar uma animation especifica, ex:
+
+a:hover {
+transform: rotate (0px, 0px);
+transition: transform 5s;
+}
+
+onde:
+
+transition e a função
+
+transform e um elemento da animação, onde ao colocalo ali ele mudara o tempo que rolara 
+sua função
+
+5s e o valor da função, quanto tempo demorara para terminar a função
+
+parte 03: tem como fazer esse projeto usando suas proprias fotos
+
+basta tirar diversas fotos de cima para baixo, dps os edite:
+
+passo 1: aumenta o quadro de arteem altura e diminue sua largura para mesclar todas as 
+fotos
+
+passo 2: veja quão comprida foi a imageme diminua o quadro para assim salvala como jpg 
+para n pessar na hora que vc o colocar    
