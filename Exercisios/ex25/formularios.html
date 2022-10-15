@@ -8,15 +8,17 @@
 </head>
 <body>
     <h1>Meu primeiro formulario</h1>
-    <form>
-        <p>Nome:
-             <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome:
-             <input type="text" name="Sob" id="Sob"></p>
+    <form action="conta.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="iSob">Sobrenome:</label>
+             <input type="text" name="Sob" id="iSob"></p>
         
              <input type="submit" value="Enviar">
     </form>
+</body>
     <!--
+        parte1:
         form = tag usada para criar formularios
         input = assim como na programação, serve para criar
         sistemas de interação para o usuario
@@ -24,6 +26,22 @@
         input:text : usado para criar textos
         input:submit : usado para coletar as info das outras
         input e mandar para outra parte escolhida por vc
+
+        parte2:
+        aprendeu
+        action: e uma tag que fica no <form> ex: '<form action>'
+        que e onde voce coloca qual sera o arquivo em q os dados
+        serão mandados
+        autocomplete: se localiza no mesmo lugar. Usa para ativar
+        ou desativar o auto prenchimento
+        
+        e para finalizar, a tag label tem que ser usada por 
+        acessibilidade e pesquisa onde organiza mais o for-
+        mulario identificadoos inputs, sim isso e obrigatorio
+        ex:
+        <p><label for="IDDoInput">Sobrenome:</label>
+
+        parte3:
+        existem 2 metodos
     -->
-</body>
 </html>
