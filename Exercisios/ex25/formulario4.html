@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="conta.php" method="get" autocomplete="on">
+            <p>
+                <label for="iEmail"> Email </label>
+                <input type="email" name="Email" id="iEmail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="iTel"> Telefone </label>
+                <input type="tel" name="Tel" id="iTel" autocomplete="tel"
+                pattern="^[0-9]{4}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </fielset>
+    </form>
+</body>
+<!--aqui aprendemos outros inputs sendo eles:
+    email: ele tem como requisitos as caracteristicas de email
+    tel: ele tem como requisito numeros
+
+    pattern: ele usa simbulos para criar requesitos para o numero
+    estudar patterns de tel de HTML5
+
+    e temos a fieldset e legend
+
+    fieldset: ele separa as tags em blocos 
+
+    legend: tag do fieldset usado para colocar um titulo para o
+    bloco
+-->
+</html>
