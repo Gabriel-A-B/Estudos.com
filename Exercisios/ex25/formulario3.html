@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>terceiro form</title>
+</head>
+<body>
+    <form action="conta.php">
+    <p>
+        <label for="iNome"> Nome
+            <input type="text" name="Nome" id="iNome" required placeholder="Digite seu nome">
+        </label>
+    </p>
+
+    <p>
+        <label for="iNota"> Nota
+            <input type="number" name="Nota" id="iNota" required min="0" max="10" step="0.1" placeholder="sua nota">
+        </label>
+    </p>
+
+    <p>
+        <label for="iData"> Data
+            <input type="month" name="Data" id="iData">
+            <input type="date" name="Dia" id="iDia">
+        </label>
+    </p>
+
+    <p>
+        <label for="iHora"> Hora
+            <input type="time" name="Hora" id="iHora">
+        </label>
+    </p>
+    </form>
+</body>
+<!--
+    aqui vamos aprender sobre outros types como exemplo
+    number = ele so aceita numeros
+
+    input month = usado para meses
+
+    input date = usado para dias
+
+    input time = usado para tempo
+
+    'continue vendo dps'
+
+    e temos as conf de cada um
+
+    value = informação que sera enviada para o server
+
+    e tem como colocar min e max = ele colocam um limite de 
+    numeros que se pode colocar na barra
+
+    e tem a step = ele configura quanto os numeros podem aumentar
+-->
+</html>
