@@ -1607,4 +1607,168 @@ passo 1: aumenta o quadro de arteem altura e diminue sua largura para mesclar to
 fotos
 
 passo 2: veja quão comprida foi a imageme diminua o quadro para assim salvala como jpg 
-para n pessar na hora que vc o colocar    
+para n pessar na hora que vc o colocar
+
+o0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0Oo
+
+formularios
+
+formularios são tags que coletam inforações a respeito do usuario
+
+extrutura:
+
+<form>
+	<fieldset>
+		<legend></legend>
+		<p>
+			<label></label>
+			<input></input>
+		</p>
+	</fieldset>
+</form>
+
+onde :
+
+form: a tag que inicia um formulario
+
+fieldset: tag usada para separar em caixas as input's
+
+legend: tag do fieldset para nomea-lo
+
+p: ja sabe
+
+label: usado para interligar o input, onde ao clicar em seu nome, vc interage com
+ele
+
+input: barra onde sera colocado as info
+
+\--------------------------------------------------------------------------------/
+
+ferramentas de form:
+
+action = e onde vc colocaria o arquivo que recebera as info sendo obrigatorio ser:
+JavaScript, PHP, e outros arquivos de programação ou de https
+
+method = e para escolher o quão seguro as info vao ser enviadas tendo algumas 
+regras como
+
+
+
+POST -  quando as informações n são tão importamtes, 
+        n são senciveis, usar quando n tiver transferenciade
+        de arquivo, n pode passar de 3000 bites ou seja
+        3000 letras
+
+GET -	usar apenas quando as informações forem censi-
+        veis, quando tiver transferencia de arquivos, e se 
+        o form for maior que 3000 bites  
+
+
+
+autocomplete = ele ativa o auto prenximento com opcões sendo "off" ou "on"
+
+\--------------------------------------------------------------------------------/
+
+ferramentas do Inputs:
+
+required: ele obriga vc prenchelo antes de enviar
+
+minlength: ele obriga ter no minimo, a quantidade de
+letras requeridas por ele
+
+maxlength: ele obriga um maximo de letras q n pode ser
+passada, a quantidade de letras requeridas por ele
+
+Size: tamanho da barra
+
+placeholder: ele permite escrever qualquer coisa no input
+
+autocomplete: ele configura para sugerir senhas ou nomes
+dependendo pela input
+
+value: ele deixa nomear como uma info vai ser escrita no link na horda de mandar
+
+type: o tipo de input
+
+name: o nome do input para ligar o input para arquivos de https
+
+id: a id do input para ligar o input co arquivos de programação
+
+e eles são JavaScript, PHP, ...
+
+checked: ele mantem as inputs como Radio-CheckBox como checados
+
+pattern: esse eespecial - ele e usado para a input tel onde coloca regras de 
+prenchimento para ele usando diversos simbulos sendo
+
+e para funcionar colocamos esta tag - "^ coloca os cod aqui $"
+
+e para separar coloca "-"
+
+tudo junto
+
+*---------------------------*
+|     Lista de Cod          |
+|                           |
+|-[0-9]ele coloca ate quato |
+|o numero sera valido;      |
+|                           |
+|-\d faz a msm coisa que a  |
+|de cima                    |
+|                           |
+|-{} ele coloca a quantidade|
+|de numeros que pode ser    |
+|posto no input             |
+|                           |
+|-estudar pattern para mais |
+*---------------------------*
+
+\--------------------------------------------------------------------------------/
+
+tipos de inputs:
+
+text: para textos como nomes etc...;
+
+password: para senhas;
+
+date: day-moth-time-week - todos para datas e pode ser todos ao msm tempo
+
+buttom: botão - estudar mais dps
+
+Radio-Checkbox: ambos são caixas de confirmação
+
+Tel-Email: o nome e auto explicativo (lembrando que o pattern e usado no tel) 
+
+range: uma barra rolante (n sei estudar mais)
+
+submit: enviar
+
+reset: limpar
+
+url: auto explicativo, url de arquivos online
+
+file: arquivos
+
+image: imagem
+
+color: escolher cores
+
+search: barra de pesquisa
+
+number: para numeros
+
+hidden: input invisivel
+
+\--------------------------------------------------------------------------------/
+
+Observações:
+
+se vc quizer que os checkeds (Radio e CheckBox) tenham apenas uma marcação em
+torno de diversas opções basta colocar o mesmo nome para o inputs e o label
+ex:
+
+input[1] chama-se Clarice
+
+input[2] chama-se Clarice
+
+label chama-se Clarice
