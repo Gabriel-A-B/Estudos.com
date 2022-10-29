@@ -1739,7 +1739,7 @@ Radio-Checkbox: ambos são caixas de confirmação
 
 Tel-Email: o nome e auto explicativo (lembrando que o pattern e usado no tel) 
 
-range: uma barra rolante (n sei estudar mais)
+range: um medidor, como se fosse uma avaliação
 
 submit: enviar
 
@@ -1749,7 +1749,7 @@ url: auto explicativo, url de arquivos online
 
 file: arquivos
 
-image: imagem
+image: imagem onde e escolhida pelo dev
 
 color: escolher cores
 
@@ -1763,7 +1763,7 @@ hidden: input invisivel
 
 Observações:
 
-se vc quizer que os checkeds (Radio e CheckBox) tenham apenas uma marcação em
+01_se vc quizer que os checkeds (Radio e CheckBox) tenham apenas uma marcação em
 torno de diversas opções basta colocar o mesmo nome para o inputs e o label
 ex:
 
@@ -1772,3 +1772,13 @@ input[1] chama-se Clarice
 input[2] chama-se Clarice
 
 label chama-se Clarice
+
+02_para input de cores vc pode usar o value para escolher uma cor padrão usado o
+codigo das cores
+"#000000"
+
+03_no input do range voce pode limitar o valor dele ex:
+min="1" max="10" onde no medidor agora vai de 1 a 10 e n de 1 a 100
+
+04_no input de file vc tem que trocar o method de get para post onde o arquivo
+podera ser mandado, ate pq o get n suporta exportar arquivos

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objetos fora do Input</title>
+</head>
+<body>
+    <form action="conta.php">
+
+        <p>
+            <label for="iEst">Estado:</label>
+            <select name="Est" id="iEst">
+
+                <option value="" selected>Escolha</option>
+                <optgroup label="Sul">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Parana</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iPro">Profisão:</label>
+            <input type="text" name="Pro" id="iPro" list="List">
+            <datalist id="List">
+                <option value="ADM">Adimistrador</option>
+                <option value="PRO">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iDes">Descrição</label>
+            <textarea name="Des" id="iDes" cols="30" rows="10">
+
+            </textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+<!--Anotar dps to MT cansado!!-->
+</html>
