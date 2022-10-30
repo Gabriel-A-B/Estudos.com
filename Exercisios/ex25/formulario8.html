@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação em html</title>
+</head>
+<body>
+    <form action="conta.php">
+
+        <p>
+            <label for="iNum1">Numero:</label>
+            <input type="number" name="Num1" id="iNum1" 
+            oninput="iSoma.innerHTML = Number(iNum1.value) + Number(iNum2.value)">
+        </p>
+
+        <p>
+            <label for="iNum2">Numero 2:</label>
+            <input type="number" name="Num2" id="iNum2"
+            oninput="iSoma.innerHTML = Number(iNum1.value) + Number(iNum2.value)">
+        </p>
+
+        <p>
+            <label for="iSoma">Soma:</label>
+            <output name="Soma" id="iSoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

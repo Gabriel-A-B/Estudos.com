@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range com contador</title>
+</head>
+<body>
+    <form action="conta.php">
+        <p>
+            <label for="iCont">Contador:</label>
+            <input type="range" name="Cont" id="iCont" min="0" 
+            max="10" value="5" oninput="iVal.innerHTML = Number(iCont.value)">
+            <output name="Val" id="iVal">5</output>
+        </p>
+    </form>    
+</body>
+</html>

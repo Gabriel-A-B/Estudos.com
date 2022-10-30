@@ -44,5 +44,84 @@
         </p>
     </form>
 </body>
-<!--Anotar dps to MT cansado!!-->
+<!--aqui vou anotar diversas outras opçãos alem dos inputs
+
+select: select cria uma listade opções para escolher
+
+e sua esxtrutura e assim
+
+<form>
+
+        <p>
+            <label for="iEst">Estado:</label>
+            <select name="Est" id="iEst">
+
+            </select>
+        </p>
+</form>
+
+onde para criar suas opções podemos isar as tags:
+
+<optgroup label="Sul">
+    <option value="SC">Santa Catarina</option>
+</optgroup>
+
+onde:
+
+optgroup = ele divide em grupo as options
+
+option = ela cria uma opção da lista
+
+value = ele comoca a classe da opção ou um titulo
+
+label = nome do grupo
+
+e para finalizar podemos usar o controle selected
+
+selected = ele mantem como uma opção ja selecionada
+(sendo uma ferramenta do <option>)
+
+------------------------------------------------------
+
+datalist: datalist e uma ferramenta parecida com select 
+so que nele vc pode escrever e criar uma nova opção assim
+
+extrutura:
+
+<p>
+    <label for="iPro">Profisão:</label>
+    <input type="text" name="Pro" id="iPro" list="List">
+
+    <datalist id="List">
+    </datalist>
+</p>
+
+onde:
+
+list = liga o datalist ao input
+
+datalist = tag que cria a lista
+
+id = e a id da list
+
+e a respeito de opções, ele funciona igual a select
+
+-----------------------------------------------------------
+
+textarea: ele cria um bloco grande, onde pode se colocar 
+textos compridos
+
+extrutura:
+
+<p>
+    <label for="iDes">Descrição</label>
+    <textarea name="Des" id="iDes" cols="30" rows="10">
+
+    </textarea>
+</p>
+
+cols = define a quantidades de letras
+
+rows = define a quantidades de linhas 
+-->
 </html>
