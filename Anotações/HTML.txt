@@ -1781,4 +1781,136 @@ codigo das cores
 min="1" max="10" onde no medidor agora vai de 1 a 10 e n de 1 a 100
 
 04_no input de file vc tem que trocar o method de get para post onde o arquivo
-podera ser mandado, ate pq o get n suporta exportar arquivos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+podera ser mandado, ate pq o get n suporta exportar arquivos 
+
+\--------------------------------------------------------------------------------/
+
+outros alem do input:
+
+temos diversas outras alem do inputs e elas são:
+
+select: select cria uma listade opções para escolher
+
+e sua esxtrutura e assim
+
+<form>
+
+        <p>
+            <label for="iEst">Estado:</label>
+            <select name="Est" id="iEst">
+
+            </select>
+        </p>
+</form>
+
+onde para criar suas opções podemos isar as tags:
+
+<optgroup label="Sul">
+    <option value="SC">Santa Catarina</option>
+</optgroup>
+
+onde:
+
+optgroup = ele divide em grupo as options
+
+option = ela cria uma opção da lista
+
+value = ele comoca a classe da opção ou um titulo
+
+label = nome do grupo
+
+e para finalizar podemos usar o controle selected
+
+selected = ele mantem como uma opção ja selecionada
+(sendo uma ferramenta do <option>)
+
+------------------------------------------------------
+
+datalist: datalist e uma ferramenta parecida com select 
+so que nele vc pode escrever e criar uma nova opção assim
+
+extrutura:
+
+<p>
+    <label for="iPro">Profisão:</label>
+    <input type="text" name="Pro" id="iPro" list="List">
+
+    <datalist id="List">
+    </datalist>
+</p>
+
+onde:
+
+list = liga o datalist ao input
+
+datalist = tag que cria a lista
+
+id = e a id da list
+
+e a respeito de opções, ele funciona igual a select
+
+-----------------------------------------------------------
+
+textarea: ele cria um bloco grande, onde pode se colocar 
+textos compridos
+
+extrutura:
+
+<p>
+    <label for="iDes">Descrição</label>
+    <textarea name="Des" id="iDes" cols="30" rows="10">
+
+    </textarea>
+</p>
+
+cols = define a quantidades de letras
+
+rows = define a quantidades de linhas 
+
+\--------------------------------------------------------------------------------/
+programação para inputs:
+
+aqui vamos mostrar sobre uns scripts para os inputs e eles são:
+
+output = ele e um input que possue extenções de programação e sua logica e assim
+
+<form action="conta.php">
+
+        <p>
+            <label for="iNum1">Numero:</label>
+            <input type="number" name="Num1" id="iNum1" 
+            oninput="iSoma.innerHTML = Number(iNum1.value) + Number(iNum2.value)">
+        </p>
+
+	<p>
+            <label for="iSoma">Soma:</label>
+            <output name="Soma" id="iSoma">0</output>
+        </p>
+</form>
+
+onde:
+
+oniput = integra o output no input
+
+.innerHTML = u codigo de programação que permite usar ferramentas de java para 
+criar uma logica
+
+Number() = ferramenta que separa e classifica como numero
+
+.value = pega o valor do obj conectado
+
+----------------------------------------------------------------------------------
+
+N consegui fazer pois n entendi o q ta rolando, então nessa terça vem aqui para 
+tentar resolver
+
+\--------------------------------------------------------------------------------/
+
+Media Queries:
+
+Media Queries = e uma teclonogia que cria diversas verções para diversas 
+plataformas
+
+baixar as imagem para projeto
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
