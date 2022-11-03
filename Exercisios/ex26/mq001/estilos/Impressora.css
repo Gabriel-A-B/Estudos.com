@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* aqui e onde esta a tela de impressão */
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+head {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+/* esse e a font family correta para impresões */
+
+ul {
+    display: none;
+}
+
+/* então esse e a utilidade do valor none: para n aparecer em 
+outras formas do msm site */
+
+article::after {
+    content: "isso veio de um exercisio com finalidade de estudos";
+}

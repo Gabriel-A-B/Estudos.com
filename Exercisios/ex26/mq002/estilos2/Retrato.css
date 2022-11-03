@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*Para celulares em pe*/
+
+main {
+    margin: auto;
+    width: 350px;
+    height: 500px;
+    background: url(../imagens/cev-portrait.jpg) black 
+    no-repeat center center;
+    background-size: cover;
+}
