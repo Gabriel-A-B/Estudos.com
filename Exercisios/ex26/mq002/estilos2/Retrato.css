@@ -2,16 +2,11 @@
 
 /*Para celulares em pe*/
 
-body {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1em;
+html, body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
 
-main {
-    color: black;
-    background-color: darkblue;
-}
-
-main p::after {
-    content: "Retrato";
+p::after {
+    content: "Agora esta em Retrato";
 }

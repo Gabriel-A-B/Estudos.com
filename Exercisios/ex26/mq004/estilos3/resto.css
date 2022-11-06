@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*Os outros Medias Queres*/
+
+/*typical device breakpoints*/
+/*--------------------------
+Mobile = abaixo de 600px
+Tablet = 600px ate 768px
+Desktop = 768px ate 992px
+tv e telas grandes = 1200px
+----------------------------*/
+
+@media print {
+
+    body {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    img#phone { display: none;    }
+    img#pc { display: none;       }
+    img#print { display: block;    }
+    img#tablet { display: none;   }
+    img#tv { display: none;       }
+    
+    main p::after {
+        content: "Imprimir";
+    }
+
+    main::after {
+        content: "Imprimido em www.com.teste"
+    }
+}
+
+@media  screen and (min-width: 600px) and (max-width: 768px) {
+    
+    body {
+        background: url(../Imagens/back-tablet.jpg);
+    }
+
+    main p::after {
+        content: "Tablet";
+    }
+
+    img#phone { display: none;    }
+    img#pc { display: none;       }
+    img#print { display: none;    }
+    img#tablet { display: block;   }
+    img#tv { display: none;       }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 992px) {
+    
+    body {
+        background: url(../Imagens/back-pc.jpg);
+    }
+
+    main p::after {
+        content: "Descktop";
+    }
+
+    img#phone { display: none;    }
+    img#pc { display: block;       }
+    img#print { display: none;    }
+    img#tablet { display: none;   }
+    img#tv { display: none;       }
+}
+
+@media  screen and (min-width: 992px) {
+    
+    body {
+        background: url(../Imagens/back-tv.jpg);
+    }
+
+    main p::after {
+        content: "Televisãp";
+    }
+
+    img#phone { display: none;    }
+    img#pc { display: none;       }
+    img#print { display: none;    }
+    img#tablet { display: none;   }
+    img#tv { display: block;       }
+
+}
