@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Para celulares deitados*/
+/*config genericas*/
 
 body {
     font-family:Arial, Helvetica, sans-serif;
@@ -8,10 +8,10 @@ body {
 }
 
 main {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 main p::after {
-    content: "Paisagem";
+    content: "N deu certo veja no que errou";
 }
