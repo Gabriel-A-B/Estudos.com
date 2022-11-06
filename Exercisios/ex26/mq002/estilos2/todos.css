@@ -1,3 +1,17 @@
 @charset "UTF-8";
 
 /*todos*/
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    color: black;
+    background-color: white;
+}
+
+main p::after {
+    content: "N deu certo veja no que errou";
+}
