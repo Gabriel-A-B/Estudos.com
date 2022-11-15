@@ -34,3 +34,13 @@ sempre os melhores sites no topo
 04 = Alavanca mt sua Reputação: se
 Preoucupar com isso faz de vc um bom 
 profissional, então e mt bom testar
+
+por ultimo esses são os tamanhos de tela
+para cada plataforma
+
+/*--------------------------
+Mobile = abaixo de 600px
+Tablet = 600px ate 768px
+Desktop = 768px ate 992px
+tv e telas grandes = 1200px
+----------------------------*/

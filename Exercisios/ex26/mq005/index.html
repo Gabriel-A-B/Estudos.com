@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto</title>
+    <link rel="stylesheet" href="estilos/todos.css" media="all">
+    <link rel="stylesheet" href="estilos/mediasQ.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--essa e a extenção:
+    esta nas instructions dos icones
+    obs: e Materials icons e n Materials Symbols
+    -->
+
+</head>
+<body onresize="sizingTela()">
+    <header>
+        <h1>Projeto Media Quiries</h1>
+
+        <span class="material-icons" id="iMenu" onclick="clickMenu()">
+            menu
+        </span>
+        <!--aqui a gente inplantou um icone do site:
+        https://fonts.google.com/icons
+        
+        N esquece de colocar uma id para poder ser usada no 
+        script
+
+        onclick = ferramenta que detecta quando alguem clicou
+        nele - n esquece de colocar depois os '()'
+        (JavaScript)
+        -->
+
+        <menu id="iItens">
+            <ul>
+                <li><a href="#">Opção001</a></li>
+                <li><a href="#">Opção002</a></li>
+                <li><a href="#">Opção003</a></li>
+                <li><a href="#">Opção004</a></li>
+                <li><a href="#">Opção005</a></li>
+            </ul>
+        </menu>
+
+    </header>
+    
+    <main>
+
+        <h2>Texto</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis quis nemo expedita dolorum ea 
+           in consequuntur a quas voluptatibus! Quos corporis, earum est blanditiis veniam ea neque incidunt soluta.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore reprehenderit amet necessitatibus 
+           quibusdam dolore corporis dolor. Exercitationem porro ratione mollitia distinctio doloremque illo fugit, facere 
+           quisquam corporis odit aperiam?
+        </p>
+    </main>
+
+    <script>
+        function sizingTela() {
+            if(window.innerWidth >= '768') {
+                iItens.style.display = 'inline-block'
+            }else {
+                iItens.style.display = 'none'
+            }
+        }
+
+        /* esse script e para consertar um bug */
+
+        function clickMenu() {
+            if(iItens.style.display == 'block') {
+                iItens.style.display = 'none'
+            }else {
+                iItens.style.display = 'block'
+            }
+        }
+
+        /* aqui vc usa a logica classica para programar um 
+        menu onde:
+
+        o primeiro 'if' ve em que display ele ta e troca casso 
+        este for o valor no momento apos o clique
+
+        o 'else' faz o oposto, caso n for ele colocara o valor
+        oposto a ele apos o click
+
+        para indicar o obj que quer mudar tem que:
+
+        indicar qual tag vc quer mudar - ele fica depois do 
+        'function'
+
+        e a ordem para o objts são:
+
+        id ou ids que ja estão criadas como o 'windows'(id)
+
+        dps o arquivo que pode ser tanto um arquivo que 
+        vc criou como 'style' ate o 'innerWidth' (LC)
+
+        e por fim a config que quer mudar(CF)
+
+        id.LC.CF = config mudada
+
+        obs: e o valor tem que ser citado com ''
+        */
+    </script>
+
+</body>
+</html>

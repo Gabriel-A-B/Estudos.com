@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* outros formatos */
+
+/*--------------------------
+Mobile = abaixo de 600px
+Tablet = 600px ate 768px
+Desktop = 768px ate 992px
+tv e telas grandes = 1200px
+----------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    #iMenu {
+        display: none;
+    }
+
+    header menu {
+        display: block;
+    }
+
+    header menu > ul li {
+        display: inline-block;
+        list-style-type: none;
+        width: 9.6em;
+    }
+
+    main {
+        width: 25px;
+    }
+
+}

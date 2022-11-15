@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* para todos */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    padding-top: 10px;
+}
+
+header h1 {
+    font-weight: 900;
+}
+
+header menu {
+    display: none;
+}
+
+/* 
+para deixar bonito deixa como padrao o 
+'display: none;' para so aparecer ao clicar
+*/
+
+header menu > ul li a {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+    border-top: 1px white solid;
+}
+
+header menu > ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#iMenu {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#iMenu:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+main h1 {
+    text-align: center;
+}
+
