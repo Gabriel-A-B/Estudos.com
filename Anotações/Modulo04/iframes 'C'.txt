@@ -1,0 +1,151 @@
+Tema 01 > iframe
+
+o que é: uma ferramenta que funciona como um portal onde abre o site que esta 
+linkado
+
+obs: alguns sites n permitem esse sistema por direitos de uso
+
+~Anatomia~
+
+----------------------------------------------------------------------------------
+
+// <iframe src="link" frameborder="0"></iframe> \\
+
+objetos:
+
+<iframe> </iframe> = são as tags que fazem isso
+
+src = e onde se colocaria o link
+
+frameborder = aqui configura o tamanho e a grosura da bordas
+
+anatomia para link bloqueados:
+
+<iframe>
+     <a href="link"> </a>
+</iframe>
+
+anatomia para sites do proprio usuario:
+
+voce pode usalo para mostrar tabelas de outros projetos colocando-os na mesma 
+pasta e dps colocal a localização atraves do ctrl + space  dentro do src e tbm 
+tem como colocalo atravez do github pages, colocando o link deles usando o 
+github-pages 
+
+anatomia para abrir links dentro do i em blanck:
+
+vc pode usar links localizados no site criado por vc para abrilos no iframe
+como se fosse um navegador separado
+e para fazermos isso primeiro:
+
+criamos um iframe com o style name(coloque um nome para ele)
+
+em seguida coloca um link com a target=(nome do iframe)
+
+<a href="linkAleatorio" target="frame"> linkAleatorio </a>
+
+<iframe name="frame"></iframe>
+
+e por fim retire o src do iframe
+
+anatomia para criar conteudo dentro do iframe:
+
+conteudo do iframe por codigo
+
+podemos fazer um menu para o iframe, que sera ensinada nessa aula
+
+primeiro dentro do iframe criamos o srcdoc onde nos da a liberdade de criar um 
+documento dentro dele:
+
+<iframe srcdoc="<h1>Teste</h1>">
+----------------------------------------------------------------------------------
+
+~Configurações~
+
+----------------------------------------------------------------------------------
+
+Formas de configuralos:
+
+tem dois geito de configuralos: o primeiro e pela tag onde ja sabemos e o outro 
+e pelo style
+
+onde e importante lembrar que ele sempre dara importancia para o style
+
+Configurações:
+
+scrolling: onde e uma configuração para a rolagem onde possue 3 opções que são
+
+scrolling = "auto" = se precisar tera rolagem
+scrolling = "yes" = msm que n precise tera
+scrolling = "no" = n tera n importa
+
+scrolling obs: mais tem que lembrar que essa configurações n funciona em todos os 
+dispositivos
+
+----------------------------------------------------------------------------------
+
+~Segurança~
+
+Incovenientes que podem rolar com o iframe:
+
+nessa aula vamos falar pq tem que ter cuidado na hora de usar o iframe
+
+para comesar o bot do google analiza diversas paginas que tem relalção com a 
+busca do usuario e coloca la em cima quem se saiu melhor nas pesquisas e ao msm 
+tempo quem pagou
+
+porem sites que usam muito iframe n conseguem ser recomendados pois o robo n 
+consegue analizar o conteudo dentro do iframe, alem e claro do problema de 
+assecibilidade
+
+pois para quem n sabe pessoas cegas conseguem usar um pc, ataravez de um leitor de
+tela, o problema e que como o robo n consegue ler o iframe ele tbm n leria para 
+esta pessoa
+
+e temos os problemas de segurança onde se vc colocar no iframe sites que foram 
+rackiados recentemente eles acabam tendo uma porta para seu site
+
+usando estas tecnicas:
+crossite
+xss
+
+-Como deixar mais seguro?
+
+nessa aula vamos falar sobre metodos para manter o iframe mais seguro:
+
+para comesar vamos falar do snadbox
+
+sandbox: uma ferramenta que pode bloquear elementos do site linkado com o iframe 
+como scripts, formularios, html's, etc...
+
+pode liberar mais de um assim:
+
+sandbox="allow-script allow-form"
+
+podendo tbm bloquear tudo com o  sandbox:
+sandbox="sandbox"
+
+e o outro e a referrerpolicy onde:
+
+referrerpolicy: bloqueia qualquer armazenamento de info dos usuarios, podendo 
+usala assim
+
+referrerpolicy="no-referrer"
+
+<iframe sandbox="allow-OQVcQuiserLiberar"
+referrerpolicy="no-referrer"></iframe> 
+
+----------------------------------------------------------------------------------
+
+~Dicas~
+
+----------------------------------------------------------------------------------
+
+podemos usar o iframe para videos, mapas e documentos usando o sistema 
+incorporar:
+
+----------------------------------------------------------------------------------
+
+~Local~
+
+/* ex24/iframe06.html */

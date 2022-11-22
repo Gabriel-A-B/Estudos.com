@@ -1,0 +1,473 @@
+começo do modulo 04:
+
+aula 01: o inframe pode ser usado?
+
+o que é?
+e uma tag que funciona como um portal, onde mostra atravez de uma janela o site ligado ao iframe 
+
+Anatomia
+
+<iframe src="link" frameborder="0"></iframe>
+
+<iframe> </iframe> = são as tags que fazem isso
+
+src = e onde se colocaria o link
+
+frameborder = aqui conf' o tamanho e a grosura da bordas
+
+obs: alguns sites n permitem esse sistema por direitos de uso
+
+aula 02: Configurando iframe
+
+tem dois geito de configuralos:
+o primeiro e pela tag onde ja sabemos
+e o outro e pelo style
+
+onde e importante lembrar que ele sempre dara importancia para o style
+
+temos algumas outras coisas como por exemplo:
+
+scrolling: onde e uma conf' para a rolagem onde possue 3 opções que são
+
+auto = se precisar tera rolagem
+yes = msm que n precise tera
+no = n tera n importa 
+
+mais tem que lembrar que essa config' n funciona em todos os dispositivos
+
+por exemplo: em todos os disp' so deu certo no linux
+
+e por fim temos os links que estão bloqueados, aos qual citei antes
+
+se ele estiver bloqueado ou corromper podemos colocar um link para o usuario ir nele assim:
+
+<iframe>
+     <a href="link"> </a>
+</iframe>
+
+aula 03: conteudo local do iframe
+
+nessa aula mostrarei uma utilidade
+
+e ela e simples: voce pode usalo para mostrar tabelas de outros projetos colocando-os
+na mesma pasta e dps colocal a localização atraves do ctrl + space 
+dentro do src
+e tbm tem como colocalo atravez do github pages, colocando o link deles usando o github-pages 
+
+aula 04: Navegação do iframe
+
+nessa aula vamos usar um sistema mt legal do iframe e ele e assim
+
+vc pode usar links localizados no site criado por vc para abrilos no iframe
+como se fosse um navegador separado
+e para fazermos isso primeiro:
+
+criamos um iframe com o style name(coloque um nome para ele)
+
+em seguida coloca um link com a target=(nome do iframe)
+
+<a href="linkAleatorio" target="frame"> linkAleatorio </a>
+
+<iframe name="frame"></iframe>
+
+e por fim retire o src do iframe ou:
+
+aula 05: conteudo do iframe por codigo
+
+podemos fazer um menu para o iframe, que sera ensinada nessa aula
+
+primeiro dentro do iframe criamos o srcdoc onde nos da a liberdade de criar um documento dentro dele
+
+ex:
+
+<iframe srcdoc="<h1>Teste</h1>">
+
+aula 06: Incovenientes do iframe
+
+nessa aula vamos falar pq tem que ter cuidado na hora de usar o iframe
+
+para comesar o bot do google analiza diversas paginas que tem relalção com a busca do usuario e coloca la em cima quem se saiu melhor nas pesquisas e ao msm tempo quem pagou
+
+porem sites que usam muito iframe n conseguem ser recomendados pois o robo n consegue analizar o conteudo dentro do iframe, alem e claro do problema de assecibilidade
+
+pois para quem n sabe pessoas cegas conseguem usar um pc, ataravez de um leitor de tela, o problema e que como o robo n consegue ler o iframe ele tbm n leria para esta pessoa
+
+e temos os problemas de segurança onde se vc colocar no iframe sites que foram rackiados recentemente eles acabam tendo uma porta para seu site
+
+usando estas tecnicas:
+crossite
+xss
+
+aula 06: mantendo o iframe mais seguro
+
+nessa aula vamos falar sobre metodos para manter o iframe mais seguro:
+
+para comesar vamos falar do snadbox
+
+sandbox: uma ferramenta que pode bloquear elementos do site linkado com o iframe como scripts, formularios, html's, etc...
+
+pode liberar mais de um assim:
+
+sandbox="allow-script allow-form"
+
+podendo tbm bloquear tudo com o  sandbox:
+sandbox="sandbox"
+
+e o outro e a referrerpolicy onde:
+
+referrerpolicy: bloqueia qualquer armazenamento de info dos usuarios, podendo usala assim
+
+referrerpolicy="no-referrer"
+
+anatomia:
+
+<iframe sandbox="allow-OQVcQuiserLiberar"
+referrerpolicy="no-referrer"></iframe> 
+
+aula 07: Dicas do iframe
+
+podemos usar o iframe para videos, mapas e documentos usando o sistema incorporar:
+
+vai no ex24/iframe06.html para ver melhor
+
+projeto13: redes sociais,o que aprendi:
+
+parte 01: se voce usar o codigo ::webkit-scrollbar voce pode modificar a barra de rola-
+gem assim:
+
+::webkit-scrollbar {}
+
+lembramdo que tem como modificar elementos do navegador assim
+
+::webkit
+
+parte 02: voce pode usar transition para modificar uma animation especifica, ex:
+
+a:hover {
+transform: rotate (0px, 0px);
+transition: transform 5s;
+}
+
+onde:
+
+transition e a função
+
+transform e um elemento da animação, onde ao colocalo ali ele mudara o tempo que rolara 
+sua função
+
+5s e o valor da função, quanto tempo demorara para terminar a função
+
+parte 03: tem como fazer esse projeto usando suas proprias fotos
+
+basta tirar diversas fotos de cima para baixo, dps os edite:
+
+passo 1: aumenta o quadro de arteem altura e diminue sua largura para mesclar todas as 
+fotos
+
+passo 2: veja quão comprida foi a imageme diminua o quadro para assim salvala como jpg 
+para n pessar na hora que vc o colocar
+
+o0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0O0Oo
+
+formularios
+
+formularios são tags que coletam inforações a respeito do usuario
+
+extrutura:
+
+<form>
+	<fieldset>
+		<legend></legend>
+		<p>
+			<label></label>
+			<input></input>
+		</p>
+	</fieldset>
+</form>
+
+onde :
+
+form: a tag que inicia um formulario
+
+fieldset: tag usada para separar em caixas as input's
+
+legend: tag do fieldset para nomea-lo
+
+p: ja sabe
+
+label: usado para interligar o input, onde ao clicar em seu nome, vc interage com
+ele
+
+input: barra onde sera colocado as info
+
+\--------------------------------------------------------------------------------/
+
+ferramentas de form:
+
+action = e onde vc colocaria o arquivo que recebera as info sendo obrigatorio ser:
+JavaScript, PHP, e outros arquivos de programação ou de https
+
+method = e para escolher o quão seguro as info vao ser enviadas tendo algumas 
+regras como
+
+
+
+POST -  quando as informações n são tão importamtes, 
+        n são senciveis, usar quando n tiver transferenciade
+        de arquivo, n pode passar de 3000 bites ou seja
+        3000 letras
+
+GET -	usar apenas quando as informações forem censi-
+        veis, quando tiver transferencia de arquivos, e se 
+        o form for maior que 3000 bites  
+
+
+
+autocomplete = ele ativa o auto prenximento com opcões sendo "off" ou "on"
+
+\--------------------------------------------------------------------------------/
+
+ferramentas do Inputs:
+
+required: ele obriga vc prenchelo antes de enviar
+
+minlength: ele obriga ter no minimo, a quantidade de
+letras requeridas por ele
+
+maxlength: ele obriga um maximo de letras q n pode ser
+passada, a quantidade de letras requeridas por ele
+
+Size: tamanho da barra
+
+placeholder: ele permite escrever qualquer coisa no input
+
+autocomplete: ele configura para sugerir senhas ou nomes
+dependendo pela input
+
+value: ele deixa nomear como uma info vai ser escrita no link na horda de mandar
+
+type: o tipo de input
+
+name: o nome do input para ligar o input para arquivos de https
+
+id: a id do input para ligar o input co arquivos de programação
+
+e eles são JavaScript, PHP, ...
+
+checked: ele mantem as inputs como Radio-CheckBox como checados
+
+pattern: esse eespecial - ele e usado para a input tel onde coloca regras de 
+prenchimento para ele usando diversos simbulos sendo
+
+e para funcionar colocamos esta tag - "^ coloca os cod aqui $"
+
+e para separar coloca "-"
+
+tudo junto
+
+*---------------------------*
+|     Lista de Cod          |
+|                           |
+|-[0-9]ele coloca ate quato |
+|o numero sera valido;      |
+|                           |
+|-\d faz a msm coisa que a  |
+|de cima                    |
+|                           |
+|-{} ele coloca a quantidade|
+|de numeros que pode ser    |
+|posto no input             |
+|                           |
+|-estudar pattern para mais |
+*---------------------------*
+
+\--------------------------------------------------------------------------------/
+
+tipos de inputs:
+
+text: para textos como nomes etc...;
+
+password: para senhas;
+
+date: day-moth-time-week - todos para datas e pode ser todos ao msm tempo
+
+buttom: botão - estudar mais dps
+
+Radio-Checkbox: ambos são caixas de confirmação
+
+Tel-Email: o nome e auto explicativo (lembrando que o pattern e usado no tel) 
+
+range: um medidor, como se fosse uma avaliação
+
+submit: enviar
+
+reset: limpar
+
+url: auto explicativo, url de arquivos online
+
+file: arquivos
+
+image: imagem onde e escolhida pelo dev
+
+color: escolher cores
+
+search: barra de pesquisa
+
+number: para numeros
+
+hidden: input invisivel
+
+\--------------------------------------------------------------------------------/
+
+Observações:
+
+01_se vc quizer que os checkeds (Radio e CheckBox) tenham apenas uma marcação em
+torno de diversas opções basta colocar o mesmo nome para o inputs e o label
+ex:
+
+input[1] chama-se Clarice
+
+input[2] chama-se Clarice
+
+label chama-se Clarice
+
+02_para input de cores vc pode usar o value para escolher uma cor padrão usado o
+codigo das cores
+"#000000"
+
+03_no input do range voce pode limitar o valor dele ex:
+min="1" max="10" onde no medidor agora vai de 1 a 10 e n de 1 a 100
+
+04_no input de file vc tem que trocar o method de get para post onde o arquivo
+podera ser mandado, ate pq o get n suporta exportar arquivos 
+
+\--------------------------------------------------------------------------------/
+
+outros alem do input:
+
+temos diversas outras alem do inputs e elas são:
+
+select: select cria uma listade opções para escolher
+
+e sua esxtrutura e assim
+
+<form>
+
+        <p>
+            <label for="iEst">Estado:</label>
+            <select name="Est" id="iEst">
+
+            </select>
+        </p>
+</form>
+
+onde para criar suas opções podemos isar as tags:
+
+<optgroup label="Sul">
+    <option value="SC">Santa Catarina</option>
+</optgroup>
+
+onde:
+
+optgroup = ele divide em grupo as options
+
+option = ela cria uma opção da lista
+
+value = ele comoca a classe da opção ou um titulo
+
+label = nome do grupo
+
+e para finalizar podemos usar o controle selected
+
+selected = ele mantem como uma opção ja selecionada
+(sendo uma ferramenta do <option>)
+
+------------------------------------------------------
+
+datalist: datalist e uma ferramenta parecida com select 
+so que nele vc pode escrever e criar uma nova opção assim
+
+extrutura:
+
+<p>
+    <label for="iPro">Profisão:</label>
+    <input type="text" name="Pro" id="iPro" list="List">
+
+    <datalist id="List">
+    </datalist>
+</p>
+
+onde:
+
+list = liga o datalist ao input
+
+datalist = tag que cria a lista
+
+id = e a id da list
+
+e a respeito de opções, ele funciona igual a select
+
+-----------------------------------------------------------
+
+textarea: ele cria um bloco grande, onde pode se colocar 
+textos compridos
+
+extrutura:
+
+<p>
+    <label for="iDes">Descrição</label>
+    <textarea name="Des" id="iDes" cols="30" rows="10">
+
+    </textarea>
+</p>
+
+cols = define a quantidades de letras
+
+rows = define a quantidades de linhas 
+
+\--------------------------------------------------------------------------------/
+programação para inputs:
+
+aqui vamos mostrar sobre uns scripts para os inputs e eles são:
+
+output = ele e um input que possue extenções de programação e sua logica e assim
+
+<form action="conta.php">
+
+        <p>
+            <label for="iNum1">Numero:</label>
+            <input type="number" name="Num1" id="iNum1" 
+            oninput="iSoma.innerHTML = Number(iNum1.value) + Number(iNum2.value)">
+        </p>
+
+	<p>
+            <label for="iSoma">Soma:</label>
+            <output name="Soma" id="iSoma">0</output>
+        </p>
+</form>
+
+onde:
+
+oniput = integra o output no input
+
+.innerHTML = u codigo de programação que permite usar ferramentas de java para 
+criar uma logica
+
+Number() = ferramenta que separa e classifica como numero
+
+.value = pega o valor do obj conectado
+
+----------------------------------------------------------------------------------
+
+N consegui fazer pois n entendi o q ta rolando, então nessa terça vem aqui para 
+tentar resolver
+
+\--------------------------------------------------------------------------------/
+
+Media Queries:
+
+Media Queries = e uma teclonogia que cria diversas verções para diversas 
+plataformas
+
+baixar as imagem para projeto
+
