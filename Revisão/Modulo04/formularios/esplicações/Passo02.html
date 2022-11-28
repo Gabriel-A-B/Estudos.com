@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <h2>Selected</h2>
+
+        <p>
+            <b>select</b> e uma ferramenta usada para colocar opções
+            ja escolhidas para valerem aqui 
+        </p>
+
+        <h3>Extrutura</h3>
+
+        <p>
+            <pre>
+form
+
+    p
+        label for="iEst"Estado:/label
+        select name="Est" id="iEst"
+
+        /select
+    /p
+/form
+            </pre>
+        </p>
+
+        <p>
+            onde para criar suas opções podemos usar as tags:
+            <pre>
+optgroup label="Lista"
+
+    option value="Op" Opção /option
+
+/optgroup
+            </pre>
+        </p>
+
+        <h3>Explicações de objetos</h3>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <b>optgroup</b> = ele divide em grupos
+                        as opções
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>option</b> = ele e a tag que cria uma
+                        opção
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>value</b> = neste caso ele apenas e 
+                        para criar siglas da opção
+                    </p>
+                </li>
+                
+                <li>
+                    <p>
+                        <b>label</b> = neste caso e só para 
+                        nomear o grupo
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>selected</b> = e uma conf que ao 
+                        colocar ele vai marcar a option com 
+                        ela como valor basico, isso e, ele
+                        aparecera quando o usuario n tiver
+                        escolhido um
+                    </p>
+                </li>
+            </ul>
+        </p>
+     </p>
+
+     <h2>Datalist</h2>
+     
+     <p>
+        <b>Datalist</b> = e semelhante ao selected com
+        a diferença de que nele vc pode colocar opções 
+        a mais
+     </p>
+     
+     <h3>Extrutura</h3>
+
+     <p>
+        <pre>
+p
+    label for="iDList" DList /label
+    input type="text" name="DList" 
+    id="iDList" list="List"
+
+    datalist id="List"
+    /datalist
+/p
+        </pre>
+     </p>
+     
+     <h3>Explicações de objetos</h3>
+
+     <p>
+        <ul>
+            <li>
+                <p>
+                    <b>list</b> = ele interliga a tag do datalist 
+                    com a input
+                </p>
+            </li>
+        </ul>
+     </p>
+     
+     <h2>TextArea</h2>
+
+     <p>
+        <b>TextArea</b> = Ele cria um bloco que permite 
+        textos compridos onde são muito usados para 
+        descrições ou comentarios
+     </p>
+
+     <h3>Extrutura</h3>
+
+     <p>
+        <pre>
+p
+    label for="iTAre" TextArea /label
+
+    textarea name="TAre" id="iTAre" 
+    cols="30" rows="10"
+
+    /textarea
+/p
+        </pre>
+     </p>
+
+     <h3>Explicações de objetos</h3>
+
+     <p>
+        <ul>
+            <li>
+                <p>
+                    <b>cols</b> = define a quantidade de 
+                    colunas que pode ser posta
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>rows</b> = ele define a quantidade de 
+                    linhas que podem ser escrita
+                </p>
+            </li>
+        </ul>
+     </p>
+</body>
+</html>

@@ -100,7 +100,7 @@ tudo junto
 *---------------------------*
 |     Lista de Cod          |
 |                           |
-|-[0-9]ele coloca ate quato |
+|-[0-9]ele coloca ate quatro|
 |o numero sera valido;      |
 |                           |
 |-\d faz a msm coisa que a  |
@@ -112,6 +112,10 @@ tudo junto
 |                           |
 |-estudar pattern para mais |
 *---------------------------*
+
+o '{}' tem que estar do lado do [0-9] ou \d ex:
+
+\d{4} ou [0-9]{4}
 
 ----------------------------------------------------------------------------------
 
@@ -173,7 +177,7 @@ e sua esxtrutura e assim
         </p>
 </form>
 
-onde para criar suas opções podemos isar as tags:
+onde para criar suas opções podemos usar as tags:
 
 <optgroup label="Sul">
     <option value="SC">Santa Catarina</option>
@@ -185,7 +189,7 @@ optgroup = ele divide em grupo as options
 
 option = ela cria uma opção da lista
 
-value = ele comoca a classe da opção ou um titulo
+value = ele coloca a classe da opção ou um titulo
 
 label = nome do grupo
 

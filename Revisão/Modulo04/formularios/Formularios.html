@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>PASSO 01: anatomia e regras</h1>
+
+    <p>
+       aqui revisaremos como criamos um formulario e como 
+       funciona
+    </p>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h2>Basico</h2>
+
+    <p>
+        formularios são uma ferramenta usada para coletar info
+        do usuario onde ao ser mandado para um arquivo de 
+        programação por logica ele analisa as informações e 
+        manda um valor ou leva a um link resultante
+    </p>
+
+    <p>
+        <b>Extrutura</b> <br>
+        <hr>
+            <pre>
+    form
+        fieldset
+            legend/legend
+                p
+                    label/label
+                    input/input
+                /p
+        /fieldset
+    /form
+            </pre>
+        <hr>
+        <b>Objetos da Extrutura</b>
+        
+        <ul>
+
+            <p>
+                <b>Form</b>
+            </p>
+
+            <li>
+                <p>
+                    <b>action</b>: ele e onde vc soloca o arquivo 
+                    que sera mandado as info <br>
+
+                    e a action aceita duas linguagem que são: <br>
+
+                    php = e linguagem para informações <br>
+
+                    javaScript = e linguagem de logica
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>method</b>: ele escolhe qual sistema de 
+                    segurança ele usara para mandar as info:
+
+                    <ul>
+                        <li>
+                            <p>
+                                <b>post</b>: quando as informações
+                                n são tão importamtes, n são 
+                                senciveis, usar quando n tiver 
+                                transferenciade de arquivo, n pode 
+                                passar de 3000 bites ou seja 3000 
+                                letras
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <b>get</b>: usar apenas quando as 
+                                informações forem censiveis, quando
+                                tiver transferencia de arquivos, e 
+                                se o form for maior que 3000 bites
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>autocomplete</b>: ele liga a função de 
+                    autocompletar os inputs
+                </p>
+            </li>
+        </ul> 
+
+        <ul>
+
+            <p>
+                <b>Label</b>
+            </p>
+
+            <li>
+                <p>
+                    <b>for</b>: ele liga a input com a label 
+                    onde para ligar tem que colocar o name ou
+                    a id da input
+                </p>
+            </li>
+        </ul>
+
+        <ul>
+
+            <p>
+                <b>Input</b>
+            </p>
+            
+            <li>
+                <p>
+                    <b>type</b>: ele mostra qual e o tipo do 
+                    input
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>name</b>: da o nome para o input onde 
+                    vai ligar ao label onde sera usado em 
+                    form que usara arquivos php
+                    'form action = arquivo.php'
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>id</b>: da a id para o input onde 
+                    vai ligar ao label onde sera usado em 
+                    form que usara arquivos javaScript
+                    'form action = arquivo.javaScript'
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <form action="Conta.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Login</legend>
+
+            <p>
+                <label for="iEmail">Email</label>
+                <input type="email" name="Email" id="iEmail"
+                placeholder="Email" required autocomplete="email">
+            </p>
+
+
+            <p>
+                <label for="iSenha">Senha</label>
+                <input type="password" name="Senha" id="iSenha"
+                placeholder="Senha" required minlength="10" maxlength="30"
+                autocomplete="current-password">
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+    </form>
+
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h1>PASSO 02: tipos de inputs</h1>
+
+    <p>aqui mostrarei todos os inputs</p>
+
+    <form action="Conta.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Conta</legend>
+
+            <p>
+                <label for="iEmail">Email</label>
+                <input type="email" name="Email" id="iEmail"
+                placeholder="Email" required autocomplete="email">
+            </p>
+
+
+            <p>
+                <label for="iSenha">Senha</label>
+                <input type="password" name="Senha" id="iSenha"
+                placeholder="Senha" required minlength="10" maxlength="30"
+                autocomplete="current-password">
+            </p>
+
+            <p>
+                <label for="iTel">Telefone</label>
+                <input type="tel" name="Tel" id="iTel" required autocomplete="tel"
+                pattern="^[0-9]{4}-[0-9]{4}$" placeholder="(xx) xxxx-xxxx">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações</legend>
+
+            <p>
+                <label for="iData">Data</label>
+                <input type="date" name="Data" id="iData">
+            </p>
+
+            <p>
+                <label for="iDTime">Data e Hora</label>
+                <input type="datetime" name="DTime" id="iDTime">
+            </p>
+
+            <p>
+                <label for="iDTLoc">Data Horas e Local</label>
+                <input type="datetime-local" name="DTLoc" id="iDTLoc">
+            </p>
+
+            <p>
+                <label for="iMês">Mês</label>
+                <input type="month" name="Mês" id="iMês">
+            </p>
+
+            <p>
+                <label for="iSem">Semana</label>
+                <input type="week" name="Sem" id="iSem">
+            </p>
+
+            <p>
+                <label for="iHora">Horas</label>
+                <input type="time" name="Hora" id="iHora">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Objetos</legend>
+
+            <p>
+                <input type="button" value="botão">
+            </p>
+
+            <p>
+                <label for="iChe">Checkbox</label>
+                <input type="checkbox" name="Che" id="iCheck">
+            </p>
+
+            <p>
+                <label for="iColor">Cor</label>
+                <input type="color" name="Color" id="iColor">
+            </p>
+
+            <p>
+                <label for="iNum">Numero</label>
+                <input type="number" name="Num" id="iNum">
+            </p>
+
+            <p>
+                <label for="iRad">Radio</label>
+                <input type="radio" name="Rad" id="iRad">
+            </p>
+
+            <p>
+                <label for="iRan">Range</label>
+                <input type="range" name="Ran" id="iRan">
+            </p>
+
+            <p>
+                <label for="iSea">Pequisa</label>
+                <input type="search" name="Sea" id="iSea">
+            </p>
+
+            <p>
+                <label for="iTex">Texto</label>
+                <input type="text" name="Tex" id="iTex">
+            </p>
+            
+            <p>
+                <input type="submit" value="Enviar">
+            </p>            
+            
+            <p>
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Arquivos</legend>
+
+            <p>
+                <label for="iArq">Arquivo</label>
+                <input type="file" name="Arq" id="iArq">
+            </p>
+
+            <p>
+                tem um input aqui chamado hidden
+                <input type="hidden" name="escondido">
+            </p>
+
+            <p>
+                <label for="iImg">Imagem</label>
+                <input type="image" src="" alt="aqui ficaria uma imagem">
+            </p>
+
+            <p>
+                <label for="iUrl">Url de imagem</label>
+                <input type="url" name="url" id="iUrl">
+            </p>
+        </fieldset>
+    </form>
+
+    <p>
+        esplicações mais a fundo
+    </p>
+
+    <iframe src="esplicações/Passo.html" frameborder="1"></iframe>
+
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h1>PASSO 03: Outros alem dos inputs</h1>
+
+    <p>Existem outros alem dos input e eles são</p>
+
+    <form action="Conta.php" method="post" autocomplete="on">
+        <fieldset>
+            
+            <p>
+                <b>select:</b> select cria uma listade opções para escolher
+            </p>
+
+
+            <p>
+                <label for="iSel">Selected</label>
+                <select name="Sel" id="iSel">
+                    <optgroup label="grupo01">
+
+                        <option value="Op01">
+                            opção01
+                        </option>
+
+                        <option value="Op02">
+                            opção02
+                        </option>
+
+                    </optgroup>
+                    <optgroup label="grupo02">
+
+                        <option value="Op01" selected>
+                            opção01
+                        </option>
+
+                        <option value="Op02">
+                            opção02
+                        </option>
+
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <b>datalist:</b> datalist e uma ferramenta parecida 
+                com select so que nele vc pode escrever e 
+                criar uma nova opção
+            </p>
+
+            <p>
+                <label for="iList">Datalist</label>
+                <input type="text" name="List" id="iList" list="DList">
+
+                <datalist id="DList">
+                    <option value="Op01">Opção01</option>
+
+                    <option value="Op02">Opção02</option>
+                </datalist>
+            </p>
+
+            <p>
+                <b>textarea:</b> ele cria um bloco grande, onde 
+                pode se colocar textos compridos
+            </p>
+
+            <p>
+                <label for="iTArea">TextArea</label>
+                <textarea name="TArea" id="iTArea" cols="30" rows="10">
+
+                </textarea>
+            </p>
+        </fieldset>
+    </form>
+
+    <p>Explicações mais a fundo</p>
+
+    <iframe src="esplicações/Passo02.html" frameborder="1"></iframe>
+
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h1>PASSO 04: Programação</h1>
+
+    <form action="Conta.php">
+        <fieldset>
+            <legend>Programação</legend>
+
+            <label for="iPro">Programação</label>
+            <input type="Num" name="Pro" id="iPro"
+            oninput="iSoma.innerHTML = Number(iNum1.value) + Number(iNum2.value)">
+        </p>
+
+	    <p>
+            <label for="iSoma">Soma:</label>
+            <output name="Soma" id="iSoma">0</output>
+        </p>
+        </fieldset>
+    </form>
+
+    <p>Esse vou terminar Amanha</p>
+
+</body>
+</html>
