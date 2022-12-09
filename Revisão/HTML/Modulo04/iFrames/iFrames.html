@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PASSO 01: Anatomia e regras</h1>   
+    
+    <p>
+        aqui revisaremos como criamos um e como 
+       funciona
+    </p>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h2>Basico</h2>
+
+    <p>
+        iFrame e uma ferramenta que abre uma janela 
+        que permite ver outro site dentro dele 
+    </p>
+
+    <p>
+        <b>Extrutura</b> <br>
+        <hr>
+        <pre>
+iframe
+
+    a href="link" /a
+
+/iframe
+        <hr>
+        </pre>
+        <b>Objetos da Extrutura</b>
+
+        <ul>
+            <p>
+                <b>a</b>: ele abre o site dentro <br>
+
+                <li>href = ele e onde se coloca o link</li>
+            </p> 
+        </ul>
+    </p>
+
+    <iframe src="#" frameborder="0"></iframe>
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h2>PASSO 02: iframes de doc criados nela</h2>
+
+    <p>
+        aqui mostrarei algo legal,voce pode criar um documento
+        dentro do iframe
+    </p>
+
+    <iframe srcdoc="<h1> Exemplo </h1>" frameborder="1"></iframe>
+
+    <p>
+        onde apenas muda o src para srcdoc
+    </p>
+
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h2>PASSO 03: configurações</h2>
+
+    <p>
+        tem algumas configs para o iframe:
+
+        <b>scrolling</b>: onde e uma configuração 
+        para a rolagem onde possue 3 opções que 
+        são
+
+        <ul>
+            <li>
+                <p>
+                    <b>auto</b>: se precisar tera rolagem 
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>yes</b>: msm que n precise tera
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>no</b>: n tera n importa
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h2>PASSO 04: Segurança</h2>
+
+    <p>
+        <ul style="list-style: none;">
+            <li>
+                nessa aula vamos falar sobre metodos para manter o
+                iframe mais seguro:
+            </li>
+
+            <li>para comesar vamos falar do snadbox</li>
+
+            <li>
+                sandbox: uma ferramenta que pode bloquear elementos
+                do site linkado com o iframe
+            </li>
+
+            <li>como scripts, formularios, html's, etc...</li>
+
+            <li>pode liberar mais de um assim:</li>
+
+            <li>sandbox="allow-script allow-form"</li>
+
+            <li>podendo tbm bloquear tudo com o  sandbox:</li>
+
+            <li>sandbox="sandbox"</li>
+
+            <li>e o outro e a referrerpolicy onde:</li>
+
+            <li>
+                referrerpolicy: bloqueia qualquer armazenamento de
+                info dos usuarios, podendo
+            </li>
+
+            <li>usala assim <br></li>
+
+            <li>referrerpolicy="no-referrer" <br></li>
+        </ul>
+
+        <b>Extrutura</b> <br>
+
+        <pre>
+            iframe sandbox="allow-OQVcQuiserLiberar"
+            referrerpolicy="no-referrer" /iframe 
+        </pre>
+    </p>
+
+</body>
+</html>
