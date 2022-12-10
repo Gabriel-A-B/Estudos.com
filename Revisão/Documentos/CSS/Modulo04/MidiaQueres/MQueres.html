@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia Queres</title>
+</head>
+<body>
+    
+    <h1>PASSO 01: anatomia e regras</h1>
+
+    <p>
+        aqui vamos revisar o que e Media Quiries e como funciona
+    </p>
+
+    <h2>Basico</h2>
+
+    <p>
+        Media Queries e uma ferramenta que seta stylese os separa que e selecionado
+        pelo tamanho da tela
+    </p>
+
+    <p>
+        <b>Extrutura</b> <br>
+    </p>
+    <hr>
+
+    <p>
+        ela e uma ferramenta que se coloca no link:css, no final dele 
+    </p>
+
+    <pre>
+        link rel="stylesheet" 
+        href="estilos/tela.css" 
+        media="formato"
+    </pre>
+
+    <hr>
+    <p>
+        <b>Objetos da Extrutura</b>
+        <ul>
+            <li><p>
+                <b>media</b>: ele separa os estilos para dividir em diversas midiasqueres
+            </p></li>
+
+            <li><p>
+                <b>screen</b> = para tela normal, o site original
+            </p></li>
+
+            <li><p>
+                <b>print</b> = para impresão do site
+            </p></li>
+
+            <li><p>
+                <b>all</b> = todos
+            </p></li>
+        </ul>
+    </p>
+
+    <p>
+        E para finalizar: Existe uma extrategia chamada 'Mobile First' onde vc ao 
+        usar essa ferramenta vc faz a versão do celular primeiro
+    </p>
+    
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h1>PASSO 02: Extrutura em Css</h1>
+
+    <h2>Basico:</h2>
+
+    <p>
+        as Media Queres tbm podem ser feitas em arquivos css onde podem ser 
+        divididas em diversas Medias
+    </p>
+
+    <p>
+        <b>Extrutura</b>
+    </p>
+
+    <hr>
+
+    <pre>
+@media screen and (orientation: Orientação) {}
+    </pre>
+
+    <hr>
+
+    <p>
+        <b>Objetos da Extrutura</b>
+
+        <ul>
+            <li><p>
+                <b>@media</b>: ela separa os estilos para 
+                dividir em diersas midiaQueres
+            </p></li>
+
+            <li><p>
+                <b>screen</b>: e o formato da midia quere 
+            </p></li>
+
+            <li><p>
+                <b>orientation</b>: ele e a config para o 
+                tamanho da tela como width e height com 
+                valores pre-definidos
+            </p></li>
+        </ul>
+    </p>
+
+    <p>
+        <b>valores</b>
+    </p>
+
+    <p>
+        <ul>
+            <li><b>
+                midia:
+            </b></li>
+
+            <ul>
+                <li><p>
+                    screen = e para telas em geral
+                </p></li>
+
+                <li><p>
+                    print = e para a janela de impresão do site
+                </p></li>
+            </ul>
+
+            <li><b>
+                orientation:
+            </b></li>
+
+            <ul>
+                <li><p>
+                    portrait = para celulares em pé
+                </p></li>
+
+                <li><p>
+                    landscape = para celulares deitados
+                </p></li>
+            </ul>
+        </ul>
+    </p>
+
+    <hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h1>PASSO 03: Tamanhos mais expecificos</h1>
+
+    <h2>Basico:</h2>
+
+    <p>
+        possue uma certa lista de tamanhos de telo onde
+        usamos para cetar certos tipos de tamanho de 
+        telas e midias queres usados
+    </p>
+
+    <p>
+        <b>Extrutura:</b> 
+    </p>
+
+    <hr>
+
+    <pre>
+@media  screen and (min-width: 600px) and (max-width: 768px) {}
+    </pre>
+
+    <hr>
+
+    <p>
+        <b>Objetos da Extrutura:</b>
+    </p>
+
+    <p>
+        <ul>
+            <li><p>
+                <b>min-width:</b> ele seta o minimo do 
+                tamanho de tela para mudar
+            </p></li>
+
+            <li><p>
+                <b>max-width:</b> ele seta o maximo da tela 
+                para mudar para proxima midia quere
+            </p></li>
+        </ul>
+    </p>
+
+    <p>
+        <b>Listas de Medidas de Tela:</b>
+    </p>
+
+    <p>
+        essa lista de medidas de telas mostram os tamanhos
+        mais normais de telas da epoca
+    </p>
+
+    <iframe src="Anotações/MQLista.html" frameborder="1"></iframe>
+
+    <hr>
+</body>
+</html>
