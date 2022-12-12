@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+
+    <h1>PASSO 01: Criação Do Menu</h1>
+
+    <p>
+        aqui vamos mostrar como criar menus interativos com JavaScript
+    </p>
+
+    <p>
+        e para comesar vamos primeiro pegar um icone para o menu
+    </p>
+
+    <h2>Icone:</h2>
+
+    <p>
+        primeiro precisamos pegar um icone e podemos usar o site: 
+        <a href="https://fonts.google.com/icons?icon.set=Material+Icons"> https://fonts.google.com/icons?icon.set=Material+Icons </a>
+    </p>
+
+    <p>
+        apos isso vc faz a extenção para o icone que sera pego usando a internet assim
+    </p>
+
+    <p>
+        <ul>
+            <li><p>
+                <b>parte01:</b> vc extende com a tag link onde estara nas 
+                instruções do icone abaixo dele apos o clique: <br>
+                <hr>
+
+                <b>
+                    link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                    rel="stylesheet"
+                </b>
+
+            </p></li>
+
+            <li><p>
+                <b>parte02:</b> apos isso vc incrementa o icone ao codigo com esta
+                extrutura: <br>
+
+                <hr>
+
+                <pre>
+        <b>
+    span class="material-icons" id="iMenu" 
+    onclick="clickMenu()"
+        menu
+    /span
+        </b>
+                </pre>
+
+                <hr>
+                
+                <h3>Objetos:</h3>
+
+                <ul>
+                    <li><p>
+                        <b>span:</b> tag usada pelo site para incrementar um icone 
+                        para uso do codigo
+                    </p></li>
+
+                    <li><p>
+                        <b>class:</b> para reconhecer como icone com apenas uma 
+                        informação inportante, ele tem que estar escrito apenas
+                        "material-icons"
+                    </p></li>
+
+                    <li><p>
+                        <b>id:</b> ele coloca uma id para linkar com o script de 
+                        Java
+                    </p></li>
+
+                    <li><p>
+                        <b>onclick:</b> conf de scripts que ativa certo objt ao 
+                        ser clicada
+                    </p></li>
+
+                    <li><p>
+                        <b>menu:</b> o icone desejado, aqui vc coloca o nome do icone 
+                        desejado
+                    </p></li>
+                </ul>
+            </p></li>
+        </ul>
+    </p>
+
+    <h2>Script:</h2>
+
+    <p>
+        apos isso usamos o Java para criar uma logica no menu para extender caso 
+        clicado e compactado caso clicado denovo
+    </p>
+
+    <p>
+        primeiramente criamos um conjunto de objetos em sequencia e compactamos 
+        ela em um unico grupo, para assim podermos colocar uma id nela, por exemplo
+        <hr>
+        
+        <pre>
+    menu id="iItens"
+        ul
+            lia href="#"Opção001/a/li
+            lia href="#"Opção002/a/li
+            lia href="#"Opção003/a/li
+            lia href="#"Opção004/a/li
+            lia href="#"Opção005/a/li
+        /ul
+    /menu
+        </pre>
+
+        <hr>
+
+        em seguida, no css colocamos no "iItens" um display com valor none
+        
+        e criamos uma logica no script
+    </p>
+
+    <h3>Extrutura do Script</h3>
+
+    <hr>
+    <pre>
+    script
+        function clickMenu() {
+            if(iItens.style.display == 'block') {
+                iItens.style.display = 'none'
+            }else {
+                iItens.style.display = 'block'
+            }
+    /script
+    </pre>
+    <hr>
+
+    <h4>Objetos</h4>
+
+    <ul>
+        <li><p>
+            <b>function:</b> ela cria uma logica para um objeto de script
+        </p></li>
+
+        <li><p>
+            <b>if e else:</b> cria posibilidades que analisaram a situação descrita
+            e muda o valor de acordo com seu objetivo
+        </p></li>
+
+        <li><p>
+            <b>iItens.style.display:</b> e uma localização para o objeto que 
+            deseja mudar seu valor, onde tem como extrutura:
+            <hr>
+            <b>idDoItem.arquivo.confQueDesejaMudarSeuValor = 'valor'</b> <br>
+            ou <br>
+            <b>idDoItem.arquivo.confQueDesejaMudarSeuValor == 'valor'</b>
+        </p></li>
+    </ul>
+
+    <hr>
+
+    <h1>PASSO 02: Consertando Bug</h1>
+
+    <p>
+        assim que ele muda de mediaQuere ele buga e n permite ser fechado, então 
+        para consertar vamos forçar a logica para funcionar
+    </p>
+
+    <h2>Parte do HTML</h2>
+
+    <p>
+        para comesar precisamos criar um objeto de script para o body usando a
+        ativação chamada 'onresize'
+    </p>
+
+    <h3>Extrutura</h3>
+
+    <p>
+        para fazermos isso iremos coloca-lo no body
+    </p>
+    <hr>
+
+    <pre>
+        <b>body onresize="sizingTela()"</b>
+    </pre>
+
+    <hr>
+    <p>
+        <ul>
+            <li><p>
+                <b>onresize:</b>  onde ativa quando detecta que um objeto do 
+                site mudou de tamanho, ou se o proprio site mudou de tamanho
+            </p></li>
+
+            <li><p>
+                <b>sizingTela():</b> Nome do objeto para o script
+            </p></li>
+        </ul>
+    </p>
+
+    <h2>Parte do Script</h2>
+
+    <p>
+        e agora vou mostrar a extrutura do script
+    </p>
+
+    <h3>Extrutura</h3>
+
+    <p>
+        colocamos isso no script
+    </p>
+    <hr>
+
+    <pre>
+    function sizingTela() {
+        if(window.innerWidth >= '768') {
+            iItens.style.display = 'inline-block'
+        }else {
+            iItens.style.display = 'none'
+        }
+    }
+    </pre>
+
+    <hr>
+    <p>
+        <ul>
+            <li><p>
+                <b>window.innerWidth:</b> ela e uma função do jav que verifica
+                o tamanho da tela para que assim possa ou n ser ativada caso for
+                '>= maior' ou '<= menor'
+            </p></li>
+        </ul>
+    </p>
+</body>
+</html>
