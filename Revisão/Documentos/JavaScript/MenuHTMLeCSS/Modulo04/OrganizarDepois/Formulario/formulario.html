@@ -8,6 +8,84 @@
 </head>
 <body>
 
+    <!--Titulo-->
+
+    <h1>PASSO 01: anatomia e regras</h1>
+
+    <p>
+       aqui revisaremos como criamos um calculo em um 
+       formulario
+    </p>
+
+    <!--Explicação-->
+    
+    <h2>Basico</h2>
+
+    <p>
+        Tem como fazermos calculos em formularios como Idade
+        de acordo com o nacimento e a data atual
+    </p>
+
+    <!--Extrutura do codigo-->
+    
+    <p><b>
+        Extrutura 
+    </b></p>
+
+    <pre>
+        <hr>
+
+        Soma
+
+        p
+            label for="in1" Numero 01 /label
+            input type="Num" name="n1" id="in1"
+            oninput="iSoma.innerHTML = Number(in1.value) + 
+            Number(in2.value)"
+        /p
+
+        p
+            label for="iSoma" Soma: /label
+            output name="Soma" id="iSoma" 0 /output
+        /p
+
+--------------------------------------------------------------
+
+        Idade
+
+            p
+                label for="iano" Nacimento /label
+                input type="number" name="ano" id="iano" 
+                requirer oninput="calcIdade()"
+            /p
+
+            p
+                label for="iIdade" Sua Idade /label
+                output id="iIdade" 0 /output
+            /p
+
+    script
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iIdade.innerHTML = Number(atual) - 
+            Number(iano.value)
+        }
+    /script
+            <hr>
+        </pre>
+
+        <h2>Soma</h2>
+
+        <p>
+            <b>Objetos da Extrutura</b>
+        </p>
+
+        <iframe src="explicação/Objetos.html" frameborder="1"></iframe>
+
+        <p>
+            <b>Exemplo</b>
+        </p>
+
     <form action="#">
         <fieldset>
             <legend>Soma</legend>
@@ -30,13 +108,28 @@
         </p>
         </fieldset>
     </form>
+<hr>
+
+<!--//////////////////////////////////////////////////////////////////-->
+
+    <h2>Idade</h2>
+
+    <p>
+        <b>Objetos da Extrutura</b>
+    </p>
+
+    <iframe src="explicação2/Objetos.html" frameborder="1"></iframe>
+
+    <p>
+        <b>Exemplo</b>
+    </p>
 
     <form action="#">
         <fieldset>
             <legend>Idade</legend>
 
             <p>
-                <label for="iano">Idade</label>
+                <label for="iano">Nacimento:</label>
                 <input type="number" name="ano" id="iano" requirer 
                 oninput="calcIdade()">
             </p>
