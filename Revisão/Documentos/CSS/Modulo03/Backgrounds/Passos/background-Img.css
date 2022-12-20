@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body main {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+body main > div {
+    position: relative;
+    top: 25%;
+    left: 25%;
+
+    transform: translate(-25%, -25%);
+
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+    padding: 20px, 20px;
+    border: 1px solid black;
+}
+
+body main > div p {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+body main > div#urlExt {
+    background-image: url(../../../../../../../../Imagens/Mira.jpg);
+    background-position: left, top;
+}
+
+body main > div#urlCen {
+    background-image: url(../../../../../../../../Imagens/Mira.jpg);
+    background-position: center, center;
+}
+

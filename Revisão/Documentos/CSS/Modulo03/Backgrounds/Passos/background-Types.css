@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body main {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+body main > div {
+    position: relative;
+    top: 25%;
+    left: 25%;
+
+    transform: translate(-25%, -25%);
+
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+    padding: 20px, 20px;
+}
+
+body main > div p {
+    color: white;
+    font-weight: bold;
+}
+
+body main > div#backCol {
+    background-color: black;
+}
+
+body main > div#backInl {
+    background-image: linear-gradient(blue, black);
+}
+
+body main > div#backRad {
+    background-image: radial-gradient(blue, black);
+}
+
+body main > div#backImg {
+    background-image: url(../../../../../../../../Imagens/100px.png);
+    background-size: cover;
+}

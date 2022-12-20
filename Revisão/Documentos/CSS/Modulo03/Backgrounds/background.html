@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+</head>
+
+<body>
+
+    <h1>PASSO 01: Basico</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        config usada para fundos de imagem onde possue diversas
+        formas de ser usadas
+    </p>
+
+    <h2>Tags que se usam</h2>
+
+    <hr>
+
+    <ul>
+        <li>
+            <p>
+             body   
+            </p>
+        </li>
+
+        <li>
+            <p>
+             header, main, e footer   
+            </p>
+        </li>
+
+        <li>
+            <p>
+             qualquer bloco de conteudo   
+            </p>
+        </li>
+    </ul>
+    
+    <hr>
+<!--///////////////////////////////////////////////////////-->
+
+    <h1>PASSO 02: Tipos de backgrounds</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        na area de background possuimos diversos tipos de 
+        backgrounds sendo eles
+    </p>
+
+    <h2>Tipos de backgrounds</h2>
+
+    <hr>
+
+    <ul>
+        <li>
+            <p>
+            <b>normal:</b> background comum, ao qual vc escolhe
+            apenas uma cor
+
+            <pre>
+        body {
+            background: #000000;   
+        }
+            </pre>
+
+            </p>
+        </li>
+
+        <li>
+            <p>
+            <b>linearColor:</b> ele muda crecentemente de uma 
+            cor para outra, de extrutura para extrutura
+
+            <pre>
+        body {
+            background-image: linear-gradient
+            (to bottom, color1, color2);
+        }
+            </pre>
+
+            <p>
+                onde vc pode mudar a direção com to top, 
+                to bottom, to left, to right
+            </p>
+
+            </p>
+
+        </li>
+            
+        <li>
+            <p>
+            <b>radialColor:</b> ele muda crecentemente de uma 
+            cor para outra
+
+            <pre>
+        body {
+            background-image: radial-gradient
+            (color1, color2);
+        }
+            </pre>
+
+            </p>
+        </li>
+
+        <li>
+            <p>
+            <b>Imagens:</b> ele usa url de imagens para coloar a 
+            imagem escolhidas como background
+
+            <pre>
+        body {
+            background-image: url(urlDaImagem)
+        }
+            </pre>
+
+            </p>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Exemplo</h2>
+
+    <iframe src="Passos/Passo02.html" frameborder="1"></iframe>
+
+    <hr>
+<!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+    <h1>PASSO 03: Possition</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        ele coloca para focar uma parte expecifica de 
+        uma background-image: url
+    </p>
+
+    <h2>Tipos de Position</h2>
+
+    <hr>
+
+    <ul>
+        <li>
+            <p>
+            <b>top, bottom, left, right:</b> eles focam 
+            extremidades da imagem para mostrar no background
+            </p>
+
+            <pre>
+        body {
+        background-image: url();
+        background-possition: top ou bottom, left 
+        ou right;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>center:</b> ele foca no centro da imagem do 
+            background
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-possition: center;
+        }
+            </pre>
+        </li>
+    </ul>
+    <hr>
+
+    <h2>Exemplo</h2>
+
+    <iframe src="Passos/Passo03.html" frameborder="1"></iframe>
+    <hr>
+
+    <h1>PASSO04: Repeat</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+       ele seta se sera repetido a imagem de fundo casso ele
+       n ocupa toda a janela 
+    </p>
+
+    <h2>Tipos de Repeat</h2>
+
+    <hr>
+    <ul>
+        <li>
+            <p>
+            <b>repeat:</b> ele repete uma imagem caso n
+            ocupe toda a janela
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-repeat: repeat;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>no-repeat:</b> ele só n repete
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-repeat: no-repeat;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>repeat-x e repeat-y:</b> ele repete a imagem 
+            no eixo selecionado como X ou Y
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-repeat: repeatX ou repeatY;
+        }
+            </pre>
+        </li>
+    </ul>
+    <hr>
+
+    <h2>Exemplo</h2>
+
+    <iframe src="Passos/Passo04.html" frameborder="1"></iframe>
+    <hr>
+
+    <h1>PASSO 05: Size</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        ele cuida do tamanho d background onde pode cetar um
+        tamanho em especifico, ou podemos usar as pretamanhos
+        que tem  
+    </p>
+
+    <h2>Tipos de Size</h2>
+    <hr>
+
+    <ul>
+        <li>
+            <p>
+            <b>auto:</b> ele e o que ja esta presetado onde
+            o sistema ja escolheo o tamanho e como se 
+            comportara
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-size: auto;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>contain:</b> ele faz com que o background 
+            ocupe copletamente um container como por Exemplo
+            o main
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-size: contain;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>cover:</b> ele adapta o background para que
+            ele se expanda para suportar a imagem toda
+            </p>
+
+            <pre>
+        body {
+            background-image: url();
+            background-size: auto;
+        }
+            </pre>
+        </li>
+
+        <p>
+            a diferença do contain e do cover e que:
+            <p>o contain: ele privilegia o conteudo</p>
+            <p>o cover: ele privilegia a imagem</p>
+        </p>
+    </ul>
+    <hr>
+
+    <h2>Exemplo</h2>
+
+    <iframe src="Passos/Passo05.html" frameborder="1"></iframe>
+    <hr>
+
+    <h1>PASSO06: attachment</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        como um background se comporta em rolagem de pagina
+    </p>
+
+    <h2>Tipo de Attachment</h2>
+    <hr>
+
+    <ul>
+        <li>
+            <p>
+            <b>fixed:</b> ele deixa o background fixo 
+            em um unico local do site
+            </p>
+
+            <pre>
+        body {
+            background: #000000;
+            background-attachment: fixed;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>local:</b> ele esta sempre seguindo o usuario
+            </p>
+
+            <pre>
+        body {
+            background: #000000;
+            background-attachment: local;
+        }
+            </pre>
+        </li>
+
+        <li>
+            <p>
+            <b>scroll:</b> ele segue a rolagem da pagina em 
+            uma extremidade da pagina cetada
+            </p>
+
+            <pre>
+                body {
+                    background: #000000;
+                    background-attachment: scroll;
+                }
+            </pre>
+        </li>
+    </ul>
+    <hr>
+
+    <h2>Exemplo</h2>
+
+    <p>Arumar dps</p>
+
+    <iframe src="Passos/Passo06.html" frameborder="1"></iframe>
+</body>
+</html>
