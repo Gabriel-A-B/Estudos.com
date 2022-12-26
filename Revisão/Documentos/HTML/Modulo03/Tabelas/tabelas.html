@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>PASSO01: Basico</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        tabelas são formas de organizar informações, onde 
+        tinham uma epoca em que usavam para fazer uma 
+        pagina, so que hoje em dia n se pode mais fazer
+        isso, pois o google n recomndera-ra seu site e 
+        esta sugeito a sql inchektion
+    </p>
+
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+        table
+            tr
+                th----------/th
+                td--------/td
+            /tr
+        /table
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/Passo01.html" frameborder="1"></iframe>
+
+    <h2>Exemplo</h2>
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+            vertical-align: middle;
+        }
+
+    </style>
+
+    <table>
+        <tr>
+            <th>Teste01</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste02</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste03</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste04</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste05</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+    <p>
+        observação: vc pode colocar border-collapse que separa
+        ou gruda os dados no table
+
+        vertical-align: anota dps
+    </p>
+
+    <hr>
+<!--///////////////////////////////////////////////////////-->
+
+    <h1>PASSO02: Tabelas grandes</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        a anatomia de uma tabela grande e diferente ja que vc
+        separa a head, o body, e o foot, da tabela
+    </p>
+
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+        table
+            thead
+              tr
+                 th----------/th
+                 td----------/td
+              /tr
+            /thead
+            tbody
+              tr
+                 th----------/th
+                 td----------/td
+              /tr
+            /tbody
+            tfoot
+              tr
+                 th----------/th
+                 td----------/td
+              /tr
+            /tfoot
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/Passo02.html" frameborder="1"></iframe>
+
+    <h2>Exemplo</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cabeçario</th>
+                <td>Dado1</td>
+                <td>Dado2</td>
+                <td>Dado3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Corpo</th>
+                <td>Dado1</td>
+                <td>Dado2</td>
+                <td>Dado3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Footer</th>
+                <td>Dado1</td>
+                <td>Dado2</td>
+                <td>Dado3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+<!--///////////////////////////////////////////////////////-->
+
+    <h1>PASSO03: Caption e Escopos</h1>
+
+    <h2></h2>
+</body>
+</html>
