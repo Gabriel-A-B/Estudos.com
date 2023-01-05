@@ -184,7 +184,8 @@
         <b>Caption</b> e uma legenda que pode descrever sobre 
         o que e a tabela <br>
         <b>Escopos</b> ele configura um titulo para 
-        representar duas colunas ou linhas 
+        representar duas colunas ou linhas em questão de 
+        tamanhos
     </p>
 
     <h2>Extrutura</h2>
@@ -204,23 +205,91 @@
 
     </pre>
 
+    <h4>Exemplo</h4>
+
+    <table>
+        <caption>Tabela</caption>
+        <tr>
+            <td>Exemplo</td>
+        </tr>
+    </table>
+
+    <hr>
+
     <h3>Escopos</h3>
 
     <pre>
-        <table>
-            <tr>
-                <th scope="col">TituloDeLinha</th>
-                <th scope="row">TituloDeLinha</th>
-            </tr>
-            <tr>
-                <td>Teste</td>
-                <td>Teste2</td>
-            </tr>
-            <tr>
-                <td>Teste</td>
-                <td>Teste2</td>
-            </tr>
-        </table>
+    table
+        thead
+            tr
+                th scope="col"----------/th
+                th scope="col"----------/th
+            /tr
+        /thead
+        tbody
+            tr
+                td----------/td
+                td----------/td
+            /tr
+            tr
+                td----------/td
+                td----------/td
+            /tr
+        /tbody
+    /table
     </pre>
+
+    <h4>Exemplo</h4>
+
+    <style>
+        table#Es {
+            width: 500px;
+        }
+    </style>
+
+    <table id="Es">
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col" style="background-color: gray;
+                color: white; width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>7.165.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>12.033.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/Passo03.html" frameborder="0"></iframe>
+
+    <hr>
+<!--///////////////////////////////////////////////////////-->
+
+    <h1>PASSO04: Efeito Zebrado em tabelas</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        efeito Zebrado e auto explicativo, e um metodo capaz
+        de colocar uma background-color em um e e m outro n
+    </p>
+
+    <p>
+        E tem milhares de formas para fazer isso, porem iremos
+        anotar esssa
+    </p>
+
+    <a href="../../../CSS/Modulo03/Tabelas">Continua no CSS</a>
 </body>
 </html>
