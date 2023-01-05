@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Zebrado*/
+
+table#Zebra tr:nth-child(2n){
+    background-color: rgb(56, 216, 216);
+}
+
+/*Cabeçario Fixo*/
+
+table#Sticky {
+    position: relative;
+}
+
+table#Sticky > thead {
+    position: sticky;
+    top: -1px;
+
+    background-color: black;
+    color: white;
+}
+

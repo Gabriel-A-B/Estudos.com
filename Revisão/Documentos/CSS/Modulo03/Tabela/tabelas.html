@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <link rel="stylesheet" href="tabelas.css">
+</head>
+<body>
+    <P>
+        //Basico copiado do HTML\\
+    </P>
+
+    <h1>PASSO01: Basico</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        tabelas são formas de organizar informações, onde 
+        tinham uma epoca em que usavam para fazer uma 
+        pagina, so que hoje em dia n se pode mais fazer
+        isso, pois o google n recomndera-ra seu site e 
+        esta sugeito a sql inchektion
+    </p>
+
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+        table
+            tr
+                th----------/th
+                td--------/td
+            /tr
+        /table
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="../../../HTML/Modulo03/Tabelas/Passos/Passo01.html" frameborder="1"></iframe>
+
+    <h2>Exemplo</h2>
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+            vertical-align: middle;
+        }
+
+    </style>
+
+    <table>
+        <tr>
+            <th>Teste01</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste02</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste03</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste04</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Teste05</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+    <p>
+        observação: vc pode colocar border-collapse que separa
+        ou gruda os dados no table
+
+        vertical-align: anota dps
+    </p>
+
+    <hr>
+<!--///////////////////////////////////////////////////////-->
+
+    <h1>PASSO04: Efeito Zebrado em tabelas</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        efeito Zebrado e auto explicativo, e um metodo capaz
+        de colocar uma background-color em um e em outro n
+    </p>
+
+    <p>
+        E tem milhares de formas para fazer isso, porem iremos
+        anotar esssa
+    </p>
+
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+        tabela tr:nth-child(2n) {
+
+        }
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/passo04.html" frameborder="0"></iframe>
+
+    <table id="Zebra">
+        <tr>
+            <td>Dado 01</td>
+        </tr>
+        <tr>
+            <td>Dado 02</td>
+        </tr>
+        <tr>
+            <td>Dado 03</td>
+        </tr>
+        <tr>
+            <td>Dado 04</td>
+        </tr>
+    </table>
+
+    <h2>Observações</h2>
+
+    <p>
+        tem como fazer com par e inpar, onde ao invez de
+        usar numeros, podemos usar 'odd' e 'even' ou podemos
+        usar questões matematicos assim 3n-1 ou 5n+3 
+    </p>
+
+    <hr>
+<!--///////////////////////////////////////////////////////-->
+
+    <h1>PASSO05: Cabeçalho fixo </h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        tem como colocar o abeçario fixo no topo da tela em 
+        tabelas grandes
+    </p>
+
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+        table#Cab {
+            position: relative;
+        }
+
+        table#Cab > tr > thead {
+            position: sticky;
+            top: -1px;
+        }
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/passo05.html" frameborder="0"></iframe>
+
+    <table id="Sticky">
+        <thead>
+            <th>Teste Completo</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+            
+            <tr>
+                <td>Complemento</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusamus repudiandae reprehenderit sint 
+        vero eius optio aliquid, exercitationem et 
+        quibusdam explicabo laudantium eum ea voluptates 
+        nulla quaerat pariatur ullam incidunt similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Dolorum libero aliquid itaque a voluptatibus
+        excepturi deleniti fugiat sequi velit delectus 
+        corporis ullam et dignissimos, ratione quos eum 
+        temporibus commodi similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quaerat ea officiis fugiat quia. Ullam 
+        possimus voluptas itaque fuga ab neque quas 
+        dolorum soluta harum? Autem aut similique dolorum 
+        amet minus.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusamus repudiandae reprehenderit sint 
+        vero eius optio aliquid, exercitationem et 
+        quibusdam explicabo laudantium eum ea voluptates 
+        nulla quaerat pariatur ullam incidunt similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Dolorum libero aliquid itaque a voluptatibus
+        excepturi deleniti fugiat sequi velit delectus 
+        corporis ullam et dignissimos, ratione quos eum 
+        temporibus commodi similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quaerat ea officiis fugiat quia. Ullam 
+        possimus voluptas itaque fuga ab neque quas 
+        dolorum soluta harum? Autem aut similique dolorum 
+        amet minus.Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusamus repudiandae reprehenderit sint 
+        vero eius optio aliquid, exercitationem et 
+        quibusdam explicabo laudantium eum ea voluptates 
+        nulla quaerat pariatur ullam incidunt similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Dolorum libero aliquid itaque a voluptatibus
+        excepturi deleniti fugiat sequi velit delectus 
+        corporis ullam et dignissimos, ratione quos eum 
+        temporibus commodi similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quaerat ea officiis fugiat quia. Ullam 
+        possimus voluptas itaque fuga ab neque quas 
+        dolorum soluta harum? Autem aut similique dolorum 
+        amet minus.Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusamus repudiandae reprehenderit sint 
+        vero eius optio aliquid, exercitationem et 
+        quibusdam explicabo laudantium eum ea voluptates 
+        nulla quaerat pariatur ullam incidunt similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Dolorum libero aliquid itaque a voluptatibus
+        excepturi deleniti fugiat sequi velit delectus 
+        corporis ullam et dignissimos, ratione quos eum 
+        temporibus commodi similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quaerat ea officiis fugiat quia. Ullam 
+        possimus voluptas itaque fuga ab neque quas 
+        dolorum soluta harum? Autem aut similique dolorum 
+        amet minus.
+        Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusamus repudiandae reprehenderit sint 
+        vero eius optio aliquid, exercitationem et 
+        quibusdam explicabo laudantium eum ea voluptates 
+        nulla quaerat pariatur ullam incidunt similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Dolorum libero aliquid itaque a voluptatibus
+        excepturi deleniti fugiat sequi velit delectus 
+        corporis ullam et dignissimos, ratione quos eum 
+        temporibus commodi similique.
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+        elit. Quaerat ea officiis fugiat quia. Ullam 
+        possimus voluptas itaque fuga ab neque quas 
+        dolorum soluta harum? Autem aut similique dolorum 
+        amet minus.
+    </p>
+
+    <hr>
+<!--////////////////////////////////////////////////////////-->
+</body>
+</html>
