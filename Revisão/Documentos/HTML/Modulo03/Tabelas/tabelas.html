@@ -276,26 +276,216 @@
     <hr>
 <!--///////////////////////////////////////////////////////-->
 
-    <h1>PASSO04: Efeito Zebrado em tabelas</h1>
+    <h1>PASSO05: Celulas mescladas</h1>
 
     <h2>Explicação</h2>
 
     <p>
-        efeito Zebrado e auto explicativo, e um metodo capaz
-        de colocar uma background-color em um e e m outro n
+        aqui vc podera aprender a extender um elemento na 
+        tabela para prencher certo numeros de colunas ou 
+        linhas
     </p>
 
-    <p>
-        E tem milhares de formas para fazer isso, porem iremos
-        anotar esssa
-    </p>
-
-    <a href="../../../CSS/Modulo03/Tabela/tabelas.html">Continua no CSS</a>
+    <h2>Extrutura</h2>
 
     <hr>
-<!--///////////////////////////////////////////////////////-->
+    <pre>
+     table
+        tr
+            td----------/td
+            th colspan="2"----------/th
+            th colspan="2"----------/th
+        /tr
+        tr
+            th rowspan="2"----------/th
+            td----------/td
+            td----------/td
+            td----------/td
+            td----------/td
+        /tr
+     /table  
+    </pre>
+    <hr>
 
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/Passo05.html" frameborder="0"></iframe>
+
+    <h2>Exemplo</h2>
+
+    <table>
+       <thead style="background-color: cadetblue; color: white;">
+        <tr>
+            <td style="text-align: center;">X</td>
+            <th colspan="2">Coluna 1</th>
+            <th colspan="2">Coluna 2</th>
+        </tr>
+       </thead> 
+       <tbody>
+        <tr>
+            <th rowspan="2">Linha 1</th>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Linha 2</th>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+       </tbody>
+    </table>
+
+    <hr>
+<!--////////////////////////////////////////////////////////-->
+
+    <h1>PASSO06: Scope de grupos</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        Lembra quando usamos os scopes 'row' e 'col' para 
+        fazer com que um 'th' represente uma coluna ou uma
+        linha na hora do css em questão de tamanho, sendo 
+        assim, o scopes de grupo e usado quando um 'th' 
+        quepresenta mais de uma linha ou coluna 
+    </p>
+
+    <h2>Extrutura</h2>
     
+    <hr>
+    <pre>
+        table
+        tr
+            td----------/td
+            th colspan="2" scope="colgroup"----------/th
+            th colspan="2" scope="colgroup"----------/th
+        /tr
+        tr
+            th rowspan="2" scope="rowgroup"----------/th
+            td----------/td
+            td----------/td
+            td----------/td
+            td----------/td
+        /tr
+     /table  
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/Passo06.html" frameborder="0"></iframe>
+
+    <h2>Exemplo</h2>
+
+    <table>
+        <thead style="background-color: cadetblue; color: white;">
+         <tr>
+             <td style="text-align: center;">X</td>
+             <th colspan="2" scope="colgroup">V colgroup</th>
+             <th colspan="2" scope="colgroup">colgroup V</th>
+         </tr>
+        </thead> 
+        <tbody>
+         <tr>
+             <th rowspan="2" scope="rowgroup">rowgroup ></th>
+             <td>A</td>
+             <td>B</td>
+             <td>C</td>
+             <td>D</td>
+         </tr>
+         <tr>
+             <td>A</td>
+             <td>B</td>
+             <td>C</td>
+             <td>D</td>
+         </tr>
+        </tbody>
+    </table>
+
+    <h1>Parte 2: Utilizand css em scopes</h1>
+
+    <a href="../../../CSS/Modulo03/Tabela/tabelas.html">
+        Continue por aqui...
+    </a>
+
+    <hr>
+<!--////////////////////////////////////////////////////////-->
+
+<h1>Mapeamento de Passos</h1>
+    
+<ol>
+    <li>
+        <p>
+            <b>PASSO: Basico </b>= Nos dois
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <b>PASSO: Tabelas Grandes</b> = HTML
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <b>PASSO: Caption e Escopos</b> = HTML
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <b>PASSO: Efeito Zebrado em tabelas</b> = 
+            CSS
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <b>PASSO: Celulas Mescladas</b> = HTML
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <b>PASSO {</b>
+            <ul>
+                <li>
+                    <p>
+                        <b>Parte1</b> = HTML
+                    </p>
+                </li>
+
+                    <p>
+                        <b>Parte2</b> = CSS
+                    </p>
+                </li>
+            </ul>
+            <b>}</b>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            <b>PASSO07: Tabelas Responsivas</b> = CSS
+        </p>
+    </li>
+</ol>
 
 </body>
 </html>

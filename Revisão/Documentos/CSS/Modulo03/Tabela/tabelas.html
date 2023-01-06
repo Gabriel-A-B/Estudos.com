@@ -321,5 +321,227 @@
 
     <hr>
 <!--////////////////////////////////////////////////////////-->
+
+    <h1>PASSO06: Utilizando css em scopes</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        tem um geito de editar uma coluna inteira usando 
+        as socpes
+    </p>
+    
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+    style
+
+        col.primeiroCol {
+            background-color: cadetblue;
+        }
+
+        col.segundoCol {
+            background-color: thistle;
+        }
+
+    /style
+
+    table
+        colgroup
+            col class="primeiroCol"
+            col class="segundoCol"
+        /colgroup
+
+        tr
+            th scope="col" class="primeiroCol"
+                ----------
+            /th
+            th scope="col" class="segundoCol"
+                ----------
+            /th
+        /tr
+        tr
+            td----------/td
+            td----------/td
+        /tr
+    /table
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <iframe src="Passos/Passo06.html" frameborder="0"></iframe>
+
+    <h2>Exemplo</h2>
+
+    <style>
+
+        col.G1 {
+            background-color: cadetblue;
+        }
+
+        col.G2 {
+            background-color: thistle;
+        }
+
+    </style>
+
+    <table>
+        <colgroup>
+            <col class="G1">
+            <col class="G2">
+        </colgroup>
+
+        <tr>
+            <th scope="col" class="G1">Grupo01</th>
+            <th scope="col" class="G2">Grupo02</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <hr>
+<!--////////////////////////////////////////////////////////-->
+
+    <h1>PASSO07: Tabelas Responsivas</h1>
+
+    <h2>Explicação</h2>
+
+    <p>
+        normalmente as tabelas ja vem com responsividade,
+        porem ate um certo ponto, onde acaba criando 
+        uma rolagem lateral, aqui te insinarei a resolver isso
+    </p>
+
+    <h2>Extrutura</h2>
+
+    <hr>
+    <pre>
+        style
+            var#Container {
+                overflow-x: auto;
+            }
+        /style
+
+        var id="Container"
+            table
+                tabela muito longa
+            /table
+        /var
+    </pre>
+    <hr>
+
+    <h2>Objetos</h2>
+
+    <p>
+        <b>overflow-x:</b> ele cria uma rolagem lateral
+        (no eixo x) dentro da tabela caso ela n conseguir 
+        diminuir mais
+    </p>
+
+    <h2>Exemplo</h2>
+    
+    <style>
+
+        div#Container {
+            overflow-x: auto;
+        }
+
+    </style>
+
+    <div id="Container">
+
+        <table>
+            <tr>
+                <th>Lista</th>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+                <td>Teste</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <hr>
+<!--////////////////////////////////////////////////////////-->
+
+    <h1>Mapeamento de Passos</h1>
+    
+    <ol>
+        <li>
+            <p>
+                <b>PASSO: Basico </b>= Nos dois
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <b>PASSO: Tabelas Grandes</b> = HTML
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <b>PASSO: Caption e Escopos</b> = HTML
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <b>PASSO: Efeito Zebrado em tabelas</b> = 
+                CSS
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <b>PASSO: Celulas Mescladas</b> = HTML
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <b>PASSO {</b>
+                <ul>
+                    <li>
+                        <p>
+                            <b>Parte1</b> = HTML
+                        </p>
+                    </li>
+
+                        <p>
+                            <b>Parte2</b> = CSS
+                        </p>
+                    </li>
+                </ul>
+                <b>}</b>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <b>PASSO07: Tabelas Responsivas</b> = CSS
+            </p>
+        </li>
+    </ol>
 </body>
 </html>
